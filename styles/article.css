@@ -1,13 +1,18 @@
 
 article {
   color: #4E4E4E;
-  font-family: Arial;
+  font-family: YuGothic, Arial;
+  font-size: 13px;
   font-weight: bold;
+  letter-spacing: .1em;
+  line-height: 2.2;
 }
 
 article .title {
-  font-size: 35px;
-  margin: 40px 0 60px;
+  font-family: Futura, Arial;
+  font-size: 28px;
+  letter-spacing: .05em;
+  margin: 40px 0 45px;
   text-align: center;
 }
 
@@ -16,26 +21,27 @@ article h1 {
   margin: 15px 0;
 }
 
-article p {
-  color: #4E4E4E;
-  font-family: Arial;
-  font-weight: bold;
-  line-height: 2.2;
-}
-
-article p em {
+article em {
   font-family: inherit;
-  font-size: 24px;
+  font-size: 21px;
   font-style: inherit;
 }
 
-article p .underline {
+.underline {
   text-decoration: underline;
+}
+
+.red {
+  color: #FC3838;
 }
 
 article ol,
 article ul {
   margin-left: 35px;
+}
+
+article img {
+  max-width: 100%;
 }
 
 article .block {
@@ -87,15 +93,25 @@ article .block.next-link {
 
 article .block .info-block {
   font-family: Futura, Arial;
-  font-size: 30px;
+  font-size: 21px;
   font-weight: normal;
+  letter-spacing: .1em;
+  line-height: 1.6;
   margin-bottom: 60px;
   text-align: center;
 }
 
 article .block .info-block img {
   margin-top: 15px;
-  width: 200px;
+  width: 150px;
+}
+
+.partition {
+  color: #FC3838;
+  font-size: 40px;
+  font-weight: lighter;
+  margin: -40px 0 20px;
+  text-align: center;
 }
 
 @media screen and (max-width: 1024px) {

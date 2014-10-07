@@ -47,7 +47,7 @@ a:visited {
 }
 
 #navigation {
-  padding: 16px 0 20px;
+  padding: 16px 0 10px;
 }
 
 #navigation ul {
@@ -57,11 +57,12 @@ a:visited {
 #navigation ul li {
   box-sizing: border-box;
   display: inline-block;
-  font-size: 16px;
+  font-size: 15px;
+  letter-spacing: .1em;
   line-height: 20px;
   padding: 40px 0;
   text-align: center;
-  width: 109px;
+  width: 102px;
 }
 
 #navigation ul li span {
@@ -91,22 +92,22 @@ a:visited {
 
 #navigation li.logo {
   background: url(http://wxii-test.appspot.com/images/logo.png) left center no-repeat;
-  background-size: 110px;
+  background-size: 105px;
   color: rgba(0, 0, 0, 0);
-  width: 110px;
+  width: 135px;
 }
 
-#navigation li.logo:hover {
+#navigation ul li.logo:hover {
   opacity: .7;
 }
 
 #navigation ul li.test-city {
   background-image: url(http://wxii-test.appspot.com/images/cities/tokyo_mini.png);
-  background-size: 44px;
+  background-size: 37px;
   background-repeat: no-repeat;
-  background-position: 30px;
-  padding-left: 79px;
-  width: 195px;
+  background-position: 36px;
+  padding-left: 82px;
+  width: 219px;
 }
 
 #topbar {
@@ -144,7 +145,8 @@ a:visited {
 
 #breadcrumb span, #breadcrumb a {
   color: #8F8F8F;
-  font-size: 13px; 
+  font-size: 11px; 
+  letter-spacing: .1em;
 }
 
 #breadcrumb a:last-child {
@@ -186,20 +188,24 @@ a:visited {
     background-color: white;
   }
 
-  #navigation ul li.logo span:after {
-    opacity: 1;
-  }
-
   #navigation ul li.logo {
     background: none;
     color: white;
+  }
+
+  #navigation ul li.logo:hover {
+    opacity: 1;
+  }
+
+  #navigation ul li.logo span:after {
+    opacity: 1;
   }
 
   #navigation ul li.test-city {
     background-image: url(http://wxii-test.appspot.com/images/cities/tokyo_mini_white.png);
     background-repeat: no-repeat;
     padding-left: 52px;
-    background-position: 0 8px;
+    background-position: 0;
     width: 100%;
   }
 
@@ -220,11 +226,13 @@ a:visited {
 
 /* Footer */
 #footer {
+  clear: both;
   color: #fc3838;
   font-family: 'Futura', Arial;
-  font-weight: bold;
+  font-size: 14px;
   left: 0;
-  padding: 40px 0 70px;
+  letter-spacing: .1em;
+  padding: 90px 0 70px;
   text-align: center;
   width: 100%;
 }

@@ -13,13 +13,14 @@
 <script>
   window.addEventListener('load', function() {
     var sidebar = document.getElementById('about-sidebar');
-    var top = sidebar.getBoundingClientRect().top;
-    var left = sidebar.getBoundingClientRect().left;
+    var clientRect = sidebar.getClientRects()[0];
+    var topPosition = clientRect.top;
+    var leftPosition = clientRect.left;
     window.addEventListener('scroll', function() {
-      if (scrollY > top) {
+      if (scrollY > topPosition) {
         sidebar.classList.add('floating');
         sidebar.style.top = 10;
-        sidebar.style.left = left;
+        sidebar.style.left = leftPosition;
       } else {
         sidebar.classList.remove('floating');
         sidebar.style.top = '';
