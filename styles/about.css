@@ -1,0 +1,51 @@
+#content {
+  position: relative;
+}
+
+#about-sidebar {
+  left: 0;
+  height: 100%;
+  position: absolute;
+  width: 200px;
+}
+
+#about-sidebar ul {
+  list-style: none;
+  font-family: Futura, Arial;
+}
+
+#about-sidebar ul li {
+  padding: 10px 0;
+}
+
+#about-sidebar.floating {
+  position: fixed;
+  top: 0;
+}
+
+#about-body {
+  padding-left: 200px;
+  width: 815px;
+}
+
+@media screen and (max-width: 1024px) {
+  #about-sidebar {
+    height: initial;
+    position: initial;
+    width: initial;
+  }
+
+  #about-sidebar.floating {
+    position: relative;
+  }
+
+  #about-sidebar ul li {
+    display: inline-block;
+    padding: 0 30px 0 0;
+  }
+
+  #about-body {
+    padding-left: 0;
+    width: 100%;
+  }
+}

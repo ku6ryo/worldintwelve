@@ -1,0 +1,68 @@
+<article>
+  <div id="city-info">
+    <div id="city-perspective">
+      <img src="/images/cities/{{city_id}}_perspective.jpg">
+    </div>
+    <script>
+      var frame = document.getElementById('city-perspective');
+      var img = frame.getElementsByTagName('img')[0];
+      img.addEventListener('load', function() {
+        var displayRatio = 0.85;
+        var height = img.height * displayRatio;
+        var imgScrollAmount = img.height * (1 - displayRatio);
+        frame.style.height = height;
+        var displayHeight = window.innerHeight;
+        if (img.y < displayHeight) {
+          var startScrollY = 0;
+          var endScrollY = img.y + height;
+        } else {
+          var startScrollY = img.y - displayHeight;
+          var endScrollY = img.y + height;
+        }
+        var scrollHeight = endScrollY - startScrollY;
+        window.addEventListener('scroll', function() {
+          if (scrollY < startScrollY) {
+            img.style.top = 0;
+          } else if (scrollY > endScrollY) {
+            img.style.top = - imgScrollAmount;
+          } else {
+            img.style.top = - imgScrollAmount * (scrollY - startScrollY) / scrollHeight;
+          }
+        });
+      });
+    </script>
+    <div class="block two">
+      <div class="inner-block">
+        <div class="info-block">
+          <img src="/images/cities/{{city_id}}.png">
+          <div>{{meta.label}}</div>
+          <div style="font-size: 16px;">{{meta.month}}</div>
+        </div>
+        <div class="info-block">
+          <div>City Population : {{meta.population}}</div>
+          <div>City Area : {{meta.area}}km&sup2;</div>
+          <div>Urban Population : {{meta.urban_population}}</div>
+          <div>Urban Area : {{meta.urban_area}}km&sup2;</div>
+          <div>Districts/Wards : {{meta.num_districts}}</div>
+          <div>Nicknames : {{meta.nicknames}}</div>
+        </div>
+        <div class="info-block">
+          <div>Flag:</div>
+          <img src="/images/cities/{{city_id}}_flag.png">
+        </div>
+        <div class="info-block">
+          <div>Emblem/Symbol:</div>
+          <img src="/images/cities/{{city_id}}_symbol.png">
+        </div>
+      </div>
+      <div class="inner-block">
+        <p>
+          <em>コミ論 : Why {{meta.label}}??</em><br><br>
+          {% autoescape false %}
+            {{description}}
+          {% endautoescape %}
+        </p>
+      </div>
+    </div>
+  </div>
+</article>

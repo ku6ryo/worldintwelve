@@ -1,0 +1,47 @@
+application: worldintwelve
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: / 
+  script: main.app
+
+- url: /cities(/(|sanfrancisco|newyork|toronto|riodejaneiro|london|stockholm|munich|paris|barcelona|istanbul|melbourne|bangkok|tokyo))?
+  script: main.app
+
+- url: /about(/(|cities|projects|wxii|faq|rules))?
+  script: main.app
+
+- url: /projects(/(|musicians|soundscape|treasure_box|live|dates1|dates2|grandma_cooking|micro_guide|misc|twelve_questions|bck|marketplace))?
+  script: main.app
+
+- url: /people
+  script: main.app
+
+- url: /sponsors
+  script: main.app
+
+- url: /test_city_tokyo
+  script: main.app
+
+- url: /styles
+  static_dir: styles
+
+- url: /images
+  static_dir: images
+
+- url: /fonts
+  static_dir: fonts
+
+libraries:
+- name: webapp2
+  version: "2.5.2"
+
+- name: jinja2
+  version: latest

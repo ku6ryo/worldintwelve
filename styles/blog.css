@@ -1,0 +1,37 @@
+.blog-frame {
+  position: relative;
+}
+
+.blog-sidebar {
+  display: inline-block;
+  position: absolute;
+  width: 15%;
+}
+
+.blog-main {
+  padding-left: 15%;
+  width: 84%;
+}
+
+.blog-title-container {
+  color: #fc4646;
+}
+
+.blog-content {
+  word-wrap: break-word;
+}
+
+.blog-calendar {
+  padding: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .blog-main {
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .blog-sidebar {
+    position: initial;
+  }
+}

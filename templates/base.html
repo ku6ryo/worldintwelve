@@ -1,0 +1,72 @@
+<link rel="shortcut icon" href="/images/logo_mini.png">
+<link rel="stylesheet" href="/styles/base.css" />
+<title>The World in Twelve</title>
+
+<div id="wrapper">
+  <div id="menu">
+    <div id="navigation">
+      <ul>
+        <a href="/"><li class="logo"><span>Home</span></li></a>
+        <a href="/about"><li><span>About</span></li></a>
+        <a href="/cities"><li><span>Cities</span></li></a>
+        <a href="/projects"><li><span>Projects</span></li></a>
+        <a href="http://jp.blog.worldintwelve.com/latest-post"><li><span>Blog</span></li></a>
+        <a href="/people"><li><span>People</span></li></a>
+        <a href="/sponsors"><li><span>Sponsors</span></li></a>
+        <a href="/test_city_tokyo"><li class="test-city"><span>TEST City:Tokyo</span></li></a>
+      </ul>
+    </div>
+    <div id="topbar">
+      <a anchor="wxii" href="/"><div class="logo"></div></a>
+      <div id="toggle"></div>
+    </div>
+    {% if dir_list %}
+    <div id="breadcrumb">
+      <a href="/">Wxii</a>
+      {% for dir in dir_list %}
+      <span class="separator">&gt;</span><a
+        href="/{{dir_list[:loop.index]|join('/')}}">{{dir|replace("_", " ")|title}}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+
+  <script>
+    var menu = document.getElementById('menu');
+    var items = menu.getElementsByTagName('li');
+    for (var i = 1; i < items.length; i++) {
+      var item = items[i];
+      var a = item.parentNode;
+      if (location.href.match(new RegExp(a.href))) {
+        item.classList.add('selected');
+      }
+    }
+
+    var toggleBtn = document.getElementById('toggle');
+    toggleBtn.addEventListener('click', function() {
+      menu.classList.toggle('expanded');
+    });
+  </script>
+
+  {% autoescape false %}
+  <div id="content">{{ body }}</div>
+  {% endautoescape %}
+
+  <div id="footer">
+    <div class="left">
+      <div id="contact" class="footer-block">
+        <a href=""><img src="/images/icon_condition.png" />Terms &amp; Conditions</a> | 
+        <a href=""><img src="/images/icon_contact.png" />Contact</a>
+      </div>
+    </div>
+    <div class="right">
+      <div id="social" class="footer-block">
+        <a href="https://twitter.com/worldintwelve" target="_blank"><img src="/images/icon_twitter.png"></a>
+        <a href="https://www.facebook.com/worldintwelve" target="_blank"><img src="/images/icon_facebook.png"></a>
+        <a href="http://jp.pinterest.com/worldintwelve/" target="_blank"><img src="/images/icon_pinterest.png"></a>
+        <a href="" target="_blank"><img src="/images/icon_rss.png"></a>
+      </div>
+      <div id="copyright" class="footer-block">&copy;2015,wxii. All Rights Reserved.</div>
+    </div>
+  </div>
+</div>

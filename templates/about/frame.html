@@ -1,0 +1,33 @@
+<link rel="stylesheet" type="text/css" href="/styles/about.css" />
+<link rel="stylesheet" type="text/css" href="/styles/article.css" />
+
+<div id="about-sidebar">
+  <ul>
+    <a href="/about/wxii"><li>What is WXII</li></a>
+    <a href="/about/cities"><li>Cities</li></a>
+    <a href="/about/projects"><li>Projects</li></a>
+    <a href="/about/rules"><li>Rules</li></a>
+    <a href="/about/faq"><li>FAQ</li></a>
+  </ul>
+</div>
+<script>
+  window.addEventListener('load', function() {
+    var sidebar = document.getElementById('about-sidebar');
+    var top = sidebar.getBoundingClientRect().top;
+    var left = sidebar.getBoundingClientRect().left;
+    window.addEventListener('scroll', function() {
+      if (scrollY > top) {
+        sidebar.classList.add('floating');
+        sidebar.style.top = 10;
+        sidebar.style.left = left;
+      } else {
+        sidebar.classList.remove('floating');
+        sidebar.style.top = '';
+        sidebar.style.left = '';
+      }
+    });
+  });
+</script>
+{% autoescape false %}
+<div id="about-body">{{body}}</div>
+{% endautoescape %}

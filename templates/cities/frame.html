@@ -1,0 +1,29 @@
+<link type="text/css" rel="stylesheet" href="/styles/article.css">
+<link type="text/css" rel="stylesheet" href="/styles/list.css">
+<link type="text/css" rel="stylesheet" href="/styles/cities.css">
+<style>
+  {% for city in cities %}
+  .image-list .item.{{city.id}} {
+    background-image: url(/images/cities/{{city.id}}_gray.png);
+  }
+  .image-list.{{city.id}} .item.{{city.id}},
+  .image-list .item.{{city.id}}:hover {
+    background-image: url(/images/cities/{{city.id}}.png);
+  }
+  {% endfor %}
+</style>
+{% for city in cities %}
+<img class="pre-load" src="/images/cities/{{city.id}}.png">
+{% endfor %}
+<div id="city-list" class="image-list {{city_id}}">
+  {% for city in cities %}
+  <a anchor="{{city.label}}" title="{{city.label}}" href="/cities/{{city.id}}">
+    <div class="item {{city.id}}"></div>
+  </a>
+  {% endfor %}
+</div>
+<div id="city-info">
+  {% autoescape false %}
+    {{info}}
+  {% endautoescape %}
+</div>

@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Futura', Arial;
+}
+
+@font-face {
+  font-family: 'Futura';
+  src: url('fonts/futura_oblique.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.calendar {
+  color: #fc4646;
+  font-weight: bold;
+}
+
+.calendar a {
+  color: #fc4646;
+  text-decoration: none;
+}
+
+.calendar a:hover {
+  text-decoration: underline;
+}
+
+.calendar a:visited {
+  color: #fc4646;
+}
+
+.calendar table {
+  border-color: #fc4646;
+  border-style: solid;
+  border-collapse: collapse;
+  border-width: 2px 0 0 0;
+  color: #fc4646;
+  font-weight: bold;
+  width: 100%;
+}
+
+.calendar table tr td {
+  text-align: center;
+  border-color: #fc4646;
+  border-style: solid;
+  border-width: 0 0 2px 2px;
+  padding: 4px 12px;
+}
+
+.calendar table tr td.selected {
+  background-color: #fc4646;
+  color: white;
+}
+
+.calendar table tr td:last-child {
+  border-right-width: 2;
+}
+
+.calendar tbody tr td {
+    width: 14%;
+}
+
+.calendar thead tr:last-child td {
+  border-width: 2px;
+}
+
+.calendar-footer {
+  padding: 3px 0;
+}
+
+.calendar-prev {
+  float: left;
+}
+
+.calendar-next {
+  float: right;
+}

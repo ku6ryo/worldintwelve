@@ -1,0 +1,335 @@
+
+#map {
+  font-family: 'Futura', Arial;
+  left: -13%;
+  position: relative;
+  width: 126%;
+}
+
+@media screen and (max-width: 1024px) {
+  #map {
+    left: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #world {
+    display: none;
+  }
+}
+
+#world {
+  width: 100%;
+}
+
+.pin-container {
+  position: absolute;
+}
+
+.pin-container:hover {
+  z-index: 99999;
+}
+
+.pin {
+  width: 17px;
+  height: 73px;
+}
+
+.pin .point {
+  background-color: #F00;
+  border: 2px solid #FFF;
+  border-radius: 15px;
+  height: 13px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  transition: .5s;
+  width: 13px;
+}
+
+.pin .point img {
+  opacity: 0;
+  transition: .5s;
+  width: 62%;
+  top: 7%;
+  left: 19%;
+  position: absolute;
+}
+
+.pin .point .city {
+  color: white;
+  opacity: 0;
+  transition: .1s;
+  transition-delay: .1s;
+  position: relative;
+  top: 74%;
+  width: 100%;
+  font-size; 0;
+}
+
+.pin-container:hover .pin .point .city {
+  opacity: 1;
+  font-size: 15px;
+}
+
+.pin-container:hover .pin .point img {
+  opacity: 1;
+}
+
+.pin-container:hover .pin .point {
+  border-width: 3px;
+  border-radius: 78px;
+  height: 150px;
+  left: -68px;
+  position: relative;
+  top: -68px;
+  width: 150px;
+}
+
+.pin .bar {
+  background-color: #F00;
+  border: 2px solid #FFF;
+  border-top-width: 0;
+  border-radius: 2px;
+  height: 55px;
+  left: 5px;
+  position: absolute;
+  top: 15px;
+  transition: .5s;
+  opacity: 1;
+  width: 3px;
+}
+
+.pin-container:hover .pin .bar {
+  height: 0;
+  opacity: 0;
+  top: 70px;
+}
+
+@media screen and (max-width: 1024px) {
+  .pin-container {
+    display: inline-block;
+    position: initial;
+    width: 24%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .pin-container .pin {
+    height: 160px;
+    width: 160px;
+    margin: auto;
+  }
+
+  .pin-container .pin .point {
+    height: 150px;
+    width: 150px;
+    border-radius: 75px;
+    position: relative;
+  }
+
+  .pin-container:hover .pin .point {
+    height: 150px;
+    width: 150px;
+    border-radius: 75px;
+    top: 0;
+    left: 0;
+  }
+
+  .pin-container .pin .point img {
+    opacity: 1;
+    width: 62%;
+    top: 8%;
+    left: 19%;
+    position: absolute;
+  }
+
+  .pin-container .pin .point .city {
+    opacity: 1;
+    font-size: 15px;
+  }
+
+  .pin-container .pin .bar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pin-container {
+    width: 32%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .pin-container {
+    width: 48.5%;
+  }
+}
+
+.city {
+  opacity: 0;
+  transition: .1s;
+  transition-delay: .1s;
+  position: relative;
+  top: 74%;
+}
+
+#bangkok {
+  bottom: 48%;
+  left: 76.5%;
+}
+
+#bangkok .pin .point,
+#bangkok .pin .bar {
+  background-color: #ff6d00;
+}
+
+#melbourne {
+  bottom: 15%;
+  left: 88.5%;
+}
+
+#melbourne .pin .point,
+#melbourne .pin .bar {
+  background-color: #22adf2;
+}
+
+#sanfrancisco {
+  bottom: 62%;
+  left: 15.5%;
+}
+
+#sanfrancisco .pin .point,
+#sanfrancisco .pin .bar {
+  background-color: #7436c6;
+}
+
+#newyork {
+  bottom: 67%;
+  left: 29%;
+}
+
+#newyork .pin .point,
+#newyork .pin .bar {
+  background-color: #82a81a;
+}
+
+#toronto {
+  bottom: 67%;
+  left: 26.5%;
+}
+
+#toronto .pin .point, 
+#toronto .pin .bar {
+  background-color: #6b3e0d;
+}
+
+#riodejaneiro {
+  bottom: 25%;
+  left: 37%;
+}
+
+#riodejaneiro .pin .point,
+#riodejaneiro .pin .bar {
+  background-color: #457012;
+}
+
+#london {
+  bottom: 72%;
+  left: 48.5%;
+}
+
+#london .pin .point,
+#london .pin .bar {
+  background-color: #08b29a;
+}
+
+#stockholm {
+  bottom: 77%;
+  left: 53.5%;
+}
+
+#stockholm .pin .point,
+#stockholm .pin .bar {
+  background-color: #1d3c7f;
+}
+
+#munich {
+  bottom: 69.5%;
+  left: 51.5%;
+}
+
+#munich .pin .point,
+#munich .pin .bar {
+  background-color: #f49f08;
+}
+
+#paris {
+  bottom: 69.5%;
+  left: 49.5%;
+}
+
+#paris .pin .point,
+#paris .pin .bar {
+  background-color: #f93ea5;
+}
+
+#barcelona {
+  bottom: 66%;
+  left: 49%;
+}
+
+#barcelona .pin .point,
+#barcelona .pin .bar {
+  background-color: #fc3838;
+}
+
+#istanbul {
+  bottom: 65%;
+  left: 56%;
+}
+
+#istanbul .pin .point,
+#istanbul .pin .bar {
+  background-color: #a3860c;
+}
+
+#tokyo {
+  bottom: 61.5%;
+  left: 87%;
+}
+
+#tokyo .pin .point,
+#tokyo .pin .bar {
+  background-color: #565656;
+}
+
+#plane {
+  position: absolute;
+  top: 57%;
+  left: 64%;
+  width: 170px;
+}
+
+#ship {
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  width: 170px;
+}
+
+#satellite {
+  position: absolute;
+  top: -9%;
+  left: 78%;
+  width: 170px;
+}
+
+@media screen and (max-width: 1024px) {
+  #ship, #plane, #satellite {
+    display: none;
+  }
+}

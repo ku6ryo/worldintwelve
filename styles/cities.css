@@ -1,0 +1,9 @@
+#city-perspective {
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+
+#city-perspective img {
+  position: relative;
+  width: 100%;
+}

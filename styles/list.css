@@ -1,0 +1,141 @@
+img.pre-load {
+  display: none;
+}
+
+.image-list {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+
+.image-list .item {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80px;
+  display: inline-block;
+  height: 80px;
+  width: 80px;
+}
+
+@media screen and (max-width: 1024px) {
+  .image-list .item {
+    width: 15%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .image-list .item {
+    width: 23%;
+  }
+}
+
+.list {
+  position: relative;
+}
+
+.list-title {
+  color: #666;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.box {
+  width: 24%;
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 20px 10px;
+}
+
+.box img {
+  width: 40%;
+}
+
+.label {
+  text-align: left;
+  font-weight: bold;
+  left: -15px;
+  position: relative;
+  padding: 15px 0 0;
+}
+
+.label:before {
+  content: "--";
+  position: relative;
+  top: -20px;
+  left: 15px;
+}
+
+.description {
+  text-align: left;
+}
+
+@media screen and (max-width: 1000px) {
+  .list {
+    padding: 0 10%;
+  }
+  .box {
+    width: 32%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .box {
+    width: 49%;
+  }
+}
+
+.month {
+  text-align: right;
+  font-style: italic;
+}
+
+.bangkok .label {
+  color: #ff6d00;
+}
+
+.melbourne .label {
+  color: #22adf2;
+}
+
+.sanfrancisco .label {
+  color: #7436c6;
+}
+
+.newyork .label {
+  color: #82a81a;
+}
+
+.toronto .label {
+  color: #6b3e0d;
+}
+
+.riodejaneiro .label {
+  color: #457012;
+}
+
+.london .label {
+  color: #08b29a;
+}
+
+.stockholm .label {
+  color: #1d3c7f;
+}
+
+.munich .label {
+  color: #f49f08;
+}
+
+.paris .label {
+  color: #f93ea5;
+}
+
+.barcelona .label {
+  color: #fc3838;
+}
+
+.istanbul .label {
+  color: #a3860c;
+}

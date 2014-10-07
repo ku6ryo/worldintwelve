@@ -1,0 +1,13 @@
+<div>Redirecting...</div>
+<script>
+function callback(data) {
+  if (data.meta.status = 200) {
+    location.href = data.response.posts[0].post_url;
+  } else {
+    location.href = '/';
+  }
+}
+</script>
+
+<script
+src="http://api.tumblr.com/v2/blog/theworldintwelve.tumblr.com/posts/?api_key=NNwYyVBQ9QnqUP9h9HFGzJrukopgJOKiNoFiNNvHxlQZjoPe1I&jsonp=callback"></script>

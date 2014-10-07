@@ -1,0 +1,141 @@
+
+article {
+  color: #4E4E4E;
+  font-family: Arial;
+  font-weight: bold;
+}
+
+article .title {
+  font-size: 35px;
+  margin: 40px 0 60px;
+  text-align: center;
+}
+
+article h1 {
+  font-size: 25px;
+  margin: 15px 0;
+}
+
+article p {
+  color: #4E4E4E;
+  font-family: Arial;
+  font-weight: bold;
+  line-height: 2.2;
+}
+
+article p em {
+  font-family: inherit;
+  font-size: 24px;
+  font-style: inherit;
+}
+
+article p .underline {
+  text-decoration: underline;
+}
+
+article ol,
+article ul {
+  margin-left: 35px;
+}
+
+article .block {
+  margin-bottom: 65px;
+  position: relative;
+}
+
+article .block:last-child {
+  margin-bottom: 0;
+}
+
+article .block.image-left img {
+  /*margin: 20px 30px;*/
+  position: absolute;
+  width: 220px;
+}
+
+article .block.image-left p {
+  padding-left: 230px;
+}
+
+article .block.image-right img {
+  /*margin: 20px 35px;*/
+  position: absolute;
+  right: 0;
+  width: 220px;
+}
+
+article .block.image-right p {
+  padding-right: 230px;
+}
+
+article .block.two .inner-block {
+  display: inline-block;
+  vertical-align: top;
+  width: 47%;
+}
+
+article .block.two .inner-block:last-child {
+  padding-left: 5%;
+}
+
+article .block.next-link {
+  color: red;
+  font-size: 20pt;
+  text-align: center;
+  text-decoration: underline;
+}
+
+article .block .info-block {
+  font-family: Futura, Arial;
+  font-size: 30px;
+  font-weight: normal;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+article .block .info-block img {
+  margin-top: 15px;
+  width: 200px;
+}
+
+@media screen and (max-width: 1024px) {
+
+  article .block {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  article .block p {
+    text-align: left;
+  }
+
+  article .block.image-left img,
+  article .block.image-right img {
+    position: initial;
+    right: initial;
+  }
+
+  article .block.image-left p,
+  article .block.image-right p {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  article .block img.remove-when-screen-size-small {
+    display: none;
+  }
+
+  article .block.two .inner-block {
+    display: block;
+    vertical-align: initial;
+    width: 100%;
+  }
+
+  article .block.two .inner-block:first-child {
+    margin-right: 9%;
+  }
+
+  article .block.two .inner-block:last-child {
+    padding-left: 0;
+  }
+}
