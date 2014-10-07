@@ -14,8 +14,8 @@
   window.addEventListener('load', function() {
     var sidebar = document.getElementById('about-sidebar');
     var clientRect = sidebar.getClientRects()[0];
-    var topPosition = clientRect.top;
-    var leftPosition = clientRect.left;
+    var topPosition = clientRect.top + scrollY;
+    var leftPosition = clientRect.left + scrollX;
     window.addEventListener('scroll', function() {
       if (scrollY > topPosition) {
         sidebar.classList.add('floating');
