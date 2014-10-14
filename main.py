@@ -30,22 +30,23 @@ JINJA_ENVIRONMENT = jinja2.Environment(
 
 
 CITIES = [
-        {'id': 'sanfrancisco', 'label': 'San Francisco'},
-        {'id': 'toronto', 'label': 'Toronto'},
-        {'id': 'newyork', 'label': 'New York'},
-        {'id': 'riodejaneiro', 'label': 'Rio de Janeiro'},
-        {'id': 'london', 'label': 'London'},
-        {'id': 'stockholm', 'label': 'Stockholm'},
-        {'id': 'munich', 'label': 'Munich'},
-        {'id': 'paris', 'label': 'Paris'},
-        {'id': 'barcelona', 'label': 'Barcelona'},
-        {'id': 'istanbul', 'label': 'Istanbul'},
-        {'id': 'bangkok', 'label': 'Bangkok'},
-        {'id': 'melbourne', 'label': 'Melbourne'},
+  'sanfrancisco',
+  'toronto',
+  'newyork',
+  'riodejaneiro',
+  'london',
+  'stockholm',
+  'munich',
+  'paris',
+  'barcelona',
+  'istanbul',
+  'bangkok',
+  'melbourne',
 ]
 
 CITY_METAS = {
   'tokyo': {
+    'id': 'tokyo',
     'label': 'Tokyo',
     'population': '9,071,577',
     'area': '622.99',
@@ -53,9 +54,11 @@ CITY_METAS = {
     'urban_area': '8,547',
     'num_districts': '23 Wards',
     'nicknames': '-',
-    'month': '-'
+    'month': '-',
+    'color': '#565656'
   },
   'bangkok': {
+    'id': 'bangkok',
     'label': 'Bandkok',
     'population': '8,280,925',
     'area': '1,568.737',
@@ -63,9 +66,11 @@ CITY_METAS = {
     'urban_area': '7,761.6',
     'num_districts': '50 Districts, 12 Clusters',
     'nicknames': 'Big Mango, Venice of the East',
-    'month': 'Oct, 2015'
+    'month': 'Nov, 2015',
+    'color': '#ff6d00'
   },
   'barcelona': {
+    'id': 'barcelona',
     'label': 'Barcelona',
     'population': '1,620,943',
     'area': '101.9',
@@ -73,9 +78,11 @@ CITY_METAS = {
     'urban_area': '803',
     'num_districts': '10 Districts',
     'nicknames': 'The City of Counts, The City of Gaudi',
-    'month': 'Aug, 2015'
+    'month': 'Sep, 2015',
+    'color': '#AC0D19'
   },
   'istanbul': {
+    'id': 'istanbul',
     'label': 'Istanbul',
     'population': '14,160,467',
     'area': '5,343',
@@ -83,9 +90,11 @@ CITY_METAS = {
     'urban_area': '5,343',
     'num_districts': '39 Districts',
     'nicknames': 'The City on Seven Hills, Queen of Cities, City of World\'s Desires',
-    'month': 'Sep, 2015'
+    'month': 'Oct, 2015',
+    'color': '#A3860C'
   },
   'london': {
+    'id': 'london',
     'label': 'London',
     'population': '8,416,535',
     'area': '1,572.15',
@@ -93,9 +102,11 @@ CITY_METAS = {
     'urban_area': '1,623',
     'num_districts': '33 Local Authorities',
     'nicknames': 'The Square Mile, The (Big) Smoke',
-    'month': 'Apr, 2015'
+    'month': 'May, 2015',
+    'color': '#08B29A'
   },
   'melbourne': {
+    'id': 'melbourne',
     'label': 'Melbourne',
     'population': '116,431',
     'area': '33.7',
@@ -103,9 +114,11 @@ CITY_METAS = {
     'urban_area': '9,990.5',
     'num_districts': '31 Municipalities',
     'nicknames': 'The Second City',
-    'month': 'Nov, 2015'
+    'month': 'Dec, 2015',
+    'color': '#22ADF2'
   },
   'munich': {
+    'id': 'munich',
     'label': 'Munich',
     'population': '1,388,308',
     'area': '310.43',
@@ -113,9 +126,11 @@ CITY_METAS = {
     'urban_area': '',
     'num_districts': '25 Boroughs',
     'nicknames': 'World City with Heart',
-    'month': 'Jun, 2015'
+    'month': 'July, 2015',
+    'color': '#F49F08'
   },
   'newyork': {
+    'id': 'newyork',
     'label': 'New York',
     'population': '8,405,837',
     'area': '783.84',
@@ -123,9 +138,11 @@ CITY_METAS = {
     'urban_area': '11,642',
     'num_districts': '5 Boroughs',
     'nicknames': 'The Big Apple, Gotham',
-    'month': 'Feb, 2015'
+    'month': 'Mar, 2015',
+    'color': '#82A81A'
   },
   'paris': {
+    'id': 'paris',
     'label': 'Paris',
     'population': '2,211,297',
     'area': '105',
@@ -133,9 +150,11 @@ CITY_METAS = {
     'urban_area': '17,174.4',
     'num_districts': '20 arrondissements',
     'nicknames': 'la Ville Lumiere (City of Lights), City of Love',
-    'month': 'Jul, 2015'
+    'month': 'Aug, 2015',
+    'color': '#F93EA5'
   },
   'riodejaneiro': {
+    'id': 'riodejaneiro',
     'label': 'Rio de Janeiro',
     'population': '6,429,923',
     'area': '1,200.27',
@@ -143,9 +162,11 @@ CITY_METAS = {
     'urban_area': '2,020',
     'num_districts': '5 Districts',
     'nicknames': 'Cidade Maravilhosa (Marvelous City)',
-    'month': 'Mar, 2015'
+    'month': 'Apr, 2015',
+    'color': '#457012'
   },
   'sanfrancisco': {
+    'id': 'sanfrancisco',
     'label': 'San Francisco',
     'population': '837,442',
     'area': '600.6',
@@ -153,9 +174,11 @@ CITY_METAS = {
     'urban_area': '9,128',
     'num_districts': '10 Neighborhoods (Unofficial)',
     'nicknames': 'San Fran, Frisco',
-    'month': 'Dec, 2014'
+    'month': 'Jan, 2015',
+    'color': '#7436C6'
   },
   'stockholm': {
+    'id': 'stockholm',
     'label': 'Stockholm',
     'population': '905,184',
     'area': '188',
@@ -163,9 +186,11 @@ CITY_METAS = {
     'urban_area': '6,519',
     'num_districts': '14 Districts (3 Divisions)',
     'nicknames': 'Eken (The Oak)',
-    'month': 'May, 2015'
+    'month': 'Jun, 2015',
+    'color': '#1D3C7F'
   },
   'toronto': {
+    'id': 'toronto',
     'label': 'Toronto',
     'population': '2,615,060',
     'area': '630',
@@ -173,7 +198,8 @@ CITY_METAS = {
     'urban_area': '7,125',
     'num_districts': '140 Neighborhodds, 6 Districts',
     'nicknames': '-',
-    'month': 'Jan, 2015'
+    'month': 'Feb, 2015',
+    'color': '#6B3E0D'
   }
 }
 
@@ -258,18 +284,18 @@ class TopHandler(webapp2.RequestHandler):
     def get(self):
         base_template = JINJA_ENVIRONMENT.get_template('templates/base.html')
         top_template = JINJA_ENVIRONMENT.get_template('templates/top.html')
-        cities = [{
-            'id': 'tokyo', 'label': 'Tokyo'
-        }]
+        cities = ['tokyo']
         cities.extend(CITIES)
-        body = top_template.render({'cities': cities})
+        body = top_template.render({
+            'cities': [CITY_METAS[c] for c in cities],
+        })
         self.response.write(base_template.render({'body': body}))
 
 
 class CitiesHandler(webapp2.RequestHandler):
     def get(self, city):
         base_template = JINJA_ENVIRONMENT.get_template('templates/base.html')
-        if city != '':
+        if city != None:
             frame_template = JINJA_ENVIRONMENT.get_template('templates/cities/frame.html')
             city_template = JINJA_ENVIRONMENT.get_template('templates/cities/%s.html' % city)
             city_body = city_template.render()
@@ -282,12 +308,17 @@ class CitiesHandler(webapp2.RequestHandler):
             body = frame_template.render({
                 'info': info_body,
                 'city_id': city,
-                'cities': CITIES,
+                'cities': [CITY_METAS[c] for c in CITIES]
             })
             dir_list = ['cities', city]
         else:
-            cities_template = JINJA_ENVIRONMENT.get_template('templates/cities.html')
-            body = cities_template.render()
+            frame_template = JINJA_ENVIRONMENT.get_template('templates/cities/frame.html')
+            body = frame_template.render({
+                'info': '',
+                'city_id': '',
+                'cities': [CITY_METAS[c] for c in CITIES],
+                'is_top': True
+            })
             dir_list = ['cities']
         self.response.write(base_template.render({
             'body': body, 'dir_list': dir_list}))
@@ -375,11 +406,7 @@ app = webapp2.WSGIApplication([
     webapp2.Route(r'/about/', webapp2.RedirectHandler, defaults={'_uri':
         '/about/wxii', '_code': 301}),
     (r'/about/(cities|projects|wxii|faq|rules)', AboutHandler),
-    webapp2.Route(r'/cities', webapp2.RedirectHandler, defaults={'_uri':
-        '/cities/sanfrancisco', '_code': 301}),
-    webapp2.Route(r'/cities/', webapp2.RedirectHandler, defaults={'_uri':
-        '/cities/sanfrancisco', '_code': 301}),
-    (r'/cities/(%s)' % '|'.join([city['id'] for city in CITIES]), CitiesHandler),
+    (r'/cities/*(%s)?' % '|'.join(CITIES), CitiesHandler),
     webapp2.Route(r'/projects', webapp2.RedirectHandler, defaults={'_uri':
         '/projects/musicians', '_code': 301}),
     webapp2.Route(r'/projects/', webapp2.RedirectHandler, defaults={'_uri':

@@ -10,15 +10,20 @@
   .image-list .item.{{city.id}}:hover {
     background-image: url(/images/cities/{{city.id}}.png);
   }
+  .image-list .item.{{city.id}}:hover .label {
+    color: {{city.color}};
+  }
   {% endfor %}
 </style>
 {% for city in cities %}
 <img class="pre-load" src="/images/cities/{{city.id}}.png">
 {% endfor %}
-<div id="city-list" class="image-list {{city_id}}">
+<div id="city-list" class="image-list {{city_id}} {% if is_top %}top{% endif %}">
   {% for city in cities %}
   <a anchor="{{city.label}}" title="{{city.label}}" href="/cities/{{city.id}}">
-    <div class="item {{city.id}}"></div>
+    <div class="item {{city.id}}">
+      <div class="label">{{city.label}}</div>
+    </div>
   </a>
   {% endfor %}
 </div>
