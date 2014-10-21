@@ -1,0 +1,22 @@
+<article>
+  <div class="block two">
+    <div class="inner-block">
+      <div class="info-block">
+        <img src="/images/projects/{{item_id}}.png">
+        <div>{{meta.label}}</div>
+      </div>
+      <div class="info-block">
+        {% for item in meta.metas %}
+        <div>{{item}}</div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="inner-block">
+      <p>
+      {% autoescape false %}
+        {{description}}
+      {% endautoescape %}
+      </p>
+    </div>
+  </div>
+</article>

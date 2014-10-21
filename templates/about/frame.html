@@ -3,11 +3,11 @@
 
 <div id="about-sidebar">
   <ul>
-    <a href="/about/wxii"><li>What is WXII</li></a>
-    <a href="/about/cities"><li>Cities</li></a>
-    <a href="/about/projects"><li>Projects</li></a>
-    <a href="/about/rules"><li>Rules</li></a>
-    <a href="/about/faq"><li>FAQ</li></a>
+    <a href="/about/wxii"><li><span>What is WXII</span></li></a>
+    <a href="/about/cities"><li><span>Cities</span></li></a>
+    <a href="/about/projects"><li><span>Projects</span></li></a>
+    <a href="/about/rules"><li><span>Rules</span></li></a>
+    <a href="/about/faq"><li><span>FAQ</span></li></a>
   </ul>
 </div>
 <script>
@@ -19,11 +19,9 @@
     window.addEventListener('scroll', function() {
       if (scrollY > topPosition) {
         sidebar.classList.add('floating');
-        sidebar.style.top = 10;
         sidebar.style.left = leftPosition;
       } else {
         sidebar.classList.remove('floating');
-        sidebar.style.top = '';
         sidebar.style.left = '';
       }
     });

@@ -2,27 +2,37 @@
 <link type="text/css" rel="stylesheet" href="/styles/list.css">
 <link type="text/css" rel="stylesheet" href="/styles/cities.css">
 <style>
-  {% for city in cities %}
+  {% for city in items %}
   .image-list .item.{{city.id}} {
     background-image: url(/images/cities/{{city.id}}_gray.png);
   }
+  .image-list.top .item.{{city.id}},
   .image-list.{{city.id}} .item.{{city.id}},
   .image-list .item.{{city.id}}:hover {
     background-image: url(/images/cities/{{city.id}}.png);
   }
-  .image-list .item.{{city.id}}:hover .label {
+  .image-list .item.{{city.id}} .meta:before,
+  .image-list .item.{{city.id}} .label {
     color: {{city.color}};
   }
   {% endfor %}
+  .image-list .item.riodejaneiro,
+  .image-list .item.munich,
+  .image-list .item.melbourne {
+    margin-right: 0;
+  }
 </style>
-{% for city in cities %}
+{% for city in items %}
 <img class="pre-load" src="/images/cities/{{city.id}}.png">
 {% endfor %}
-<div id="city-list" class="image-list {{city_id}} {% if is_top %}top{% endif %}">
-  {% for city in cities %}
+<div id="city-list" class="image-list {{city_id}} {% if is_top %}top{% else %}deep{% endif %}">
+  {% for city in items %}
   <a anchor="{{city.label}}" title="{{city.label}}" href="/cities/{{city.id}}">
     <div class="item {{city.id}}">
-      <div class="label">{{city.label}}</div>
+      <div class="meta">
+        <div class="label">{{city.label}}</div>
+        <div class="month">{{city.month}}</div>
+      </div>
     </div>
   </a>
   {% endfor %}

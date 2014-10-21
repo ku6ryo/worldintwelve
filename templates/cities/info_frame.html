@@ -1,10 +1,11 @@
 <article>
   <div id="city-info">
     <div id="city-perspective">
-      <img src="/images/cities/{{city_id}}_perspective.jpg">
+      <img src="/images/cities/{{item_id}}_perspective.jpg">
     </div>
     <script>
       var frame = document.getElementById('city-perspective');
+      frame.style.height = 0;
       var img = frame.getElementsByTagName('img')[0];
       img.addEventListener('load', function() {
         var displayRatio = 0.85;
@@ -34,7 +35,7 @@
     <div class="block two">
       <div class="inner-block">
         <div class="info-block">
-          <img src="/images/cities/{{city_id}}.png">
+          <img src="/images/cities/{{item_id}}.png">
           <div>{{meta.label}}</div>
           <div style="font-size: 16px;">{{meta.month}}</div>
         </div>
@@ -48,11 +49,11 @@
         </div>
         <div class="info-block">
           <div>Flag:</div>
-          <img src="/images/cities/{{city_id}}_flag.png">
+          <img src="/images/cities/{{item_id}}_flag.png">
         </div>
         <div class="info-block">
           <div>Emblem/Symbol:</div>
-          <img src="/images/cities/{{city_id}}_symbol.png">
+          <img src="/images/cities/{{item_id}}_symbol.png">
         </div>
       </div>
       <div class="inner-block">

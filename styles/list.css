@@ -17,35 +17,64 @@ img.pre-load {
   background-repeat: no-repeat;
   background-size: 80px;
   display: inline-block;
-  height: 80px;
+  height: 100px;
   position: relative;
+  transition: .1s;
   width: 80px;
 }
 
 .image-list.top .item {
-  background-size: 200px;
-  height: 200px;
+  background-size: 120px;
+  height: 160px;
   margin-bottom: 30px;
-  width: 250px;
+  margin-right: 40px;
+  width: 220px;
 }
 
-.image-list .item .label {
+.image-list.deep .item {
+  background-position-y: 2px;
+}
+
+.image-list.top .item:hover {
+  background-size: 135px;
+}
+
+.image-list.deep .item:hover {
+  background-position-y: -2px;
+}
+
+.meta:before {
+  content: "ー";
+  font-weight: bold;
+  line-height: 1;
+}
+
+.image-list .item .meta {
   display: none;
+  text-align: left;
+  width: 100%;
 }
 
-.image-list.top .item .label {
-  bottom: -25px;
-  color: #B4B4B4;
+.image-list.top .item .meta {
   display: block;
   font-family: Futura, Arial;
   position: absolute;
-  text-align: center;
-  width: 100%;
+  top: 140px;
+}
+
+.image-list .item .meta .month {
+  color: #B4B4B4;
+  font-size: 13px;
+  margin-top: 5px;
+  text-align: right;
 }
 
 @media screen and (max-width: 1024px) {
   .image-list .item {
     width: 15%;
+  }
+  .image-list.top .item {
+    margin: 10px
   }
 }
 
