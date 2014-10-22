@@ -28,7 +28,8 @@ article em {
 }
 
 .underline {
-  text-decoration: underline;
+  border-bottom: 2px dashed #FC3838;
+  padding-bottom: 3px;
 }
 
 .red {
