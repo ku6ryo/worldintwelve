@@ -48,8 +48,8 @@ CITIES = [
   'munich',
   'barcelona',
   'istanbul',
-  'bangkok',
   'melbourne',
+  'bangkok',
 ]
 
 CITY_METAS = {
@@ -74,7 +74,7 @@ CITY_METAS = {
     'urban_area': '7,761.6',
     'num_districts': '50 Districts, 12 Clusters',
     'nicknames': 'Big Mango, Venice of the East',
-    'month': 'Nov, 2015',
+    'month': 'Dec, 2015',
     'color': '#ff6d00'
   },
   'barcelona': {
@@ -122,7 +122,7 @@ CITY_METAS = {
     'urban_area': '9,990.5',
     'num_districts': '31 Municipalities',
     'nicknames': 'The Second City',
-    'month': 'Dec, 2015',
+    'month': 'Nov, 2015',
     'color': '#22ADF2'
   },
   'munich': {
