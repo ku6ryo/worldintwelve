@@ -23,7 +23,7 @@
 {% endfor %}
 <div id="project-list" class="image-list {{item_id}} {% if is_top %}top{% else %}deep{% endif %}">
   {% for project in items %}
-  <a anchor="{{project.label}}" title="{{project.label}}" href="/projects/{{project.id}}">
+  <a anchor="{{project.label}}" title="{{project.label}}" href="/{{lang}}/projects/{{project.id}}">
     <div class="item {{project.id}}">
       <div class="meta">
         <div class="label">{{project.label}}</div>

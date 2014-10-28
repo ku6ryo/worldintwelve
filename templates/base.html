@@ -7,14 +7,14 @@
   <div id="menu">
     <div id="navigation">
       <ul>
-        <a href="/"><li class="logo"><span>Home</span></li></a>
-        <a href="/about"><li><span>About</span></li></a>
-        <a href="/cities"><li><span>Cities</span></li></a>
-        <a href="/projects"><li><span>Projects</span></li></a>
+        <a href="/{{lang}}/"><li class="logo"><span>Home</span></li></a>
+        <a href="/{{lang}}/about"><li><span>About</span></li></a>
+        <a href="/{{lang}}/cities"><li><span>Cities</span></li></a>
+        <a href="/{{lang}}/projects"><li><span>Projects</span></li></a>
         <a href="http://jp.blog.worldintwelve.com/latest-post"><li><span>Blog</span></li></a>
-        <a href="/people"><li><span>People</span></li></a>
-        <a href="/sponsors"><li><span>Sponsors</span></li></a>
-        <a href="/test_city_tokyo"><li class="test-city"><span>TEST CITY:Tokyo</span></li></a>
+        <a href="/{{lang}}/people"><li><span>People</span></li></a>
+        <a href="/{{lang}}/sponsors"><li><span>Sponsors</span></li></a>
+        <a href="/{{lang}}/test_city_tokyo"><li class="test-city"><span>TEST CITY:Tokyo</span></li></a>
       </ul>
     </div>
     <div id="topbar">
@@ -23,10 +23,9 @@
     </div>
     {% if dir_list %}
     <div id="breadcrumb">
-      <a href="/">Wxii</a>
+      <a href="/{{lang}}/">Wxii</a>
       {% for dir in dir_list %}
-      <span class="separator">&gt;</span><a
-        href="/{{dir_list[:loop.index]|join('/')}}">{{dir|replace("_", " ")|title}}</a>
+      <span class="separator">&gt;</span><a href="/{{lang}}/{{dir_list[:loop.index]|join('/')}}">{{dir|replace("_", " ")|title}}</a>
       {% endfor %}
     </div>
     {% endif %}

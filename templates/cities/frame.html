@@ -27,7 +27,7 @@
 {% endfor %}
 <div id="city-list" class="image-list {{city_id}} {% if is_top %}top{% else %}deep{% endif %}">
   {% for city in items %}
-  <a anchor="{{city.label}}" title="{{city.label}}" href="/cities/{{city.id}}">
+  <a anchor="{{city.label}}" title="{{city.label}}" href="/{{lang}}/cities/{{city.id}}">
     <div class="item {{city.id}}">
       <div class="meta">
         <div class="label">{{city.label}}</div>
