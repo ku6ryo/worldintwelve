@@ -24,12 +24,12 @@ class Handler(webapp2.RequestHandler):
 
 app = webapp2.WSGIApplication([
     webapp2.Route('/ja/about', webapp2.RedirectHandler, defaults={
-      '_uri': '/ja/about/wxii', '_code': 301}),
+      '_uri': '/ja/about/whatis', '_code': 301}),
     webapp2.Route('/en/about', webapp2.RedirectHandler, defaults={
-      '_uri': '/en/about/wxii', '_code': 301}),
+      '_uri': '/en/about/whatis', '_code': 301}),
     webapp2.Route('/en/about/', webapp2.RedirectHandler, defaults={
-      '_uri': '/en/about/wxii', '_code': 301}),
+      '_uri': '/en/about/whatis', '_code': 301}),
     webapp2.Route('/ja/about/', webapp2.RedirectHandler, defaults={
-      '_uri': '/ja/about/wxii', '_code': 301}),
-    (r'/(en|ja)/about/(cities|projects|wxii|faq|rules)', Handler),
+      '_uri': '/ja/about/whatis', '_code': 301}),
+    (r'/(en|ja)/about/(cities|projects|whatis|faq|rules)', Handler),
 ], debug=True)

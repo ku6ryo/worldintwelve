@@ -20,7 +20,8 @@ BREADCRUMB_DICT = {
   'sanfrancisco': 'San Francisco',
   'riodejaneiro': 'Rio de Janeiro',
   'grandma_cooking': 'Grandmas\' Cooking',
-  'test_city_tokyo': 'TEST CITY: Tokyo'
+  'test_city_tokyo': 'TEST CITY: Tokyo',
+  'whatis': 'What is Wxii?',
 }
 
 

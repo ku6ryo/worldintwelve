@@ -25,7 +25,7 @@
 {% for city in items %}
 <img class="pre-load" src="/images/cities/{{city.id}}.png">
 {% endfor %}
-<div id="city-list" class="image-list {{city_id}} {% if is_top %}top{% else %}deep{% endif %}">
+<div id="city-list" class="image-list {{item_id}} {% if is_top %}top{% else %}deep{% endif %}">
   {% for city in items %}
   <a anchor="{{city.label}}" title="{{city.label}}" href="/{{lang}}/cities/{{city.id}}">
     <div class="item {{city.id}}">
