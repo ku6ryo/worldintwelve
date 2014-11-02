@@ -56,7 +56,7 @@ CITY_METAS = {
   },
   'bangkok': {
     'id': 'bangkok',
-    'label': 'Bandkok',
+    'label': 'Bangkok',
     'population': '8,280,925',
     'area': '1,568.737',
     'urban_population': '14,565,547',

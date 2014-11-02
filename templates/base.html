@@ -8,13 +8,20 @@
     <div id="navigation">
       <ul>
         <a href="/{{lang}}/"><li class="logo"><span>Home</span></li></a>
-        <a href="/{{lang}}/about"><li><span>About</span></li></a>
-        <a href="/{{lang}}/cities"><li><span>Cities</span></li></a>
-        <a href="/{{lang}}/projects"><li><span>Projects</span></li></a>
-        <a href="http://jp.blog.worldintwelve.com/latest-post"><li><span>Blog</span></li></a>
-        <a href="/{{lang}}/people"><li><span>People</span></li></a>
-        <a href="/{{lang}}/sponsors"><li><span>Sponsors</span></li></a>
-        <a href="/{{lang}}/test_city_tokyo"><li class="test-city"><span>TEST CITY:Tokyo</span></li></a>
+        <a href="/{{lang}}/about"><li class="item"><span>About</span></li></a>
+        <a href="/{{lang}}/cities"><li class="item"><span>Cities</span></li></a>
+        <a href="/{{lang}}/projects"><li class="item"><span>Projects</span></li></a>
+        <a href="http://jp.blog.worldintwelve.com/latest-post"><li class="item"><span>Blog</span></li></a>
+        <a href="/{{lang}}/people"><li class="item"><span>People</span></li></a>
+        <a href="/{{lang}}/sponsors"><li class="item"><span>Sponsors</span></li></a>
+        <a href="/{{lang}}/test_city_tokyo"><li class="item test-city"><span>TEST CITY:Tokyo</span></li></a>
+        <li class="lang">
+          <a href="/en/"><span {% if lang == 'en' %}
+            class="selected"
+          {% endif %}>EN</span></a>&nbsp;/&nbsp;<a href="/ja/"><span {% if lang == 'ja' %}
+            class="selected"
+          {% endif %}>JA</span></a>
+        </li>
       </ul>
     </div>
     <div id="topbar">
@@ -34,7 +41,7 @@
   <script>
     var menu = document.getElementById('menu');
     var items = menu.getElementsByTagName('li');
-    for (var i = 1; i < items.length; i++) {
+    for (var i = 1; i < items.length - 1; i++) {
       var item = items[i];
       var a = item.parentNode;
       if (location.href.match(new RegExp(a.href))) {

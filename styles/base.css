@@ -11,7 +11,7 @@ body {
 
 @font-face {
   font-family: 'Futura Oblique';
-  src: url('./fonts/futura_oblique.ttf') format('truetype');
+  src: url('http://worldintwelve.com/fonts/futura_oblique.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -57,12 +57,12 @@ a:visited {
 #navigation ul li {
   box-sizing: border-box;
   display: inline-block;
-  font-size: 15px;
+  font-size: 14px;
   letter-spacing: .1em;
   line-height: 20px;
   padding: 40px 0;
   text-align: center;
-  width: 102px;
+  width: 90px;
 }
 
 #navigation ul li span {
@@ -85,13 +85,15 @@ a:visited {
   opacity: 0;
 }
 
-#navigation ul li:hover span:after,
-#navigation ul li.selected span:after {
+#navigation ul li.item:hover span:after,
+#navigation ul li.selected span:after,
+#navigation ul li.lang span.selected:after,
+#navigation ul li.lang span:hover:after {
   width: 100%;
 }
 
 #navigation li.logo {
-  background: url(/images/logo.png) left center no-repeat;
+  background: url(http://worldintwelve.com/images/logo.png) left center no-repeat;
   background-size: 105px;
   color: rgba(0, 0, 0, 0);
   width: 135px;
@@ -102,12 +104,12 @@ a:visited {
 }
 
 #navigation ul li.test-city {
-  background-image: url(/images/cities/tokyo_mini.png);
+  background-image: url(http://worldintwelve.com/images/cities/tokyo_mini.png);
   background-size: 37px;
   background-repeat: no-repeat;
-  background-position: 36px;
-  padding-left: 82px;
-  width: 219px;
+  background-position: 18px;
+  padding-left: 56px;
+  width: 200px;
 }
 
 #topbar {
@@ -128,7 +130,7 @@ a:visited {
 
 
 #toggle {
-  background-image: url(/images/menu.png);
+  background-image: url(http://worldintwelve.com/images/menu.png);
   background-size: 50px;
   display: inline-block;
   height: 50px;
@@ -202,7 +204,7 @@ a:visited {
   }
 
   #navigation ul li.test-city {
-    background-image: url(/images/cities/tokyo_mini_white.png);
+    background-image: url(http://worldintwelve.com/images/cities/tokyo_mini_white.png);
     background-repeat: no-repeat;
     padding-left: 52px;
     background-position: 0;
@@ -218,7 +220,7 @@ a:visited {
   }
 
   #menu.expanded #toggle {
-    background-image: url(/images/close.png);
+    background-image: url(http://worldintwelve.com/images/close.png);
     position: fixed;
     right: 5%;
   }
