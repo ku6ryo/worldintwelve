@@ -2,9 +2,12 @@
 
 <div id="map">
   <img id="world" src="/images/map_red.png">
-  <img id="plane" src="/images/vehicles/plane.png">
-  <img id="ship" src="/images/vehicles/ship.png">
-  <img id="satellite" src="/images/vehicles/satellite.png">
+  <div id="vehicles">
+    <img id="ship" class="vehicle" src="/images/vehicles/ship.png">
+    <img id="plane" class="vehicle" src="/images/vehicles/plane.png">
+    <img id="ufo" class="vehicle" src="/images/vehicles/ufo.png">
+    <img id="submarine" class="vehicle" src="/images/vehicles/submarine.png">
+  </div>
 
   {% for city in cities %} 
   <div id="{{city.id}}" class="pin-container">

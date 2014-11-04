@@ -109,66 +109,6 @@
   top: 70px;
 }
 
-@media screen and (max-width: 1024px) {
-  .pin-container {
-    display: inline-block;
-    position: initial;
-    width: 24%;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-
-  .pin-container .pin {
-    height: 160px;
-    width: 160px;
-    margin: auto;
-  }
-
-  .pin-container .pin .point {
-    height: 150px;
-    width: 150px;
-    border-radius: 75px;
-    position: relative;
-  }
-
-  .pin-container:hover .pin .point {
-    height: 150px;
-    width: 150px;
-    border-radius: 75px;
-    top: 0;
-    left: 0;
-  }
-
-  .pin-container .pin .point img {
-    opacity: 1;
-    width: 62%;
-    top: 8%;
-    left: 19%;
-    position: absolute;
-  }
-
-  .pin-container .pin .point .city {
-    opacity: 1;
-    font-size: 15px;
-  }
-
-  .pin-container .pin .bar {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .pin-container {
-    width: 32%;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .pin-container {
-    width: 48.5%;
-  }
-}
-
 .city {
   opacity: 0;
   transition: .1s;
@@ -321,7 +261,14 @@
   width: 170px;
 }
 
-#satellite {
+#submarine {
+  position: absolute;
+  top: 50%;
+  left: 7%;
+  width: 170px;
+}
+
+#ufo {
   position: absolute;
   top: -9%;
   left: 78%;
@@ -329,7 +276,34 @@
 }
 
 @media screen and (max-width: 1024px) {
-  #ship, #plane, #satellite {
+  #vehicles {
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    width: 100%;
+  }
+
+  .vehicle {
+    background-color: #FFF;
+    border: 2px solid #FC3838;
+    border-radius: 200px;
+  }
+
+  #ship, #ufo, #plane, #submarine {
+    position: initial;
+  }
+
+  .pin-container {
     display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .vehicle {
+    margin: 10px;
+  }
+
+  #vehicles {
+    position: relative;
   }
 }

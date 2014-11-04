@@ -5,6 +5,7 @@
 #about-sidebar {
   background-color: white;
   padding: 5px 0;
+  text-align: center;
   width: 1015px;
   z-index: 99999;
 }
@@ -47,6 +48,7 @@
   border-bottom: 2px dashed #FC3838;
   position: fixed;
   top: 0;
+  width: 1015px;
 }
 
 #about-body {
@@ -61,7 +63,7 @@
   }
 
   #about-sidebar.floating {
-    position: relative;
+    width: 90%;
   }
 
   #about-sidebar ul li {
