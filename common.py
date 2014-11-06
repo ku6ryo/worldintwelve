@@ -276,12 +276,12 @@ PROJECT_METAS_EN = {
   },
   'marketplace': {
       'id': 'marketplace',
-      'label': 'Market Place',
+      'label': 'Marketplace',
       'metas': ['Base Format: Photos / Web', 'Participants: 12 groups at least']
   },
   'live': {
       'id': 'live',
-      'label': 'Live!',
+      'label': 'LIVE!!',
       'metas': []
   }
 }

@@ -11,7 +11,13 @@
 
   {% for city in cities %} 
   <div id="{{city.id}}" class="pin-container">
-    <a alt="{{city.label}}" href="/{{lang}}/cities/{{city.id}}">
+    <a alt="{{city.label}}"
+      {% if city.id == "tokyo" %}
+        href="/{{lang}}/test_city_tokyo"
+      {% else %}
+        href="/{{lang}}/cities/{{city.id}}"
+      {% endif %}
+    >
       <div class="pin">
         <div class="point">
           <img src="/images/cities/{{city.id}}_white.png">

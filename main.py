@@ -58,6 +58,13 @@ class TestCityHandler(webapp2.RequestHandler):
         common.WrapWithBaseTemplate(body, lang, ['test_city_tokyo']))
 
 
+class TacHandler(webapp2.RequestHandler):
+  def get(self):
+    base_template = common.GetTemplate('base.html')
+    sponsors_template = common.GetTemplate('tac.html')
+    sponsors_body = sponsors_template.render()
+    self.response.write(common.WrapWithBaseTemplate(sponsors_body, 'en', ['tac']))
+
 
 app = webapp2.WSGIApplication([
     # English is the default.
@@ -67,4 +74,5 @@ app = webapp2.WSGIApplication([
     ('/(en|ja)/people', PeopleHandler),
     ('/(en|ja)/sponsors', SponsorsHandler),
     ('/(en|ja)/test_city_tokyo', TestCityHandler),
+    ('/tac', TacHandler),
 ], debug=True)

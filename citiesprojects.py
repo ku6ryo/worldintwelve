@@ -55,5 +55,9 @@ class Handler(webapp2.RequestHandler):
 
 app = webapp2.WSGIApplication([
     (r'/(en|ja)/(cities)/*(%s)?' % '|'.join(common.CITIES), Handler),
+    webapp2.Route('/en/cities/tokyo', webapp2.RedirectHandler, defaults={
+      '_uri': '/en/test_city_tokyo', '_code': 301}),
+    webapp2.Route('/ja/cities/tokyo', webapp2.RedirectHandler, defaults={
+      '_uri': '/ja/test_city_tokyo', '_code': 301}),
     (r'/(en|ja)/(projects)/*(%s)?' % '|'.join(common.PROJECTS), Handler),
 ], debug=True)
