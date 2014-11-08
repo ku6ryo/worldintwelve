@@ -117,6 +117,10 @@ article .block .info-block img {
 
 @media screen and (max-width: 1024px) {
 
+  article .title {
+    margin: 20px 0 25px;
+  }
+
   article .block {
     margin-bottom: 50px;
     text-align: center;
@@ -154,5 +158,11 @@ article .block .info-block img {
 
   article .block.two .inner-block:last-child {
     padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  article .title {
+    margin: 15px 0;
   }
 }

@@ -27,9 +27,9 @@ app = webapp2.WSGIApplication([
       '_uri': '/ja/about/whatis', '_code': 301}),
     webapp2.Route('/en/about', webapp2.RedirectHandler, defaults={
       '_uri': '/en/about/whatis', '_code': 301}),
-    webapp2.Route('/en/about/', webapp2.RedirectHandler, defaults={
-      '_uri': '/en/about/whatis', '_code': 301}),
     webapp2.Route('/ja/about/', webapp2.RedirectHandler, defaults={
       '_uri': '/ja/about/whatis', '_code': 301}),
-    (r'/(en|ja)/about/(cities|projects|whatis|faq|rules)', Handler),
+    webapp2.Route('/en/about/', webapp2.RedirectHandler, defaults={
+      '_uri': '/en/about/whatis', '_code': 301}),
+    (r'/(en|ja)/about/(cities|projects|whatis|faq|rules|team)', Handler),
 ], debug=True)

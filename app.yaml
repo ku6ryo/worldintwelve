@@ -13,8 +13,8 @@ libraries:
 
 handlers:
 - url: /favicon\.ico
-  static_files: favicon.ico
-  upload: favicon\.ico
+  static_files: /images/logo_mini.png
+  upload: /logo_mini\.png
 
 - url: /((en|ja)/)?
   script: main.app
@@ -25,7 +25,7 @@ handlers:
 - url: /(en|ja)/projects(/(|musicians|soundscape|treasure_box|live|dates1|dates2|grandma_cooking|micro_guide|misc|twelve_questions|bck|marketplace))?
   script: citiesprojects.app
 
-- url: /(en|ja)/about(/(|cities|projects|whatis|faq|rules))?
+- url: /(en|ja)/about(/(|cities|projects|whatis|faq|rules|team))?
   script: about.app
 
 - url: /(en|ja)/people

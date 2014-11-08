@@ -27,6 +27,9 @@
     <div class="item {{project.id}}">
       <div class="meta">
         <div class="label">{{project.label}}</div>
+        <div class="description">
+          {% autoescape false %}{{project.description}}{% endautoescape %}
+        </div>
       </div>
     </div>
   </a>

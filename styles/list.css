@@ -31,6 +31,15 @@ img.pre-load {
   width: 220px;
 }
 
+#project-list.top .item {
+  background-position-y: 10px;
+  height: 200px;
+}
+
+#project-list .item .meta {
+  top: 130px;
+}
+
 .image-list.deep .item {
   background-position-y: 2px;
 }
@@ -67,6 +76,12 @@ img.pre-load {
   font-size: 13px;
   margin-top: 5px;
   text-align: right;
+}
+
+.image-list .item .meta .description {
+  color: #4E4E4E;
+  margin-top: 5px;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 1024px) {

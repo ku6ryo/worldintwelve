@@ -1,0 +1,80 @@
+
+.person {
+  height: 480px;
+  margin-bottom: 60px;
+  position: relative;
+  top: 0;
+}
+
+.person:last-child {
+  margin-bottom: 0;
+}
+
+.person .image-box {
+  position: absolute;
+  top: 0;
+}
+
+.person .image-box img {
+  height: 480px;
+  width: 480px;
+}
+
+.person .profile .name {
+  color: #FC3838;
+  font-size: 24px;
+}
+
+.person .profile .role {
+  color: #FC3838;
+  margin-bottom: 20px;
+}
+
+.person.image-left .profile {
+  padding-left: 530px;
+}
+
+.person.image-left .image-box {
+  left: 0;
+}
+
+.person.image-right .profile {
+  padding-right: 530px;
+}
+
+.person.image-right .image-box {
+  right: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .person {
+    height: initial;
+  }
+
+  .person .image-box {
+    height: 300px;
+    text-align: center;
+    top: 85px;
+    width: 100%;
+  }
+
+  .person .image-box img {
+    height: 300px;
+    width: 300px;
+  }
+
+  .person.image-left .profile,
+  .person.image-right .profile {
+    padding: 0;
+  }
+
+  .person .profile .role {
+    margin-bottom: 320px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .person {
+    margin-bottom: 30px;
+  }
+}
