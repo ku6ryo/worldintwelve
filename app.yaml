@@ -14,7 +14,7 @@ libraries:
 handlers:
 - url: /favicon\.ico
   static_files: /images/logo_mini.png
-  upload: /logo_mini\.png
+  upload: /images/logo_mini\.png
 
 - url: /((en|ja)/)?
   script: main.app
@@ -40,8 +40,11 @@ handlers:
 - url: /(en|ja)/test_city_tokyo
   script: main.app
 
-- url: /fonts
-  static_dir: fonts
+- url: /(en|ja)/coming_soon
+  script: main.app
+
+- url: /(en|ja)/not_found
+  script: main.app
 
 - url: /images
   static_dir: images

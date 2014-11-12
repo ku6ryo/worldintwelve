@@ -58,6 +58,22 @@ class TestCityHandler(webapp2.RequestHandler):
         common.WrapWithBaseTemplate(body, lang, ['test_city_tokyo']))
 
 
+class NotFoundHandler(webapp2.RequestHandler):
+  def get(self, lang):
+    base_template = common.GetTemplate('base.html')
+    template = common.GetTemplate('not_found.html')
+    body = template.render()
+    self.response.write(common.WrapWithBaseTemplate(body, lang, ['not_found']))
+
+
+class ComingSoonHandler(webapp2.RequestHandler):
+  def get(self, lang):
+    base_template = common.GetTemplate('base.html')
+    template = common.GetTemplate('coming_soon.html')
+    body = template.render()
+    self.response.write(common.WrapWithBaseTemplate(body, lang, ['coming_soon']))
+
+
 class TacHandler(webapp2.RequestHandler):
   def get(self):
     base_template = common.GetTemplate('base.html')
@@ -75,4 +91,6 @@ app = webapp2.WSGIApplication([
     ('/(en|ja)/sponsors', SponsorsHandler),
     ('/(en|ja)/test_city_tokyo', TestCityHandler),
     ('/tac', TacHandler),
+    ('/(en|ja)/not_found', NotFoundHandler),
+    ('/(en|ja)/coming_soon', ComingSoonHandler),
 ], debug=True)

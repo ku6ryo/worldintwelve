@@ -27,10 +27,6 @@
   position: absolute;
 }
 
-.pin-container:hover {
-  z-index: 99999;
-}
-
 .pin {
   width: 17px;
   height: 73px;
@@ -70,16 +66,24 @@
   font-size; 0;
 }
 
-.pin-container:hover .pin .point .city {
+.pin-container:hover,
+.pin-container.selected {
+  z-index: 99999;
+}
+
+.pin-container:hover .pin .point .city,
+.pin-container.selected .pin .point .city {
   opacity: 1;
   font-size: 15px;
 }
 
-.pin-container:hover .pin .point img {
+.pin-container:hover .pin .point img,
+.pin-container.selected .pin .point img {
   opacity: 1;
 }
 
-.pin-container:hover .pin .point {
+.pin-container:hover .pin .point,
+.pin-container.selected .pin .point {
   border-width: 3px;
   border-radius: 78px;
   height: 150px;
@@ -87,6 +91,13 @@
   position: relative;
   top: -68px;
   width: 150px;
+}
+
+.pin-container:hover .pin .bar,
+.pin-container.selected .pin .bar {
+  height: 0;
+  opacity: 0;
+  top: 70px;
 }
 
 .pin .bar {
@@ -101,12 +112,6 @@
   transition: .5s;
   opacity: 1;
   width: 3px;
-}
-
-.pin-container:hover .pin .bar {
-  height: 0;
-  opacity: 0;
-  top: 70px;
 }
 
 .city {
@@ -252,6 +257,7 @@
   top: 57%;
   left: 64%;
   width: 170px;
+  -webkit-animation: anime_plane 6s ease-in-out 0 infinite normal;
 }
 
 #ship {
@@ -271,8 +277,33 @@
 #ufo {
   position: absolute;
   top: -9%;
-  left: 78%;
+  left: 86%;
   width: 170px;
+  -webkit-animation: anime_ufo 1s ease-in-out 0 infinite alternate;
+}
+
+@-webkit-keyframes anime_plane {
+  0% {
+    left: 150%;
+  }
+  20% {
+    left: 64%;
+  }
+  80% {
+    left: 64%;
+  }
+  100% {
+    left: -50%;
+  }
+}
+
+@-webkit-keyframes anime_ufo {
+  0% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
 }
 
 @media screen and (max-width: 1024px) {

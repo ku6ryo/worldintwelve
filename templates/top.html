@@ -31,3 +31,16 @@
   </div>
   {% endfor %}
 </div>
+<script>
+  var cities_ = "{% for city in cities %}_{{city.id}}{% endfor %}";
+  var cities = cities_.split("_").slice(1);
+  var i = 0;
+  setInterval(function() {
+    var element = document.getElementById(cities[i]);
+    element.classList.add('selected');
+    setTimeout(function() {
+      element.classList.remove('selected');
+    }, 2000);
+    i = (i == cities.length - 1) ? 0 : i + 1;
+  }, 5000);
+</script>
