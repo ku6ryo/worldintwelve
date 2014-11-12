@@ -253,33 +253,49 @@
 }
 
 #plane {
+  left: 64%;
   position: absolute;
   top: 57%;
-  left: 64%;
   width: 170px;
   -webkit-animation: anime_plane 6s ease-in-out 0 infinite normal;
 }
 
 #ship {
+  left: 30%;
   position: absolute;
   top: 25%;
-  left: 30%;
   width: 170px;
+  -webkit-animation: anime_ship 10s ease-in-out 0 infinite alternate;
 }
 
 #submarine {
+  left: 7%;
   position: absolute;
   top: 50%;
-  left: 7%;
   width: 170px;
 }
 
 #ufo {
+  left: 86%;
   position: absolute;
   top: -9%;
-  left: 86%;
   width: 170px;
   -webkit-animation: anime_ufo 1s ease-in-out 0 infinite alternate;
+}
+
+@-webkit-keyframes anime_ship {
+  0% {
+    top: 8%;
+    left: 36%;
+  }
+  50% {
+    left: 30%;
+    top: 25%;
+  }
+  100% {
+    top: 57%;
+    left: 39%;
+  }
 }
 
 @-webkit-keyframes anime_plane {
