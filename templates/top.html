@@ -2,12 +2,6 @@
 
 <div id="map">
   <img id="world" src="/images/map_red.png">
-  <div id="vehicles">
-    <img id="ship" class="vehicle" src="/images/vehicles/ship.png">
-    <img id="plane" class="vehicle" src="/images/vehicles/plane.png">
-    <img id="ufo" class="vehicle" src="/images/vehicles/ufo.png">
-    <img id="submarine" class="vehicle" src="/images/vehicles/submarine.png">
-  </div>
 
   {% for city in cities %} 
   <div id="{{city.id}}" class="pin-container">
@@ -30,6 +24,32 @@
     </a>
   </div>
   {% endfor %}
+  <div id="vehicles">
+    <div id="ship" class="vehicle">
+      <div class="balloon">
+        <p><span id="facebooklikes">...</span></p>
+        <p>Facebook Likes</p>
+      </div>
+      <img src="/images/vehicles/ship.png">
+    </div>
+    <div id="plane" class="vehicle">
+      <img src="/images/vehicles/plane.png">
+    </div>
+    <div id="submarine" class="vehicle">
+      <img src="/images/vehicles/submarine.png">
+    </div>
+    <div id="ufo" class="vehicle">
+      <div class="balloon">
+        <p>{% if lang == 'en' %}
+             Welcome to the World in Twelve!! Leo is currently in Tokyo!!
+           {% else %}
+             ”World in Twelve”へようこそ！いま現在、東京にいるよ！
+           {% endif %}
+        </p>
+      </div>
+      <img src="/images/vehicles/ufo.png">
+    </div>
+  </div>
 </div>
 <script>
   var cities_ = "{% for city in cities %}_{{city.id}}{% endfor %}";
@@ -43,4 +63,11 @@
     }, 2000);
     i = (i == cities.length - 1) ? 0 : i + 1;
   }, 5000);
+
+  var facebookCallback = function(data) {
+    var span = document.getElementById('facebooklikes');
+    span.innerText = data.likes;
+  };
 </script>
+<script
+src="http://graph.facebook.com/worldintwelve/?callback=facebookCallback"></script>
