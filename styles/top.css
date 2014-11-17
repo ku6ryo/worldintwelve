@@ -263,7 +263,7 @@
 .vehicle .balloon {
   opacity: 0;
   transition: .2s;
-  top: -125px;
+  top: 0;
   left: -15px;
   position: absolute;
   text-align: center;
@@ -278,13 +278,13 @@
 
 .vehicle:hover .balloon {
   opacity: 1;
+  top: -125px;
 }
 
 #plane {
   left: 47%;
   position: absolute;
   top: 34%;
-  width: 170px;
   -webkit-animation: anime_plane 6s ease-in-out 0 infinite normal;
 }
 
@@ -292,27 +292,36 @@
   -webkit-animation: anime_plane_updown 6s ease-in-out 0 infinite alternate;
 }
 
+#plane .balloon #numofpeople {
+  font-size: 40px;
+}
+
 #ship {
   left: 30%;
   position: absolute;
   top: 25%;
-  width: 170px;
   -webkit-animation: anime_ship 30s ease-in-out 0 infinite alternate;
 }
 
 #submarine {
   left: 7%;
   position: absolute;
-  top: 50%;
-  width: 170px;
+  top: 65%;
+}
+
+#submarine .balloon {
+  padding-top: 20px;
+}
+
+#submarine .balloon #days {
+  font-size: 50px;
 }
 
 #ufo {
   -webkit-animation: anime_updown 1s ease-in-out 0 infinite alternate;
-  left: 86%;
+  left: 65%;
   position: absolute;
-  top: -9%;
-  width: 170px;
+  top: -6%;
 }
 
 #ufo img {
@@ -322,12 +331,27 @@
 #ufo .balloon {
   background-image: url(/images/balloon_upsidedown.png);
   padding-top: 55px;
+  top: 0;
+}
+
+#ufo:hover .balloon {
   top: 130px;
 }
 
 #ship .balloon #facebooklikes {
   font-size: 50px;
 }
+
+#submarine {
+  -webkit-animation: anime_submarine 7s ease-in-out 0 infinite alternate;
+}
+
+#wave {
+  -webkit-animation: anime_wave 7s ease-in-out 0 infinite alternate;
+  bottom: 0;
+  position: absolute;
+}
+
 
 @-webkit-keyframes anime_ship {
   0% {
@@ -427,6 +451,36 @@
   }
 }
 
+@-webkit-keyframes anime_submarine {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  20% {
+    transform: translate(0px, 0px);
+  }
+  60% {
+    transform: translate(0px, -50px);
+  }
+  100% {
+    transform: translate(0px, -50px);
+  }
+}
+
+@-webkit-keyframes anime_wave {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  20% {
+    transform: translate(0px, 0px);
+  }
+  60% {
+    transform: translate(0px, 50px);
+  }
+  100% {
+    transform: translate(0px, 50px);
+  }
+}
+
 @media screen and (max-width: 1024px) {
   #vehicles {
     position: absolute;
@@ -446,6 +500,13 @@
     position: initial;
   }
 
+  #ufo .balloon {
+    background-image: url(/images/balloon.png);
+    padding-top: 40px;
+    top: -125px;
+    opacity: 1;
+  }
+
   #ship {
     -webkit-animation: anime_updown 1s ease-in-out 0 infinite alternate;
   }
@@ -454,8 +515,8 @@
     -webkit-animation: anime_downup 1s ease-in-out 0 infinite alternate;
   }
 
-  .vehicle .balloon {
-    opacity: 1;
+  #wave {
+    display: none;
   }
 
   .pin-container {
@@ -465,7 +526,7 @@
 
 @media screen and (max-width: 768px) {
   #map {
-    margin: 100px 0;
+    margin-top: 100px;
   }
   .vehicle {
     margin: 10px;

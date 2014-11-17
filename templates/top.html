@@ -25,19 +25,6 @@
   </div>
   {% endfor %}
   <div id="vehicles">
-    <div id="ship" class="vehicle">
-      <div class="balloon">
-        <p><span id="facebooklikes">...</span></p>
-        <p>Facebook Likes</p>
-      </div>
-      <img src="/images/vehicles/ship.png">
-    </div>
-    <div id="plane" class="vehicle">
-      <img src="/images/vehicles/plane.png">
-    </div>
-    <div id="submarine" class="vehicle">
-      <img src="/images/vehicles/submarine.png">
-    </div>
     <div id="ufo" class="vehicle">
       <div class="balloon">
         <p>{% if lang == 'en' %}
@@ -48,6 +35,35 @@
         </p>
       </div>
       <img src="/images/vehicles/ufo.png">
+    </div>
+    <div id="ship" class="vehicle">
+      <div class="balloon">
+        <p><span id="facebooklikes">...</span></p>
+        <p>Facebook Likes</p>
+      </div>
+      <img src="/images/vehicles/ship.png">
+    </div>
+    <div id="plane" class="vehicle">
+      <div class="balloon">
+        <p><span id="numofpeople">20</span></p>
+        {% if lang == 'en' %}
+        <p>awsome people have helped !!</p>
+        {% else %}
+        <p>のイケてる人たちが参加してくれました !!</p>
+        {% endif %}
+        </p>
+      </div>
+      <img src="/images/vehicles/plane.png">
+    </div>
+    <div id="submarine" class="vehicle">
+      <div class="balloon">
+        {% if lang == 'ja' %}<p>出発まであと、</p>{% endif %}
+        <p><span id="days"></span>days</p>
+        {% if lang == 'en' %}<p>for the departure</p>{% endif %}
+        </p>
+      </div>
+      <img src="/images/vehicles/submarine.png">
+      <img id="wave" src="/images/vehicles/wave.png">
     </div>
   </div>
 </div>
@@ -68,6 +84,9 @@
     var span = document.getElementById('facebooklikes');
     span.innerText = data.likes;
   };
+
+  var days = document.getElementById('days');
+  days.innerText =
+      parseInt(((new Date()).getTime() - 1420038000000)*(-1) / (24*60*60*1000));
 </script>
-<script
-src="http://graph.facebook.com/worldintwelve/?callback=facebookCallback"></script>
+<script src="http://graph.facebook.com/worldintwelve/?callback=facebookCallback"></script>
