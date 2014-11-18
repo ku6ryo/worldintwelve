@@ -43,27 +43,39 @@
   top: 0;
   text-align: center;
   transition: .5s;
+  -moz-transition: .5s;
+  -o-transition: .5s;
+  -webkit-transition: .5s;
   width: 13px;
 }
 
 .pin .point img {
-  opacity: 0;
-  transition: .5s;
-  width: 62%;
-  top: 7%;
   left: 19%;
+  opacity: 0;
+  top: 7%;
+  transition: .5s;
+  -moz-transition: .5s;
+  -o-transition: .5s;
+  -webkit-transition: .5s;
   position: absolute;
+  width: 62%;
 }
 
 .pin .point .city {
   color: white;
+  font-size; 0;
   opacity: 0;
-  transition: .1s;
-  transition-delay: .1s;
   position: relative;
   top: 74%;
+  transition: .1s;
+  -moz-transition: .1s;
+  -o-transition: .1s;
+  -webkit-transition: .1s;
+  transition-delay: .1s;
+  -moz-transition-delay: .1s;
+  -o-transition-delay: .1s;
+  -webkit-transition-delay: .1s;
   width: 100%;
-  font-size; 0;
 }
 
 .pin-container:hover,
@@ -110,6 +122,9 @@
   position: absolute;
   top: 15px;
   transition: .5s;
+  -moz-transition: .5s;
+  -o-transition: .5s;
+  -webkit-transition: .5s;
   opacity: 1;
   width: 3px;
 }
@@ -117,7 +132,13 @@
 .city {
   opacity: 0;
   transition: .1s;
+  -moz-transition: .1s;
+  -o-transition: .1s;
+  -webkit-transition: .1s;
   transition-delay: .1s;
+  -moz-transition-delay: .1s;
+  -o-transition-delay: .1s;
+  -webkit-transition-delay: .1s;
   position: relative;
   top: 74%;
 }
@@ -261,19 +282,22 @@
 }
 
 .vehicle .balloon {
-  opacity: 0;
-  transition: .2s;
-  top: 0;
-  left: -15px;
-  position: absolute;
-  text-align: center;
   background: url(/images/balloon.png);
-  width: 220px;
-  height: 155px;
   background-size: 100%;
-  padding: 15px;
   box-sizing: border-box;
   color: #FC3838;
+  height: 155px;
+  left: -15px;
+  opacity: 0;
+  padding: 15px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  transition: .2s;
+  -moz-transition: .2s;
+  -o-transition: .2s;
+  -webkit-transition: .2s;
+  width: 220px;
 }
 
 .vehicle:hover .balloon {
@@ -285,11 +309,17 @@
   left: 47%;
   position: absolute;
   top: 34%;
-  -webkit-animation: anime_plane 6s ease-in-out 0 infinite normal;
+  animation: anime_plane 6s ease-in-out 0s infinite normal;
+  -moz-animation: anime_plane 6s ease-in-out 0s infinite normal;
+  -o-animation: anime_plane 6s ease-in-out 0s infinite normal;
+  -webkit-animation: anime_plane 6s ease-in-out 0s infinite normal;
 }
 
 #plane img {
-  -webkit-animation: anime_plane_updown 6s ease-in-out 0 infinite alternate;
+  animation: anime_plane_updown 6s ease-in-out 0s infinite alternate;
+  -moz-animation: anime_plane_updown 6s ease-in-out 0s infinite alternate;
+  -o-animation: anime_plane_updown 6s ease-in-out 0s infinite alternate;
+  -webkit-animation: anime_plane_updown 6s ease-in-out 0s infinite alternate;
 }
 
 #plane .balloon #numofpeople {
@@ -297,10 +327,13 @@
 }
 
 #ship {
+  animation: anime_ship 30s ease-in-out 0s infinite alternate;
+  -moz-animation: anime_ship 30s ease-in-out 0s infinite alternate;
+  -o-animation: anime_ship 30s ease-in-out 0s infinite alternate;
+  -webkit-animation: anime_ship 30s ease-in-out 0s infinite alternate;
   left: 30%;
   position: absolute;
   top: 25%;
-  -webkit-animation: anime_ship 30s ease-in-out 0 infinite alternate;
 }
 
 #submarine {
@@ -318,14 +351,20 @@
 }
 
 #ufo {
-  -webkit-animation: anime_updown 1s ease-in-out 0 infinite alternate;
+  animation: anime_updown 1s ease-in-out 0s infinite alternate;
+  -moz-animation: anime_updown 1s ease-in-out 0s infinite alternate;
+  -o-animation: anime_updown 1s ease-in-out 0s infinite alternate;
+  -webkit-animation: anime_updown 1s ease-in-out 0s infinite alternate;
   left: 65%;
   position: absolute;
   top: -6%;
 }
 
 #ufo img {
-  -webkit-animation: anime_ufo 1.7s ease-in-out 0 infinite alternate;
+  animation: anime_ufo 1.7s ease-in-out 0s infinite alternate;
+  -moz-animation: anime_ufo 1.7s ease-in-out 0s infinite alternate;
+  -o-animation: anime_ufo 1.7s ease-in-out 0s infinite alternate;
+  -webkit-animation: anime_ufo 1.7s ease-in-out 0s infinite alternate;
 }
 
 #ufo .balloon {
@@ -342,143 +381,25 @@
   font-size: 50px;
 }
 
+#ship .balloon #facebooklikes:hover {
+  text-decoration: underline;
+}
+
 #submarine {
-  -webkit-animation: anime_submarine 7s ease-in-out 0 infinite alternate;
+  animation: anime_submarine 7s ease-in-out 0s infinite alternate;
+  -moz-animation: anime_submarine 7s ease-in-out 0s infinite alternate;
+  -o-animation: anime_submarine 7s ease-in-out 0s infinite alternate;
+  -webkit-animation: anime_submarine 7s ease-in-out 0s infinite alternate;
 }
 
 #wave {
-  -webkit-animation: anime_wave 7s ease-in-out 0 infinite alternate;
+  animation: anime_wave 7s ease-in-out 0s infinite alternate;
+  -moz-animation: anime_wave 7s ease-in-out 0s infinite alternate;
+  -o-animation: anime_wave 7s ease-in-out 0s infinite alternate;
+  -webkit-animation: anime_wave 7s ease-in-out 0s infinite alternate;
   bottom: 0;
+  left: 0;
   position: absolute;
-}
-
-
-@-webkit-keyframes anime_ship {
-  0% {
-    top: 8%;
-    left: 36%;
-  }
-  25% {
-    left: 28%;
-    top: 25%;
-  }
-  50% {
-    top: 57%;
-    left: 39%;
-  }
-  75% {
-    left: 49%;
-    top: 79%;
-  }
-  100% {
-    left: 65%;
-    top: 56%;
-  }
-}
-
-@-webkit-keyframes anime_plane {
-  0% {
-    left: 150%;
-  }
-  20% {
-    left: 47%;
-  }
-  80% {
-    left: 47%;
-  }
-  100% {
-    left: -50%;
-  }
-}
-
-@-webkit-keyframes anime_plane_updown {
-  0% {
-    transform: translateY(50px);
-  }
-  5% {
-    transform: translateY(-50px);
-  }
-  10% {
-    transform: translateY(50px);
-  }
-  15% {
-    transform: translateY(-50px);
-  }
-  20% {
-    transform: translateY(0px);
-  }
-  80% {
-    transform: translateY(0px);
-  }
-  85% {
-    transform: translateY(-50px);
-  }
-  90% {
-    transform: translateY(50px);
-  }
-  95% {
-    transform: translateY(-50px);
-  }
-  100% {
-    transform: translateY(50px);
-  }
-}
-
-@-webkit-keyframes anime_ufo {
-  0% {
-    transform: rotate(-30deg);
-  }
-  100% {
-    transform: rotate(-10deg);
-  }
-}
-
-@-webkit-keyframes anime_updown {
-  0% {
-    transform: translate(0px, -10px);
-  }
-  100% {
-    transform: translate(0px, 10px);
-  }
-}
-
-@-webkit-keyframes anime_downup {
-  0% {
-    transform: translate(0px, 10px);
-  }
-  100% {
-    transform: translate(0px, -10px);
-  }
-}
-
-@-webkit-keyframes anime_submarine {
-  0% {
-    transform: translate(0px, 0px);
-  }
-  20% {
-    transform: translate(0px, 0px);
-  }
-  60% {
-    transform: translate(0px, -50px);
-  }
-  100% {
-    transform: translate(0px, -50px);
-  }
-}
-
-@-webkit-keyframes anime_wave {
-  0% {
-    transform: translate(0px, 0px);
-  }
-  20% {
-    transform: translate(0px, 0px);
-  }
-  60% {
-    transform: translate(0px, 50px);
-  }
-  100% {
-    transform: translate(0px, 50px);
-  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -508,11 +429,17 @@
   }
 
   #ship {
-    -webkit-animation: anime_updown 1s ease-in-out 0 infinite alternate;
+    animation: anime_updown 1s ease-in-out 0s infinite alternate;
+    -moz-animation: anime_updown 1s ease-in-out 0s infinite alternate;
+    -o-animation: anime_updown 1s ease-in-out 0s infinite alternate;
+    -webkit-animation: anime_updown 1s ease-in-out 0s infinite alternate;
   }
 
   #plane, #submarine {
-    -webkit-animation: anime_downup 1s ease-in-out 0 infinite alternate;
+    animation: anime_downup 1s ease-in-out 0s infinite alternate;
+    -moz-animation: anime_downup 1s ease-in-out 0s infinite alternate;
+    -o-animation: anime_downup 1s ease-in-out 0s infinite alternate;
+    -webkit-animation: anime_downup 1s ease-in-out 0s infinite alternate;
   }
 
   #wave {
@@ -534,5 +461,335 @@
 
   #vehicles {
     position: relative;
+  }
+}
+
+
+/* animations */
+@keyframes anime_ship {
+  0% {
+    top: 8%;
+    left: 36%;
+  }
+  25% {
+    left: 28%;
+    top: 25%;
+  }
+  50% {
+    top: 57%;
+    left: 39%;
+  }
+  75% {
+    left: 49%;
+    top: 79%;
+  }
+  100% {
+    left: 65%;
+    top: 56%;
+  }
+}
+
+@-webkit-keyframes anime_ship {
+  0% {
+    top: 8%;
+    left: 36%;
+  }
+  25% {
+    left: 28%;
+    top: 25%;
+  }
+  50% {
+    top: 57%;
+    left: 39%;
+  }
+  75% {
+    left: 49%;
+    top: 79%;
+  }
+  100% {
+    left: 65%;
+    top: 56%;
+  }
+}
+
+@keyframes anime_plane {
+  0% {
+    left: 150%;
+  }
+  20% {
+    left: 47%;
+  }
+  80% {
+    left: 47%;
+  }
+  100% {
+    left: -50%;
+  }
+}
+
+@-webkit-keyframes anime_plane {
+  0% {
+    left: 150%;
+  }
+  20% {
+    left: 47%;
+  }
+  80% {
+    left: 47%;
+  }
+  100% {
+    left: -50%;
+  }
+}
+
+@keyframes anime_plane_updown {
+  0% {
+    transform: translateY(50px);
+    -moz-transform: translateY(50px);
+    -o-transform: translateY(50px);
+  }
+  5% {
+    transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    -o-transform: translateY(-50px);
+  }
+  10% {
+    transform: translateY(50px);
+    -moz-transform: translateY(50px);
+    -o-transform: translateY(50px);
+  }
+  15% {
+    transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    -o-transform: translateY(-50px);
+  }
+  20% {
+    transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -o-transform: translateY(0px);
+  }
+  80% {
+    transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -o-transform: translateY(0px);
+  }
+  85% {
+    transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    -o-transform: translateY(-50px);
+  }
+  90% {
+    transform: translateY(50px);
+    -moz-transform: translateY(50px);
+    -o-transform: translateY(50px);
+  }
+  95% {
+    transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    -o-transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(50px);
+    -moz-transform: translateY(50px);
+    -o-transform: translateY(50px);
+  }
+}
+
+@-webkit-keyframes anime_plane_updown {
+  0% {
+    transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+  }
+  5% {
+    transform: translateY(-50px);
+    -webkit-transform: translateY(-50px);
+  }
+  10% {
+    transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+  }
+  15% {
+    transform: translateY(-50px);
+    -webkit-transform: translateY(-50px);
+  }
+  20% {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+  }
+  80% {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+  }
+  85% {
+    transform: translateY(-50px);
+    -webkit-transform: translateY(-50px);
+  }
+  90% {
+    transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+  }
+  95% {
+    transform: translateY(-50px);
+    -webkit-transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+  }
+}
+
+@keyframes anime_ufo {
+  0% {
+    transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+  }
+}
+
+@-webkit-keyframes anime_ufo {
+  0% {
+    transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+  }
+}
+
+@keyframes anime_updown {
+  0% {
+    transform: translate(0px, -10px);
+    -moz-transform: translate(0px, -10px);
+    -o-transform: translate(0px, -10px);
+  }
+  100% {
+    transform: translate(0px, 10px);
+    -moz-transform: translate(0px, 10px);
+    -o-transform: translate(0px, 10px);
+  }
+}
+
+@-webkit-keyframes anime_updown {
+  0% {
+    transform: translate(0px, -10px);
+    -webkit-transform: translate(0px, -10px);
+  }
+  100% {
+    transform: translate(0px, 10px);
+    -webkit-transform: translate(0px, 10px);
+  }
+}
+
+@keyframes anime_downup {
+  0% {
+    transform: translate(0px, 10px);
+    -moz-transform: translate(0px, 10px);
+    -o-transform: translate(0px, 10px);
+  }
+  100% {
+    transform: translate(0px, -10px);
+    -moz-transform: translate(0px, -10px);
+    -o-transform: translate(0px, -10px);
+  }
+}
+
+@-webkit-keyframes anime_downup {
+  0% {
+    transform: translate(0px, 10px);
+    -webkit-transform: translate(0px, 10px);
+  }
+  100% {
+    transform: translate(0px, -10px);
+    -webkit-transform: translate(0px, -10px);
+  }
+}
+
+@keyframes anime_submarine {
+  0% {
+    transform: translate(0px, -5px);
+    -moz-transform: translate(0px, -5px);
+    -o-transform: translate(0px, -5px);
+  }
+  20% {
+    transform: translate(0px, -5px);
+    -moz-transform: translate(0px, -5px);
+    -o-transform: translate(0px, -5px);
+  }
+  60% {
+    transform: translate(0px, -50px);
+    -moz-transform: translate(0px, -50px);
+    -o-transform: translate(0px, -50px);
+  }
+  100% {
+    transform: translate(0px, -50px);
+    -moz-transform: translate(0px, -50px);
+    -o-transform: translate(0px, -50px);
+  }
+}
+
+@-webkit-keyframes anime_submarine {
+  0% {
+    transform: translate(0px, -5px);
+    -webkit-transform: translate(0px, -5px);
+  }
+  20% {
+    transform: translate(0px, -5px);
+    -webkit-transform: translate(0px, -5px);
+  }
+  60% {
+    transform: translate(0px, -50px);
+    -webkit-transform: translate(0px, -50px);
+  }
+  100% {
+    transform: translate(0px, -50px);
+    -webkit-transform: translate(0px, -50px);
+  }
+}
+
+@keyframes anime_wave {
+  0% {
+    transform: translate(0px, 5px);
+    -moz-transform: translate(0px, 5px);
+    -o-transform: translate(0px, 5px);
+  }
+  20% {
+    transform: translate(0px, 5px);
+    -moz-transform: translate(0px, 5px);
+    -o-transform: translate(0px, 5px);
+  }
+  60% {
+    transform: translate(0px, 50px);
+    -moz-transform: translate(0px, 50px);
+    -o-transform: translate(0px, 50px);
+  }
+  100% {
+    transform: translate(0px, 50px);
+    -moz-transform: translate(0px, 50px);
+    -o-transform: translate(0px, 50px);
+  }
+}
+
+@-webkit-keyframes anime_wave {
+  0% {
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+  }
+  20% {
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+  }
+  60% {
+    transform: translate(0px, 50px);
+    -webkit-transform: translate(0px, 50px);
+  }
+  100% {
+    transform: translate(0px, 50px);
+    -webkit-transform: translate(0px, 50px);
   }
 }

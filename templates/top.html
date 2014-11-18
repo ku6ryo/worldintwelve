@@ -5,13 +5,7 @@
 
   {% for city in cities %} 
   <div id="{{city.id}}" class="pin-container">
-    <a alt="{{city.label}}"
-      {% if city.id == "tokyo" %}
-        href="/{{lang}}/test_city_tokyo"
-      {% else %}
-        href="/{{lang}}/cities/{{city.id}}"
-      {% endif %}
-    >
+    <a alt="{{city.label}}" {% if city.id == "tokyo" %}href="/{{lang}}/test_city_tokyo"{% else %}href="/{{lang}}/cities/{{city.id}}"{% endif %}>
       <div class="pin">
         <div class="point">
           <img src="/images/cities/{{city.id}}_white.png">
@@ -27,18 +21,13 @@
   <div id="vehicles">
     <div id="ufo" class="vehicle">
       <div class="balloon">
-        <p>{% if lang == 'en' %}
-             Welcome to the World in Twelve!! Leo is currently in Tokyo!!
-           {% else %}
-             ”World in Twelve”へようこそ！いま現在、東京にいるよ！
-           {% endif %}
-        </p>
+        <p>{% if lang == 'en' %}Welcome to the World in Twelve!! Leo is currently in Tokyo!!{% else %}”World in Twelve”へようこそ！いま現在、東京にいるよ！{% endif %}</p>
       </div>
       <img src="/images/vehicles/ufo.png">
     </div>
     <div id="ship" class="vehicle">
       <div class="balloon">
-        <p><span id="facebooklikes">...</span></p>
+        <p><a href="https://www.facebook.com/worldintwelve" target="_blank"><span id="facebooklikes">...</span></a></p>
         <p>Facebook Likes</p>
       </div>
       <img src="/images/vehicles/ship.png">
@@ -82,11 +71,10 @@
 
   var facebookCallback = function(data) {
     var span = document.getElementById('facebooklikes');
-    span.innerText = data.likes;
+    span.innerHTML = data.likes;
   };
 
   var days = document.getElementById('days');
-  days.innerText =
-      parseInt(((new Date()).getTime() - 1420038000000)*(-1) / (24*60*60*1000));
+  days.innerHTML = parseInt(((new Date()).getTime() - 1420038000000)*(-1) / (24*60*60*1000));
 </script>
 <script src="http://graph.facebook.com/worldintwelve/?callback=facebookCallback"></script>
