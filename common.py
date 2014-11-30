@@ -389,6 +389,10 @@ def GetTemplate(path):
   return JINJA_ENVIRONMENT.get_template('templates/%s' % path)
 
 
+def existTemplate(path):
+  return ('templates/%s' % path) in JINJA_ENVIRONMENT.list_templates()
+
+
 def WrapWithBaseTemplate(content, lang, dirs):
   base_template = GetTemplate('base.html')
   breadcrumbs = []

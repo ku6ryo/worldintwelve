@@ -27,269 +27,330 @@
   position: absolute;
   width: 2px;
 }
+@media screen and (max-width: 756px) {
+  /* line 30, ../sass/matrix.scss */
+  .cross:before {
+    width: 34px;
+  }
+  /* line 34, ../sass/matrix.scss */
+  .cross:after {
+    height: 34px;
+  }
+}
 
-/* line 30, ../sass/matrix.scss */
+/* line 41, ../sass/matrix.scss */
 .cross.left {
   left: 0;
 }
 
-/* line 34, ../sass/matrix.scss */
+/* line 45, ../sass/matrix.scss */
 .cross.left:after {
   left: 17px;
 }
 
-/* line 38, ../sass/matrix.scss */
+/* line 49, ../sass/matrix.scss */
 .cross.right {
   right: 120px;
 }
+@media screen and (max-width: 756px) {
+  /* line 49, ../sass/matrix.scss */
+  .cross.right {
+    right: 34px;
+  }
+}
 
-/* line 42, ../sass/matrix.scss */
+/* line 56, ../sass/matrix.scss */
 .cross.right:after {
   left: 101px;
 }
+@media screen and (max-width: 756px) {
+  /* line 56, ../sass/matrix.scss */
+  .cross.right:after {
+    left: 15px;
+  }
+}
 
-/* line 46, ../sass/matrix.scss */
+/* line 63, ../sass/matrix.scss */
 .cross.top {
   top: 0;
 }
 
-/* line 50, ../sass/matrix.scss */
+/* line 67, ../sass/matrix.scss */
 .cross.bottom {
   bottom: 0;
 }
 
-/* line 56, ../sass/matrix.scss */
+/* line 73, ../sass/matrix.scss */
 .matrix-frame.bangkok .cross:after,
 .matrix-frame.bangkok .cross:before {
   background-color: #FF6D00;
 }
 
-/* line 56, ../sass/matrix.scss */
+/* line 73, ../sass/matrix.scss */
 .matrix-frame.barcelona .cross:after,
 .matrix-frame.barcelona .cross:before {
   background-color: #AC0D19;
 }
 
-/* line 56, ../sass/matrix.scss */
+/* line 73, ../sass/matrix.scss */
 .matrix-frame.istanbul .cross:after,
 .matrix-frame.istanbul .cross:before {
   background-color: #A3860C;
 }
 
-/* line 56, ../sass/matrix.scss */
+/* line 73, ../sass/matrix.scss */
 .matrix-frame.london .cross:after,
 .matrix-frame.london .cross:before {
   background-color: #08B29A;
 }
 
-/* line 56, ../sass/matrix.scss */
+/* line 73, ../sass/matrix.scss */
 .matrix-frame.melbourne .cross:after,
 .matrix-frame.melbourne .cross:before {
   background-color: #22ADF2;
 }
 
-/* line 56, ../sass/matrix.scss */
+/* line 73, ../sass/matrix.scss */
 .matrix-frame.munich .cross:after,
 .matrix-frame.munich .cross:before {
   background-color: #F49F08;
 }
 
-/* line 56, ../sass/matrix.scss */
+/* line 73, ../sass/matrix.scss */
 .matrix-frame.newyork .cross:after,
 .matrix-frame.newyork .cross:before {
   background-color: #82A81A;
 }
 
-/* line 56, ../sass/matrix.scss */
+/* line 73, ../sass/matrix.scss */
 .matrix-frame.paris .cross:after,
 .matrix-frame.paris .cross:before {
   background-color: #F93EA5;
 }
 
-/* line 56, ../sass/matrix.scss */
+/* line 73, ../sass/matrix.scss */
 .matrix-frame.riodejaneiro .cross:after,
 .matrix-frame.riodejaneiro .cross:before {
   background-color: #457012;
 }
 
-/* line 56, ../sass/matrix.scss */
+/* line 73, ../sass/matrix.scss */
 .matrix-frame.sanfrancisco .cross:after,
 .matrix-frame.sanfrancisco .cross:before {
   background-color: #7436C6;
 }
 
-/* line 56, ../sass/matrix.scss */
+/* line 73, ../sass/matrix.scss */
 .matrix-frame.stockholm .cross:after,
 .matrix-frame.stockholm .cross:before {
   background-color: #1D3C7F;
 }
 
-/* line 56, ../sass/matrix.scss */
+/* line 73, ../sass/matrix.scss */
 .matrix-frame.tokyo .cross:after,
 .matrix-frame.tokyo .cross:before {
   background-color: #565656;
 }
 
-/* line 56, ../sass/matrix.scss */
+/* line 73, ../sass/matrix.scss */
 .matrix-frame.toronto .cross:after,
 .matrix-frame.toronto .cross:before {
   background-color: #6B3E0D;
 }
 
-/* line 63, ../sass/matrix.scss */
+/* line 80, ../sass/matrix.scss */
 .cityxproject {
-  padding: 50px 70px;
-  position: relative;
+  position: absolute;
+  text-align: center;
+  top: -43px;
+  width: 100%;
 }
-/* line 68, ../sass/matrix.scss */
+/* line 87, ../sass/matrix.scss */
 .cityxproject .icon-block {
   display: inline-block;
 }
-/* line 72, ../sass/matrix.scss */
+/* line 91, ../sass/matrix.scss */
 .cityxproject .icon-block .icon {
   width: 100px;
 }
-/* line 75, ../sass/matrix.scss */
+/* line 94, ../sass/matrix.scss */
 .cityxproject .icon-block .label {
   color: #4E4E4E;
   font-family: 'Futura', Arial;
   text-align: center;
 }
-/* line 81, ../sass/matrix.scss */
+/* line 100, ../sass/matrix.scss */
 .cityxproject .x {
   font-size: 40px;
   margin: 0 10px;
   position: relative;
   top: -40px;
 }
+@media screen and (max-width: 756px) {
+  /* line 108, ../sass/matrix.scss */
+  .cityxproject {
+    top: -29px;
+  }
+  /* line 111, ../sass/matrix.scss */
+  .cityxproject .icon-block .icon {
+    width: 75px;
+  }
+  /* line 114, ../sass/matrix.scss */
+  .cityxproject .x {
+    font-size: 25px;
+  }
+}
 
-/* line 90, ../sass/matrix.scss */
+/* line 121, ../sass/matrix.scss */
 .matrix-frame.bangkok .cityxproject .x {
   color: #FF6D00;
 }
 
-/* line 90, ../sass/matrix.scss */
+/* line 121, ../sass/matrix.scss */
 .matrix-frame.barcelona .cityxproject .x {
   color: #AC0D19;
 }
 
-/* line 90, ../sass/matrix.scss */
+/* line 121, ../sass/matrix.scss */
 .matrix-frame.istanbul .cityxproject .x {
   color: #A3860C;
 }
 
-/* line 90, ../sass/matrix.scss */
+/* line 121, ../sass/matrix.scss */
 .matrix-frame.london .cityxproject .x {
   color: #08B29A;
 }
 
-/* line 90, ../sass/matrix.scss */
+/* line 121, ../sass/matrix.scss */
 .matrix-frame.melbourne .cityxproject .x {
   color: #22ADF2;
 }
 
-/* line 90, ../sass/matrix.scss */
+/* line 121, ../sass/matrix.scss */
 .matrix-frame.munich .cityxproject .x {
   color: #F49F08;
 }
 
-/* line 90, ../sass/matrix.scss */
+/* line 121, ../sass/matrix.scss */
 .matrix-frame.newyork .cityxproject .x {
   color: #82A81A;
 }
 
-/* line 90, ../sass/matrix.scss */
+/* line 121, ../sass/matrix.scss */
 .matrix-frame.paris .cityxproject .x {
   color: #F93EA5;
 }
 
-/* line 90, ../sass/matrix.scss */
+/* line 121, ../sass/matrix.scss */
 .matrix-frame.riodejaneiro .cityxproject .x {
   color: #457012;
 }
 
-/* line 90, ../sass/matrix.scss */
+/* line 121, ../sass/matrix.scss */
 .matrix-frame.sanfrancisco .cityxproject .x {
   color: #7436C6;
 }
 
-/* line 90, ../sass/matrix.scss */
+/* line 121, ../sass/matrix.scss */
 .matrix-frame.stockholm .cityxproject .x {
   color: #1D3C7F;
 }
 
-/* line 90, ../sass/matrix.scss */
+/* line 121, ../sass/matrix.scss */
 .matrix-frame.tokyo .cityxproject .x {
   color: #565656;
 }
 
-/* line 90, ../sass/matrix.scss */
+/* line 121, ../sass/matrix.scss */
 .matrix-frame.toronto .cityxproject .x {
   color: #6B3E0D;
 }
 
-/* line 95, ../sass/matrix.scss */
+/* line 126, ../sass/matrix.scss */
 .arrows {
   bottom: -35px;
   position: absolute;
   text-align: center;
   width: 100%;
 }
-/* line 102, ../sass/matrix.scss */
+/* line 133, ../sass/matrix.scss */
 .arrows .arrow {
   display: inline-block;
   font-size: 35px;
   margin: 0 10px;
 }
-/* line 108, ../sass/matrix.scss */
+/* line 139, ../sass/matrix.scss */
 .arrows .arrow.bangkok {
   color: #FF6D00;
 }
-/* line 108, ../sass/matrix.scss */
+/* line 139, ../sass/matrix.scss */
 .arrows .arrow.barcelona {
   color: #AC0D19;
 }
-/* line 108, ../sass/matrix.scss */
+/* line 139, ../sass/matrix.scss */
 .arrows .arrow.istanbul {
   color: #A3860C;
 }
-/* line 108, ../sass/matrix.scss */
+/* line 139, ../sass/matrix.scss */
 .arrows .arrow.london {
   color: #08B29A;
 }
-/* line 108, ../sass/matrix.scss */
+/* line 139, ../sass/matrix.scss */
 .arrows .arrow.melbourne {
   color: #22ADF2;
 }
-/* line 108, ../sass/matrix.scss */
+/* line 139, ../sass/matrix.scss */
 .arrows .arrow.munich {
   color: #F49F08;
 }
-/* line 108, ../sass/matrix.scss */
+/* line 139, ../sass/matrix.scss */
 .arrows .arrow.newyork {
   color: #82A81A;
 }
-/* line 108, ../sass/matrix.scss */
+/* line 139, ../sass/matrix.scss */
 .arrows .arrow.paris {
   color: #F93EA5;
 }
-/* line 108, ../sass/matrix.scss */
+/* line 139, ../sass/matrix.scss */
 .arrows .arrow.riodejaneiro {
   color: #457012;
 }
-/* line 108, ../sass/matrix.scss */
+/* line 139, ../sass/matrix.scss */
 .arrows .arrow.sanfrancisco {
   color: #7436C6;
 }
-/* line 108, ../sass/matrix.scss */
+/* line 139, ../sass/matrix.scss */
 .arrows .arrow.stockholm {
   color: #1D3C7F;
 }
-/* line 108, ../sass/matrix.scss */
+/* line 139, ../sass/matrix.scss */
 .arrows .arrow.tokyo {
   color: #565656;
 }
-/* line 108, ../sass/matrix.scss */
+/* line 139, ../sass/matrix.scss */
 .arrows .arrow.toronto {
   color: #6B3E0D;
+}
+
+/* line 146, ../sass/matrix.scss */
+.matrix-body {
+  padding: 100px 50px;
+}
+/* line 151, ../sass/matrix.scss */
+.matrix-body article img {
+  max-width: 100%;
+}
+/* line 154, ../sass/matrix.scss */
+.matrix-body article .cover {
+  width: 100%;
+}
+/* line 157, ../sass/matrix.scss */
+.matrix-body article .logo {
+  max-height: 70px;
+}
+@media screen and (max-width: 756px) {
+  /* line 163, ../sass/matrix.scss */
+  .matrix-body {
+    padding: 100px 20px;
+  }
 }

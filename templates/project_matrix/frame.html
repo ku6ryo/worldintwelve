@@ -15,6 +15,11 @@
       <div class="label">{{c_project_meta.label}}</div>
     </div>
   </div>
+  <div class="matrix-body">
+  {% autoescape false %}
+    {{body}}
+  {% endautoescape %}
+  </div>
   <div class="arrows">
     {% if p_city_meta %}
       <a title="{{p_city_meta.label}}"
