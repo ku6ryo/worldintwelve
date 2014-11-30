@@ -22,6 +22,7 @@ BREADCRUMB_DICT = {
   'grandma_cooking': 'Grandmas\' Cooking',
   'test_city_tokyo': 'TEST CITY: Tokyo',
   'whatis': 'What is Wxii?',
+  'project_matrix': 'Project Matrix',
 }
 
 
@@ -294,7 +295,7 @@ PROJECT_METAS_EN = {
       'id': 'live',
       'label': 'LIVE!!',
       'metas': [],
-      'description': u'Live from our studios (I wish) in the cities, this the World in Twelve!!'
+      'description': u'Live from our studios (I wish) in each city, this is the World in Twelve!!'
   }
 }
 
@@ -388,13 +389,18 @@ def GetTemplate(path):
   return JINJA_ENVIRONMENT.get_template('templates/%s' % path)
 
 
-def WrapWithBaseTemplate(content, lang, dir_list):
+def WrapWithBaseTemplate(content, lang, dirs):
   base_template = GetTemplate('base.html')
-  breadcrumbs = [
-    BREADCRUMB_DICT[bc] if bc in BREADCRUMB_DICT else bc for bc in dir_list
-  ]
+  breadcrumbs = []
+  for i in range(len(dirs)):
+    d = dirs[i]
+    breadcrumbs.append({
+      'href': '/'.join(dirs[:i+1]),
+      'label': BREADCRUMB_DICT[d] if d in BREADCRUMB_DICT else d
+    })
+
   return base_template.render({
     'content': content,
-    'dir_list': breadcrumbs,
+    'breadcrumbs': breadcrumbs,
     'lang': lang
   })

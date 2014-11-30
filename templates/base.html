@@ -33,11 +33,12 @@ src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js">
       <a anchor="wxii" href="/"><div class="logo"></div></a>
       <div id="toggle"></div>
     </div>
-    {% if dir_list %}
+    {% if breadcrumbs %}
     <div id="breadcrumb">
       <a href="/{{lang}}/">Wxii</a>
-      {% for dir in dir_list %}
-      <span class="separator">&gt;</span><a href="/{{lang}}/{{dir_list[:loop.index]|join('/')}}">{{dir|replace("_", " ")|title}}</a>
+      {% for b in breadcrumbs %}
+      <span class="separator">&gt;</span><a
+      href="/{{lang}}/{{b.href}}">{{b.label|replace("_", " ")|title}}</a>
       {% endfor %}
     </div>
     {% endif %}

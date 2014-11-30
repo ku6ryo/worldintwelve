@@ -1,0 +1,42 @@
+// Theme colors
+
+$WXII_RED: #FC3838;
+
+// For articles
+$WXII_GRAY: #4E4E4E; 
+
+// City colors
+$BANGKOK: #FF6D00;
+$BARCELONA: #AC0D19;
+$ISTANBUL: #A3860C;
+$LONDON: #08B29A;
+$MELBOURNE: #22ADF2;
+$MUNICH: #F49F08;
+$NEWYORK: #82A81A;
+$PARIS: #F93EA5;
+$RIODEJANEIRO: #457012;
+$SANFRANCISCO: #7436C6;
+$STOCKHOLM: #1D3C7F;
+$TOKYO: #565656;
+$TORONTO: #6B3E0D;
+
+$CITIES: bangkok, barcelona, istanbul, london, melbourne, munich, newyork, paris, riodejaneiro, sanfrancisco, stockholm, tokyo, toronto;
+
+
+$CITY_COLORS: (
+  bangkok: $BANGKOK,
+  barcelona: $BARCELONA,
+  istanbul: $ISTANBUL,
+  london: $LONDON,
+  melbourne: $MELBOURNE,
+  munich: $MUNICH,
+  newyork: $NEWYORK,
+  paris: $PARIS,
+  riodejaneiro: $RIODEJANEIRO,
+  sanfrancisco: $SANFRANCISCO,
+  stockholm: $STOCKHOLM,
+  tokyo: $TOKYO,
+  toronto: $TORONTO
+);
+
+$PROJECTS: musicians, soundscape, treasure_box, live, dates1, dates2, grandma_cooking, micro_guide, misc, twelve_questions, bck, marketplace;

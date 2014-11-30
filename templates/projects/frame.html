@@ -1,23 +1,6 @@
 <link type="text/css" rel="stylesheet" href="/styles/article.css">
 <link type="text/css" rel="stylesheet" href="/styles/list.css">
 <link type="text/css" rel="stylesheet" href="/styles/projects.css">
-<style>
-  {% for project in items %}
-  .image-list .item.{{project.id}} {
-    background-image: url(/images/projects/{{project.id}}_gray.png);
-  }
-  .image-list.top .item.{{project.id}},
-  .image-list.{{project.id}} .item.{{project.id}},
-  .image-list .item.{{project.id}}:hover {
-    background-image: url(/images/projects/{{project.id}}.png);
-  }
-  {% endfor %}
-  .image-list .item.live,
-  .image-list .item.micro_guide,
-  .image-list .item.marketplace {
-    margin-right: 0;
-  }
-</style>
 {% for project in items %}
 <img class="pre-load" src="/images/projects/{{project.id}}.png">
 {% endfor %}

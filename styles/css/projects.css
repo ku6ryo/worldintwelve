@@ -1,0 +1,174 @@
+/* line 3, ../sass/projects.scss */
+#project-info {
+  margin-top: 50px;
+}
+
+/* line 7, ../sass/projects.scss */
+#project-details {
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 3px;
+  font-weight: normal;
+}
+
+/* line 14, ../sass/projects.scss */
+#project-list.top .item {
+  background-position: center 10px;
+  height: 200px;
+}
+
+/* line 19, ../sass/projects.scss */
+#project-list .item .meta {
+  top: 130px;
+}
+
+/* line 24, ../sass/projects.scss */
+.image-list .item.musicians {
+  background-image: url(/images/projects/musicians_gray.png);
+}
+
+/* line 27, ../sass/projects.scss */
+.image-list.top .item.musicians,
+.image-list.musicians .item.musicians,
+.image-list .item.musicians:hover {
+  background-image: url(/images/projects/musicians.png);
+}
+
+/* line 24, ../sass/projects.scss */
+.image-list .item.soundscape {
+  background-image: url(/images/projects/soundscape_gray.png);
+}
+
+/* line 27, ../sass/projects.scss */
+.image-list.top .item.soundscape,
+.image-list.soundscape .item.soundscape,
+.image-list .item.soundscape:hover {
+  background-image: url(/images/projects/soundscape.png);
+}
+
+/* line 24, ../sass/projects.scss */
+.image-list .item.treasure_box {
+  background-image: url(/images/projects/treasure_box_gray.png);
+}
+
+/* line 27, ../sass/projects.scss */
+.image-list.top .item.treasure_box,
+.image-list.treasure_box .item.treasure_box,
+.image-list .item.treasure_box:hover {
+  background-image: url(/images/projects/treasure_box.png);
+}
+
+/* line 24, ../sass/projects.scss */
+.image-list .item.live {
+  background-image: url(/images/projects/live_gray.png);
+}
+
+/* line 27, ../sass/projects.scss */
+.image-list.top .item.live,
+.image-list.live .item.live,
+.image-list .item.live:hover {
+  background-image: url(/images/projects/live.png);
+}
+
+/* line 24, ../sass/projects.scss */
+.image-list .item.dates1 {
+  background-image: url(/images/projects/dates1_gray.png);
+}
+
+/* line 27, ../sass/projects.scss */
+.image-list.top .item.dates1,
+.image-list.dates1 .item.dates1,
+.image-list .item.dates1:hover {
+  background-image: url(/images/projects/dates1.png);
+}
+
+/* line 24, ../sass/projects.scss */
+.image-list .item.dates2 {
+  background-image: url(/images/projects/dates2_gray.png);
+}
+
+/* line 27, ../sass/projects.scss */
+.image-list.top .item.dates2,
+.image-list.dates2 .item.dates2,
+.image-list .item.dates2:hover {
+  background-image: url(/images/projects/dates2.png);
+}
+
+/* line 24, ../sass/projects.scss */
+.image-list .item.grandma_cooking {
+  background-image: url(/images/projects/grandma_cooking_gray.png);
+}
+
+/* line 27, ../sass/projects.scss */
+.image-list.top .item.grandma_cooking,
+.image-list.grandma_cooking .item.grandma_cooking,
+.image-list .item.grandma_cooking:hover {
+  background-image: url(/images/projects/grandma_cooking.png);
+}
+
+/* line 24, ../sass/projects.scss */
+.image-list .item.micro_guide {
+  background-image: url(/images/projects/micro_guide_gray.png);
+}
+
+/* line 27, ../sass/projects.scss */
+.image-list.top .item.micro_guide,
+.image-list.micro_guide .item.micro_guide,
+.image-list .item.micro_guide:hover {
+  background-image: url(/images/projects/micro_guide.png);
+}
+
+/* line 24, ../sass/projects.scss */
+.image-list .item.misc {
+  background-image: url(/images/projects/misc_gray.png);
+}
+
+/* line 27, ../sass/projects.scss */
+.image-list.top .item.misc,
+.image-list.misc .item.misc,
+.image-list .item.misc:hover {
+  background-image: url(/images/projects/misc.png);
+}
+
+/* line 24, ../sass/projects.scss */
+.image-list .item.twelve_questions {
+  background-image: url(/images/projects/twelve_questions_gray.png);
+}
+
+/* line 27, ../sass/projects.scss */
+.image-list.top .item.twelve_questions,
+.image-list.twelve_questions .item.twelve_questions,
+.image-list .item.twelve_questions:hover {
+  background-image: url(/images/projects/twelve_questions.png);
+}
+
+/* line 24, ../sass/projects.scss */
+.image-list .item.bck {
+  background-image: url(/images/projects/bck_gray.png);
+}
+
+/* line 27, ../sass/projects.scss */
+.image-list.top .item.bck,
+.image-list.bck .item.bck,
+.image-list .item.bck:hover {
+  background-image: url(/images/projects/bck.png);
+}
+
+/* line 24, ../sass/projects.scss */
+.image-list .item.marketplace {
+  background-image: url(/images/projects/marketplace_gray.png);
+}
+
+/* line 27, ../sass/projects.scss */
+.image-list.top .item.marketplace,
+.image-list.marketplace .item.marketplace,
+.image-list .item.marketplace:hover {
+  background-image: url(/images/projects/marketplace.png);
+}
+
+/* line 34, ../sass/projects.scss */
+.image-list .item.live,
+.image-list .item.micro_guide,
+.image-list .item.marketplace {
+  margin-right: 0;
+}

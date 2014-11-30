@@ -1,0 +1,45 @@
+/* line 1, ../sass/blog.scss */
+.blog-frame {
+  position: relative;
+}
+
+/* line 5, ../sass/blog.scss */
+.blog-sidebar {
+  display: inline-block;
+  position: absolute;
+  width: 15%;
+}
+
+/* line 11, ../sass/blog.scss */
+.blog-main {
+  padding-left: 15%;
+  width: 84%;
+}
+
+/* line 16, ../sass/blog.scss */
+.blog-title-container {
+  color: #fc4646;
+}
+
+/* line 20, ../sass/blog.scss */
+.blog-content {
+  word-wrap: break-word;
+}
+
+/* line 24, ../sass/blog.scss */
+.blog-calendar {
+  padding: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  /* line 29, ../sass/blog.scss */
+  .blog-main {
+    padding-left: 0;
+    width: 100%;
+  }
+
+  /* line 34, ../sass/blog.scss */
+  .blog-sidebar {
+    position: initial;
+  }
+}

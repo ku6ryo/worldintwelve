@@ -1,0 +1,18 @@
+/* line 1, ../sass/cities.scss */
+#city-perspective {
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+
+/* line 6, ../sass/cities.scss */
+#city-perspective img {
+  position: relative;
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  /* line 12, ../sass/cities.scss */
+  #city-perspective {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,322 @@
+/* base stylesheet */
+/* line 3, ../sass/base.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 8, ../sass/base.scss */
+body {
+  font-family: Arial;
+}
+
+@font-face {
+  font-family: 'Futura Oblique';
+  src: url("http://worldintwelve.com/fonts/futura_oblique.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 19, ../sass/base.scss */
+a {
+  color: #FC3838;
+  text-decoration: none;
+}
+
+/* line 24, ../sass/base.scss */
+a:visited {
+  color: #FC3838;
+}
+
+/* line 28, ../sass/base.scss */
+#wrapper {
+  margin: 0 auto;
+  width: 1015px;
+}
+
+@media screen and (max-width: 1024px) {
+  /* line 34, ../sass/base.scss */
+  #wrapper {
+    padding: 0 5%;
+    width: initial;
+  }
+}
+/* Menu */
+/* line 42, ../sass/base.scss */
+#menu {
+  color: #FC3838;
+  font-family: Futura, Arial;
+  font-size: 20px;
+  width: 100%;
+}
+
+/* line 49, ../sass/base.scss */
+#navigation {
+  padding: 16px 0 10px;
+}
+
+/* line 53, ../sass/base.scss */
+#navigation ul {
+  list-style: none;
+}
+
+/* line 57, ../sass/base.scss */
+#navigation ul li {
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: .1em;
+  line-height: 20px;
+  padding: 40px 0;
+  text-align: center;
+  width: 90px;
+}
+
+/* line 68, ../sass/base.scss */
+#navigation ul li span {
+  position: relative;
+}
+
+/* line 72, ../sass/base.scss */
+#navigation ul li span:after {
+  background-color: #FC3838;
+  bottom: -2px;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+  width: 0;
+}
+
+/* line 84, ../sass/base.scss */
+#navigation ul li.logo span:after {
+  opacity: 0;
+}
+
+/* line 88, ../sass/base.scss */
+#navigation ul li.item:hover span:after,
+#navigation ul li.selected span:after,
+#navigation ul li.lang span.selected:after,
+#navigation ul li.lang span:hover:after {
+  width: 100%;
+}
+
+/* line 95, ../sass/base.scss */
+#navigation li.logo {
+  background: url(http://worldintwelve.com/images/logo.png) left center no-repeat;
+  background-size: 105px;
+  color: transparent;
+  width: 135px;
+}
+
+/* line 102, ../sass/base.scss */
+#navigation ul li.logo:hover {
+  opacity: .7;
+}
+
+/* line 106, ../sass/base.scss */
+#navigation ul li.test-city {
+  background-image: url(http://worldintwelve.com/images/cities/tokyo_mini.png);
+  background-size: 37px;
+  background-repeat: no-repeat;
+  background-position: 18px;
+  padding-left: 56px;
+  width: 200px;
+}
+
+/* line 115, ../sass/base.scss */
+#topbar {
+  display: none;
+  padding: 20px 0 10px;
+  position: relative;
+}
+
+/* line 121, ../sass/base.scss */
+#topbar .logo {
+  background-image: url(/images/logo.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 110px;
+  display: inline-block;
+  height: 84px;
+  width: 110px;
+}
+
+/* line 132, ../sass/base.scss */
+#toggle {
+  background-image: url(http://worldintwelve.com/images/menu.png);
+  background-size: 50px;
+  display: inline-block;
+  height: 50px;
+  margin-top: 14px;
+  position: absolute;
+  right: 0;
+  width: 50px;
+  z-index: 99999;
+}
+
+/* line 144, ../sass/base.scss */
+#breadcrumb {
+  margin-bottom: 15px;
+}
+
+/* line 148, ../sass/base.scss */
+#breadcrumb span, #breadcrumb a {
+  color: #8F8F8F;
+  font-size: 11px;
+  letter-spacing: .1em;
+}
+
+/* line 154, ../sass/base.scss */
+#breadcrumb a:last-child {
+  color: #FC3838;
+}
+
+/* line 158, ../sass/base.scss */
+#breadcrumb .separator {
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  /* line 163, ../sass/base.scss */
+  #navigation {
+    background-color: #FC3838;
+    box-sizing: border-box;
+    display: block;
+    min-height: 100%;
+    overflow: scroll;
+    padding: 30px 0 30px 40px;
+    position: fixed;
+    right: -350px;
+    transition: .2s;
+    width: 350px;
+    z-index: 99999;
+  }
+
+  /* line 177, ../sass/base.scss */
+  #navigation ul li {
+    color: white;
+    display: block;
+    padding: 12px 0;
+    text-align: left;
+    width: 100%;
+  }
+
+  /* line 185, ../sass/base.scss */
+  #navigation ul li a {
+    color: white;
+  }
+
+  /* line 189, ../sass/base.scss */
+  #navigation ul li span:after {
+    background-color: white;
+  }
+
+  /* line 193, ../sass/base.scss */
+  #navigation ul li.logo {
+    background: none;
+    color: white;
+  }
+
+  /* line 198, ../sass/base.scss */
+  #navigation ul li.logo:hover {
+    opacity: 1;
+  }
+
+  /* line 202, ../sass/base.scss */
+  #navigation ul li.logo span:after {
+    opacity: 1;
+  }
+
+  /* line 206, ../sass/base.scss */
+  #navigation ul li.test-city {
+    background-image: url(http://worldintwelve.com/images/cities/tokyo_mini_white.png);
+    background-repeat: no-repeat;
+    padding-left: 52px;
+    background-position: 0;
+    width: 100%;
+  }
+
+  /* line 214, ../sass/base.scss */
+  #topbar {
+    display: block;
+  }
+
+  /* line 218, ../sass/base.scss */
+  #menu.expanded #navigation {
+    right: 0;
+  }
+
+  /* line 222, ../sass/base.scss */
+  #menu.expanded #toggle {
+    background-image: url(http://worldintwelve.com/images/close.png);
+    position: fixed;
+    right: 5%;
+  }
+}
+/* Footer */
+/* line 230, ../sass/base.scss */
+#footer {
+  clear: both;
+  color: #fc3838;
+  font-family: 'Futura', Arial;
+  font-size: 14px;
+  left: 0;
+  letter-spacing: .1em;
+  padding: 90px 0 70px;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 242, ../sass/base.scss */
+.footer-block {
+  display: inline-block;
+}
+
+/* line 246, ../sass/base.scss */
+#footer .left {
+  float: left;
+}
+
+/* line 250, ../sass/base.scss */
+#footer .right {
+  float: right;
+}
+
+@media screen and (max-width: 1024px) {
+  /* line 256, ../sass/base.scss */
+  #footer .left,
+  #footer .right {
+    float: none;
+  }
+
+  /* line 260, ../sass/base.scss */
+  #footer .footer-block {
+    margin-top: 5px;
+    display: block;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* line 267, ../sass/base.scss */
+  #footer {
+    padding: 50px 0 40px;
+  }
+}
+/* line 272, ../sass/base.scss */
+#contact img {
+  margin-right: 5px;
+}
+
+/* line 276, ../sass/base.scss */
+#social {
+  bottom: -3px;
+  margin-left: 30px;
+  margin-right: 30px;
+  position: relative;
+}
+
+/* line 283, ../sass/base.scss */
+#social a {
+  margin-right: 10px;
+}

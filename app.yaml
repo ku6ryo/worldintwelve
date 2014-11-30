@@ -25,6 +25,9 @@ handlers:
 - url: /(en|ja)/projects(/(|musicians|soundscape|treasure_box|live|dates1|dates2|grandma_cooking|micro_guide|misc|twelve_questions|bck|marketplace))?
   script: citiesprojects.app
 
+- url: /(en|ja)/project_matrix/.*
+  script: projectmatrix.app
+
 - url: /(en|ja)/about(/(|cities|projects|whatis|faq|rules|team))?
   script: about.app
 
@@ -43,11 +46,13 @@ handlers:
 - url: /(en|ja)/coming_soon
   script: main.app
 
-- url: /(en|ja)/not_found
-  script: main.app
-
+# Static directories.
 - url: /images
   static_dir: images
 
 - url: /styles
-  static_dir: styles
+  static_dir: styles/css
+
+# This should be always the end of the handler definitions.
+- url: /.*
+  script: not_found.app

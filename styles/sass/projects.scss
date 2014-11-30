@@ -1,0 +1,38 @@
+@import "constants";
+
+#project-info {
+  margin-top: 50px;
+}
+
+#project-details {
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 3px;
+  font-weight: normal;
+}
+
+#project-list.top .item {
+  background-position: center 10px;
+  height: 200px;
+}
+
+#project-list .item .meta {
+  top: 130px;
+}
+
+@each $project in $PROJECTS {
+  .image-list .item.#{$project} {
+    background-image: url(/images/projects/#{$project}_gray.png);
+  }
+  .image-list.top .item.#{$project},
+  .image-list.#{$project} .item.#{$project},
+  .image-list .item.#{$project}:hover {
+    background-image: url(/images/projects/#{$project}.png);
+  }
+}
+
+.image-list .item.live,
+.image-list .item.micro_guide,
+.image-list .item.marketplace {
+  margin-right: 0;
+}

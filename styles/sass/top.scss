@@ -1,3 +1,4 @@
+@import "constants";
 
 #map {
   font-family: 'Futura', Arial;
@@ -63,7 +64,7 @@
 
 .pin .point .city {
   color: white;
-  font-size; 0;
+  font-size: 0;
   opacity: 0;
   position: relative;
   top: 74%;
@@ -143,14 +144,18 @@
   top: 74%;
 }
 
+// Sets the background colors of each city.
+@each $city, $color in $CITY_COLORS {
+  ##{$city} .pin .point,
+  ##{$city} .pin .bar {
+    background-color: $color;
+  }
+}
+
+// Sets the position of the pins.
 #bangkok {
   bottom: 48%;
   left: 76.5%;
-}
-
-#bangkok .pin .point,
-#bangkok .pin .bar {
-  background-color: #ff6d00;
 }
 
 #melbourne {
@@ -158,19 +163,9 @@
   left: 88.5%;
 }
 
-#melbourne .pin .point,
-#melbourne .pin .bar {
-  background-color: #22adf2;
-}
-
 #sanfrancisco {
   bottom: 62%;
   left: 15.5%;
-}
-
-#sanfrancisco .pin .point,
-#sanfrancisco .pin .bar {
-  background-color: #7436c6;
 }
 
 #newyork {
@@ -178,19 +173,9 @@
   left: 29%;
 }
 
-#newyork .pin .point,
-#newyork .pin .bar {
-  background-color: #82a81a;
-}
-
 #toronto {
   bottom: 67%;
   left: 26.5%;
-}
-
-#toronto .pin .point, 
-#toronto .pin .bar {
-  background-color: #6b3e0d;
 }
 
 #riodejaneiro {
@@ -198,19 +183,9 @@
   left: 37%;
 }
 
-#riodejaneiro .pin .point,
-#riodejaneiro .pin .bar {
-  background-color: #457012;
-}
-
 #london {
   bottom: 72%;
   left: 48.5%;
-}
-
-#london .pin .point,
-#london .pin .bar {
-  background-color: #08b29a;
 }
 
 #stockholm {
@@ -218,19 +193,9 @@
   left: 53.5%;
 }
 
-#stockholm .pin .point,
-#stockholm .pin .bar {
-  background-color: #1d3c7f;
-}
-
 #munich {
   bottom: 69.5%;
   left: 51.5%;
-}
-
-#munich .pin .point,
-#munich .pin .bar {
-  background-color: #f49f08;
 }
 
 #paris {
@@ -238,19 +203,9 @@
   left: 49.5%;
 }
 
-#paris .pin .point,
-#paris .pin .bar {
-  background-color: #f93ea5;
-}
-
 #barcelona {
   bottom: 66%;
   left: 49%;
-}
-
-#barcelona .pin .point,
-#barcelona .pin .bar {
-  background-color: #AC0D19;
 }
 
 #istanbul {
@@ -258,19 +213,9 @@
   left: 56%;
 }
 
-#istanbul .pin .point,
-#istanbul .pin .bar {
-  background-color: #a3860c;
-}
-
 #tokyo {
   bottom: 61.5%;
   left: 87%;
-}
-
-#tokyo .pin .point,
-#tokyo .pin .bar {
-  background-color: #565656;
 }
 
 .vehicle {

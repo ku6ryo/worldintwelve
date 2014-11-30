@@ -1,0 +1,91 @@
+/* line 1, ../sass/about.scss */
+#content {
+  position: relative;
+}
+
+/* line 5, ../sass/about.scss */
+#about-sidebar {
+  background-color: white;
+  padding: 5px 0;
+  text-align: center;
+  width: 1015px;
+  z-index: 99999;
+}
+
+/* line 13, ../sass/about.scss */
+#about-sidebar ul {
+  list-style: none;
+  letter-spacing: .1em;
+  font-family: Futura, Arial;
+}
+
+/* line 19, ../sass/about.scss */
+#about-sidebar ul li {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 10px 0;
+  position: relative;
+}
+
+/* line 26, ../sass/about.scss */
+#about-sidebar ul li span {
+  position: relative;
+}
+
+/* line 30, ../sass/about.scss */
+#about-sidebar ul li span:after {
+  background-color: #FC3838;
+  bottom: -2px;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+  width: 0;
+}
+
+/* line 42, ../sass/about.scss */
+#about-sidebar ul li:hover span:after,
+#about-sidebar ul li.selected span:after {
+  width: 100%;
+}
+
+/* line 47, ../sass/about.scss */
+#about-sidebar.floating {
+  border-bottom: 2px dashed #FC3838;
+  position: fixed;
+  top: 0;
+  width: 1015px;
+}
+
+/* line 54, ../sass/about.scss */
+#about-body {
+  width: 1015px;
+}
+
+@media screen and (max-width: 1024px) {
+  /* line 59, ../sass/about.scss */
+  #about-sidebar {
+    height: initial;
+    position: initial;
+    width: initial;
+  }
+
+  /* line 65, ../sass/about.scss */
+  #about-sidebar.floating {
+    width: 90%;
+  }
+
+  /* line 69, ../sass/about.scss */
+  #about-sidebar ul li {
+    display: inline-block;
+    padding: 0 30px 0 0;
+  }
+
+  /* line 74, ../sass/about.scss */
+  #about-body {
+    padding-left: 0;
+    width: 100%;
+  }
+}

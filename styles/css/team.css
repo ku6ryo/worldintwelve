@@ -1,0 +1,94 @@
+/* line 2, ../sass/team.scss */
+.person {
+  height: 480px;
+  margin-bottom: 60px;
+  position: relative;
+  top: 0;
+}
+
+/* line 9, ../sass/team.scss */
+.person:last-child {
+  margin-bottom: 0;
+}
+
+/* line 13, ../sass/team.scss */
+.person .image-box {
+  position: absolute;
+  top: 0;
+}
+
+/* line 18, ../sass/team.scss */
+.person .image-box img {
+  height: 480px;
+  width: 480px;
+}
+
+/* line 23, ../sass/team.scss */
+.person .profile .name {
+  color: #FC3838;
+  font-size: 24px;
+}
+
+/* line 28, ../sass/team.scss */
+.person .profile .role {
+  color: #FC3838;
+  margin-bottom: 20px;
+}
+
+/* line 33, ../sass/team.scss */
+.person.image-left .profile {
+  padding-left: 530px;
+}
+
+/* line 37, ../sass/team.scss */
+.person.image-left .image-box {
+  left: 0;
+}
+
+/* line 41, ../sass/team.scss */
+.person.image-right .profile {
+  padding-right: 530px;
+}
+
+/* line 45, ../sass/team.scss */
+.person.image-right .image-box {
+  right: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  /* line 50, ../sass/team.scss */
+  .person {
+    height: initial;
+  }
+
+  /* line 54, ../sass/team.scss */
+  .person .image-box {
+    height: 300px;
+    text-align: center;
+    top: 85px;
+    width: 100%;
+  }
+
+  /* line 61, ../sass/team.scss */
+  .person .image-box img {
+    height: 300px;
+    width: 300px;
+  }
+
+  /* line 66, ../sass/team.scss */
+  .person.image-left .profile,
+  .person.image-right .profile {
+    padding: 0;
+  }
+
+  /* line 71, ../sass/team.scss */
+  .person .profile .role {
+    margin-bottom: 320px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 77, ../sass/team.scss */
+  .person {
+    margin-bottom: 30px;
+  }
+}

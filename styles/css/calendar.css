@@ -1,0 +1,90 @@
+/* line 1, ../sass/calendar.scss */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Futura', Arial;
+}
+
+@font-face {
+  font-family: 'Futura';
+  src: url("fonts/futura_oblique.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 14, ../sass/calendar.scss */
+.calendar {
+  color: #fc4646;
+  font-weight: bold;
+}
+
+/* line 19, ../sass/calendar.scss */
+.calendar a {
+  color: #fc4646;
+  text-decoration: none;
+}
+
+/* line 24, ../sass/calendar.scss */
+.calendar a:hover {
+  text-decoration: underline;
+}
+
+/* line 28, ../sass/calendar.scss */
+.calendar a:visited {
+  color: #fc4646;
+}
+
+/* line 32, ../sass/calendar.scss */
+.calendar table {
+  border-color: #fc4646;
+  border-style: solid;
+  border-collapse: collapse;
+  border-width: 2px 0 0 0;
+  color: #fc4646;
+  font-weight: bold;
+  width: 100%;
+}
+
+/* line 42, ../sass/calendar.scss */
+.calendar table tr td {
+  text-align: center;
+  border-color: #fc4646;
+  border-style: solid;
+  border-width: 0 0 2px 2px;
+  padding: 4px 12px;
+}
+
+/* line 50, ../sass/calendar.scss */
+.calendar table tr td.selected {
+  background-color: #fc4646;
+  color: white;
+}
+
+/* line 55, ../sass/calendar.scss */
+.calendar table tr td:last-child {
+  border-right-width: 2;
+}
+
+/* line 59, ../sass/calendar.scss */
+.calendar tbody tr td {
+  width: 14%;
+}
+
+/* line 63, ../sass/calendar.scss */
+.calendar thead tr:last-child td {
+  border-width: 2px;
+}
+
+/* line 67, ../sass/calendar.scss */
+.calendar-footer {
+  padding: 3px 0;
+}
+
+/* line 71, ../sass/calendar.scss */
+.calendar-prev {
+  float: left;
+}
+
+/* line 75, ../sass/calendar.scss */
+.calendar-next {
+  float: right;
+}

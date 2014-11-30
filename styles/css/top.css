@@ -1,0 +1,847 @@
+/* line 3, ../sass/top.scss */
+#map {
+  font-family: 'Futura', Arial;
+  left: -13%;
+  position: relative;
+  width: 126%;
+}
+
+@media screen and (max-width: 1024px) {
+  /* line 11, ../sass/top.scss */
+  #map {
+    left: 0;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 18, ../sass/top.scss */
+  #world {
+    display: none;
+  }
+}
+/* line 23, ../sass/top.scss */
+#world {
+  width: 100%;
+}
+
+/* line 27, ../sass/top.scss */
+.pin-container {
+  position: absolute;
+}
+
+/* line 31, ../sass/top.scss */
+.pin {
+  width: 17px;
+  height: 73px;
+}
+
+/* line 36, ../sass/top.scss */
+.pin .point {
+  background-color: #F00;
+  border: 2px solid #FFF;
+  border-radius: 15px;
+  height: 13px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  transition: .5s;
+  -moz-transition: .5s;
+  -o-transition: .5s;
+  -webkit-transition: .5s;
+  width: 13px;
+}
+
+/* line 53, ../sass/top.scss */
+.pin .point img {
+  left: 19%;
+  opacity: 0;
+  top: 7%;
+  transition: .5s;
+  -moz-transition: .5s;
+  -o-transition: .5s;
+  -webkit-transition: .5s;
+  position: absolute;
+  width: 62%;
+}
+
+/* line 65, ../sass/top.scss */
+.pin .point .city {
+  color: white;
+  font-size: 0;
+  opacity: 0;
+  position: relative;
+  top: 74%;
+  transition: .1s;
+  -moz-transition: .1s;
+  -o-transition: .1s;
+  -webkit-transition: .1s;
+  transition-delay: .1s;
+  -moz-transition-delay: .1s;
+  -o-transition-delay: .1s;
+  -webkit-transition-delay: .1s;
+  width: 100%;
+}
+
+/* line 82, ../sass/top.scss */
+.pin-container:hover,
+.pin-container.selected {
+  z-index: 99999;
+}
+
+/* line 87, ../sass/top.scss */
+.pin-container:hover .pin .point .city,
+.pin-container.selected .pin .point .city {
+  opacity: 1;
+  font-size: 15px;
+}
+
+/* line 93, ../sass/top.scss */
+.pin-container:hover .pin .point img,
+.pin-container.selected .pin .point img {
+  opacity: 1;
+}
+
+/* line 98, ../sass/top.scss */
+.pin-container:hover .pin .point,
+.pin-container.selected .pin .point {
+  border-width: 3px;
+  border-radius: 78px;
+  height: 150px;
+  left: -68px;
+  position: relative;
+  top: -68px;
+  width: 150px;
+}
+
+/* line 109, ../sass/top.scss */
+.pin-container:hover .pin .bar,
+.pin-container.selected .pin .bar {
+  height: 0;
+  opacity: 0;
+  top: 70px;
+}
+
+/* line 116, ../sass/top.scss */
+.pin .bar {
+  background-color: #F00;
+  border: 2px solid #FFF;
+  border-top-width: 0;
+  border-radius: 2px;
+  height: 55px;
+  left: 5px;
+  position: absolute;
+  top: 15px;
+  transition: .5s;
+  -moz-transition: .5s;
+  -o-transition: .5s;
+  -webkit-transition: .5s;
+  opacity: 1;
+  width: 3px;
+}
+
+/* line 133, ../sass/top.scss */
+.city {
+  opacity: 0;
+  transition: .1s;
+  -moz-transition: .1s;
+  -o-transition: .1s;
+  -webkit-transition: .1s;
+  transition-delay: .1s;
+  -moz-transition-delay: .1s;
+  -o-transition-delay: .1s;
+  -webkit-transition-delay: .1s;
+  position: relative;
+  top: 74%;
+}
+
+/* line 149, ../sass/top.scss */
+#bangkok .pin .point,
+#bangkok .pin .bar {
+  background-color: #FF6D00;
+}
+
+/* line 149, ../sass/top.scss */
+#barcelona .pin .point,
+#barcelona .pin .bar {
+  background-color: #AC0D19;
+}
+
+/* line 149, ../sass/top.scss */
+#istanbul .pin .point,
+#istanbul .pin .bar {
+  background-color: #A3860C;
+}
+
+/* line 149, ../sass/top.scss */
+#london .pin .point,
+#london .pin .bar {
+  background-color: #08B29A;
+}
+
+/* line 149, ../sass/top.scss */
+#melbourne .pin .point,
+#melbourne .pin .bar {
+  background-color: #22ADF2;
+}
+
+/* line 149, ../sass/top.scss */
+#munich .pin .point,
+#munich .pin .bar {
+  background-color: #F49F08;
+}
+
+/* line 149, ../sass/top.scss */
+#newyork .pin .point,
+#newyork .pin .bar {
+  background-color: #82A81A;
+}
+
+/* line 149, ../sass/top.scss */
+#paris .pin .point,
+#paris .pin .bar {
+  background-color: #F93EA5;
+}
+
+/* line 149, ../sass/top.scss */
+#riodejaneiro .pin .point,
+#riodejaneiro .pin .bar {
+  background-color: #457012;
+}
+
+/* line 149, ../sass/top.scss */
+#sanfrancisco .pin .point,
+#sanfrancisco .pin .bar {
+  background-color: #7436C6;
+}
+
+/* line 149, ../sass/top.scss */
+#stockholm .pin .point,
+#stockholm .pin .bar {
+  background-color: #1D3C7F;
+}
+
+/* line 149, ../sass/top.scss */
+#tokyo .pin .point,
+#tokyo .pin .bar {
+  background-color: #565656;
+}
+
+/* line 149, ../sass/top.scss */
+#toronto .pin .point,
+#toronto .pin .bar {
+  background-color: #6B3E0D;
+}
+
+/* line 156, ../sass/top.scss */
+#bangkok {
+  bottom: 48%;
+  left: 76.5%;
+}
+
+/* line 161, ../sass/top.scss */
+#melbourne {
+  bottom: 15%;
+  left: 88.5%;
+}
+
+/* line 166, ../sass/top.scss */
+#sanfrancisco {
+  bottom: 62%;
+  left: 15.5%;
+}
+
+/* line 171, ../sass/top.scss */
+#newyork {
+  bottom: 67%;
+  left: 29%;
+}
+
+/* line 176, ../sass/top.scss */
+#toronto {
+  bottom: 67%;
+  left: 26.5%;
+}
+
+/* line 181, ../sass/top.scss */
+#riodejaneiro {
+  bottom: 25%;
+  left: 37%;
+}
+
+/* line 186, ../sass/top.scss */
+#london {
+  bottom: 72%;
+  left: 48.5%;
+}
+
+/* line 191, ../sass/top.scss */
+#stockholm {
+  bottom: 77%;
+  left: 53.5%;
+}
+
+/* line 196, ../sass/top.scss */
+#munich {
+  bottom: 69.5%;
+  left: 51.5%;
+}
+
+/* line 201, ../sass/top.scss */
+#paris {
+  bottom: 69.5%;
+  left: 49.5%;
+}
+
+/* line 206, ../sass/top.scss */
+#barcelona {
+  bottom: 66%;
+  left: 49%;
+}
+
+/* line 211, ../sass/top.scss */
+#istanbul {
+  bottom: 65%;
+  left: 56%;
+}
+
+/* line 216, ../sass/top.scss */
+#tokyo {
+  bottom: 61.5%;
+  left: 87%;
+}
+
+/* line 221, ../sass/top.scss */
+.vehicle {
+  width: 150px;
+}
+
+/* line 225, ../sass/top.scss */
+.vehicle img {
+  width: 100%;
+}
+
+/* line 229, ../sass/top.scss */
+.vehicle .balloon {
+  background: url(/images/balloon.png);
+  background-size: 100%;
+  box-sizing: border-box;
+  color: #FC3838;
+  height: 155px;
+  left: -15px;
+  opacity: 0;
+  padding: 15px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  transition: .2s;
+  -moz-transition: .2s;
+  -o-transition: .2s;
+  -webkit-transition: .2s;
+  width: 220px;
+}
+
+/* line 248, ../sass/top.scss */
+.vehicle:hover .balloon {
+  opacity: 1;
+  top: -125px;
+}
+
+/* line 253, ../sass/top.scss */
+#plane {
+  left: 47%;
+  position: absolute;
+  top: 34%;
+  animation: anime_plane 6s ease-in-out 0s infinite normal;
+  -moz-animation: anime_plane 6s ease-in-out 0s infinite normal;
+  -o-animation: anime_plane 6s ease-in-out 0s infinite normal;
+  -webkit-animation: anime_plane 6s ease-in-out 0s infinite normal;
+}
+
+/* line 263, ../sass/top.scss */
+#plane img {
+  animation: anime_plane_updown 6s ease-in-out 0s infinite alternate;
+  -moz-animation: anime_plane_updown 6s ease-in-out 0s infinite alternate;
+  -o-animation: anime_plane_updown 6s ease-in-out 0s infinite alternate;
+  -webkit-animation: anime_plane_updown 6s ease-in-out 0s infinite alternate;
+}
+
+/* line 270, ../sass/top.scss */
+#plane .balloon #numofpeople {
+  font-size: 40px;
+}
+
+/* line 274, ../sass/top.scss */
+#ship {
+  animation: anime_ship 30s ease-in-out 0s infinite alternate;
+  -moz-animation: anime_ship 30s ease-in-out 0s infinite alternate;
+  -o-animation: anime_ship 30s ease-in-out 0s infinite alternate;
+  -webkit-animation: anime_ship 30s ease-in-out 0s infinite alternate;
+  left: 30%;
+  position: absolute;
+  top: 25%;
+}
+
+/* line 284, ../sass/top.scss */
+#submarine {
+  left: 7%;
+  position: absolute;
+  top: 65%;
+}
+
+/* line 290, ../sass/top.scss */
+#submarine .balloon {
+  padding-top: 20px;
+}
+
+/* line 294, ../sass/top.scss */
+#submarine .balloon #days {
+  font-size: 50px;
+}
+
+/* line 298, ../sass/top.scss */
+#ufo {
+  animation: anime_updown 1s ease-in-out 0s infinite alternate;
+  -moz-animation: anime_updown 1s ease-in-out 0s infinite alternate;
+  -o-animation: anime_updown 1s ease-in-out 0s infinite alternate;
+  -webkit-animation: anime_updown 1s ease-in-out 0s infinite alternate;
+  left: 65%;
+  position: absolute;
+  top: -6%;
+}
+
+/* line 308, ../sass/top.scss */
+#ufo img {
+  animation: anime_ufo 1.7s ease-in-out 0s infinite alternate;
+  -moz-animation: anime_ufo 1.7s ease-in-out 0s infinite alternate;
+  -o-animation: anime_ufo 1.7s ease-in-out 0s infinite alternate;
+  -webkit-animation: anime_ufo 1.7s ease-in-out 0s infinite alternate;
+}
+
+/* line 315, ../sass/top.scss */
+#ufo .balloon {
+  background-image: url(/images/balloon_upsidedown.png);
+  padding-top: 55px;
+  top: 0;
+}
+
+/* line 321, ../sass/top.scss */
+#ufo:hover .balloon {
+  top: 130px;
+}
+
+/* line 325, ../sass/top.scss */
+#ship .balloon #facebooklikes {
+  font-size: 50px;
+}
+
+/* line 329, ../sass/top.scss */
+#ship .balloon #facebooklikes:hover {
+  text-decoration: underline;
+}
+
+/* line 333, ../sass/top.scss */
+#submarine {
+  animation: anime_submarine 7s ease-in-out 0s infinite alternate;
+  -moz-animation: anime_submarine 7s ease-in-out 0s infinite alternate;
+  -o-animation: anime_submarine 7s ease-in-out 0s infinite alternate;
+  -webkit-animation: anime_submarine 7s ease-in-out 0s infinite alternate;
+}
+
+/* line 340, ../sass/top.scss */
+#wave {
+  animation: anime_wave 7s ease-in-out 0s infinite alternate;
+  -moz-animation: anime_wave 7s ease-in-out 0s infinite alternate;
+  -o-animation: anime_wave 7s ease-in-out 0s infinite alternate;
+  -webkit-animation: anime_wave 7s ease-in-out 0s infinite alternate;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+@media screen and (max-width: 1024px) {
+  /* line 351, ../sass/top.scss */
+  #vehicles {
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    width: 100%;
+  }
+
+  /* line 358, ../sass/top.scss */
+  .vehicle {
+    background-color: #FFF;
+    border: 2px solid #FC3838;
+    border-radius: 200px;
+    display: inline-block;
+  }
+
+  /* line 365, ../sass/top.scss */
+  #ship, #ufo, #plane, #submarine {
+    position: initial;
+  }
+
+  /* line 369, ../sass/top.scss */
+  #ufo .balloon {
+    background-image: url(/images/balloon.png);
+    padding-top: 40px;
+    top: -125px;
+    opacity: 1;
+  }
+
+  /* line 376, ../sass/top.scss */
+  #ship {
+    animation: anime_updown 1s ease-in-out 0s infinite alternate;
+    -moz-animation: anime_updown 1s ease-in-out 0s infinite alternate;
+    -o-animation: anime_updown 1s ease-in-out 0s infinite alternate;
+    -webkit-animation: anime_updown 1s ease-in-out 0s infinite alternate;
+  }
+
+  /* line 383, ../sass/top.scss */
+  #plane, #submarine {
+    animation: anime_downup 1s ease-in-out 0s infinite alternate;
+    -moz-animation: anime_downup 1s ease-in-out 0s infinite alternate;
+    -o-animation: anime_downup 1s ease-in-out 0s infinite alternate;
+    -webkit-animation: anime_downup 1s ease-in-out 0s infinite alternate;
+  }
+
+  /* line 390, ../sass/top.scss */
+  #wave {
+    display: none;
+  }
+
+  /* line 394, ../sass/top.scss */
+  .pin-container {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 400, ../sass/top.scss */
+  #map {
+    margin-top: 100px;
+  }
+
+  /* line 403, ../sass/top.scss */
+  .vehicle {
+    margin: 10px;
+  }
+
+  /* line 407, ../sass/top.scss */
+  #vehicles {
+    position: relative;
+  }
+}
+/* animations */
+@keyframes anime_ship {
+  0% {
+    top: 8%;
+    left: 36%;
+  }
+  25% {
+    left: 28%;
+    top: 25%;
+  }
+  50% {
+    top: 57%;
+    left: 39%;
+  }
+  75% {
+    left: 49%;
+    top: 79%;
+  }
+  100% {
+    left: 65%;
+    top: 56%;
+  }
+}
+@-webkit-keyframes anime_ship {
+  0% {
+    top: 8%;
+    left: 36%;
+  }
+  25% {
+    left: 28%;
+    top: 25%;
+  }
+  50% {
+    top: 57%;
+    left: 39%;
+  }
+  75% {
+    left: 49%;
+    top: 79%;
+  }
+  100% {
+    left: 65%;
+    top: 56%;
+  }
+}
+@keyframes anime_plane {
+  0% {
+    left: 150%;
+  }
+  20% {
+    left: 47%;
+  }
+  80% {
+    left: 47%;
+  }
+  100% {
+    left: -50%;
+  }
+}
+@-webkit-keyframes anime_plane {
+  0% {
+    left: 150%;
+  }
+  20% {
+    left: 47%;
+  }
+  80% {
+    left: 47%;
+  }
+  100% {
+    left: -50%;
+  }
+}
+@keyframes anime_plane_updown {
+  0% {
+    transform: translateY(50px);
+    -moz-transform: translateY(50px);
+    -o-transform: translateY(50px);
+  }
+  5% {
+    transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    -o-transform: translateY(-50px);
+  }
+  10% {
+    transform: translateY(50px);
+    -moz-transform: translateY(50px);
+    -o-transform: translateY(50px);
+  }
+  15% {
+    transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    -o-transform: translateY(-50px);
+  }
+  20% {
+    transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -o-transform: translateY(0px);
+  }
+  80% {
+    transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -o-transform: translateY(0px);
+  }
+  85% {
+    transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    -o-transform: translateY(-50px);
+  }
+  90% {
+    transform: translateY(50px);
+    -moz-transform: translateY(50px);
+    -o-transform: translateY(50px);
+  }
+  95% {
+    transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    -o-transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(50px);
+    -moz-transform: translateY(50px);
+    -o-transform: translateY(50px);
+  }
+}
+@-webkit-keyframes anime_plane_updown {
+  0% {
+    transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+  }
+  5% {
+    transform: translateY(-50px);
+    -webkit-transform: translateY(-50px);
+  }
+  10% {
+    transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+  }
+  15% {
+    transform: translateY(-50px);
+    -webkit-transform: translateY(-50px);
+  }
+  20% {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+  }
+  80% {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+  }
+  85% {
+    transform: translateY(-50px);
+    -webkit-transform: translateY(-50px);
+  }
+  90% {
+    transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+  }
+  95% {
+    transform: translateY(-50px);
+    -webkit-transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+  }
+}
+@keyframes anime_ufo {
+  0% {
+    transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+  }
+}
+@-webkit-keyframes anime_ufo {
+  0% {
+    transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+  }
+}
+@keyframes anime_updown {
+  0% {
+    transform: translate(0px, -10px);
+    -moz-transform: translate(0px, -10px);
+    -o-transform: translate(0px, -10px);
+  }
+  100% {
+    transform: translate(0px, 10px);
+    -moz-transform: translate(0px, 10px);
+    -o-transform: translate(0px, 10px);
+  }
+}
+@-webkit-keyframes anime_updown {
+  0% {
+    transform: translate(0px, -10px);
+    -webkit-transform: translate(0px, -10px);
+  }
+  100% {
+    transform: translate(0px, 10px);
+    -webkit-transform: translate(0px, 10px);
+  }
+}
+@keyframes anime_downup {
+  0% {
+    transform: translate(0px, 10px);
+    -moz-transform: translate(0px, 10px);
+    -o-transform: translate(0px, 10px);
+  }
+  100% {
+    transform: translate(0px, -10px);
+    -moz-transform: translate(0px, -10px);
+    -o-transform: translate(0px, -10px);
+  }
+}
+@-webkit-keyframes anime_downup {
+  0% {
+    transform: translate(0px, 10px);
+    -webkit-transform: translate(0px, 10px);
+  }
+  100% {
+    transform: translate(0px, -10px);
+    -webkit-transform: translate(0px, -10px);
+  }
+}
+@keyframes anime_submarine {
+  0% {
+    transform: translate(0px, -5px);
+    -moz-transform: translate(0px, -5px);
+    -o-transform: translate(0px, -5px);
+  }
+  20% {
+    transform: translate(0px, -5px);
+    -moz-transform: translate(0px, -5px);
+    -o-transform: translate(0px, -5px);
+  }
+  60% {
+    transform: translate(0px, -50px);
+    -moz-transform: translate(0px, -50px);
+    -o-transform: translate(0px, -50px);
+  }
+  100% {
+    transform: translate(0px, -50px);
+    -moz-transform: translate(0px, -50px);
+    -o-transform: translate(0px, -50px);
+  }
+}
+@-webkit-keyframes anime_submarine {
+  0% {
+    transform: translate(0px, -5px);
+    -webkit-transform: translate(0px, -5px);
+  }
+  20% {
+    transform: translate(0px, -5px);
+    -webkit-transform: translate(0px, -5px);
+  }
+  60% {
+    transform: translate(0px, -50px);
+    -webkit-transform: translate(0px, -50px);
+  }
+  100% {
+    transform: translate(0px, -50px);
+    -webkit-transform: translate(0px, -50px);
+  }
+}
+@keyframes anime_wave {
+  0% {
+    transform: translate(0px, 5px);
+    -moz-transform: translate(0px, 5px);
+    -o-transform: translate(0px, 5px);
+  }
+  20% {
+    transform: translate(0px, 5px);
+    -moz-transform: translate(0px, 5px);
+    -o-transform: translate(0px, 5px);
+  }
+  60% {
+    transform: translate(0px, 50px);
+    -moz-transform: translate(0px, 50px);
+    -o-transform: translate(0px, 50px);
+  }
+  100% {
+    transform: translate(0px, 50px);
+    -moz-transform: translate(0px, 50px);
+    -o-transform: translate(0px, 50px);
+  }
+}
+@-webkit-keyframes anime_wave {
+  0% {
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+  }
+  20% {
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+  }
+  60% {
+    transform: translate(0px, 50px);
+    -webkit-transform: translate(0px, 50px);
+  }
+  100% {
+    transform: translate(0px, 50px);
+    -webkit-transform: translate(0px, 50px);
+  }
+}

@@ -47,8 +47,8 @@
     <div id="submarine" class="vehicle">
       <div class="balloon">
         {% if lang == 'ja' %}<p>出発まであと、</p>{% endif %}
-        <p><span id="days"></span>days</p>
-        {% if lang == 'en' %}<p>for the departure</p>{% endif %}
+        <p><span id="days"></span>{% if lang == 'en' %}&nbsp;days{% else %}&nbsp;日{% endif %}</p>
+        {% if lang == 'en' %}<p>until departure</p>{% endif %}
         </p>
       </div>
       <img src="/images/vehicles/submarine.png">

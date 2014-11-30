@@ -1,0 +1,112 @@
+@import "constants";
+
+.matrix-frame {
+  min-height: 400px;
+  position: relative;
+}
+
+.cross {
+  position: absolute;
+  /* :before is for the horizontal bar */
+  &:before {
+    background-color: $WXII_RED;
+    content: "";
+    height: 2px;
+    position: absolute;
+    top: 17px;
+    width: 120px;
+  }
+
+  /* :after is for the verfical bar */
+  &:after {
+    background-color: $WXII_RED;
+    content: "";
+    height: 36px;
+    position: absolute;
+    width: 2px;
+  }
+}
+
+.cross.left {
+  left: 0;
+}
+
+.cross.left:after {
+  left: 17px;
+}
+
+.cross.right {
+  right: 120px;
+}
+
+.cross.right:after {
+  left: 101px;
+}
+
+.cross.top {
+  top: 0;
+}
+
+.cross.bottom {
+  bottom: 0;
+}
+
+// Sets the color of the crosses with the color of each city.
+@each $city, $color in $CITY_COLORS {
+  .matrix-frame.#{$city} .cross:after,
+  .matrix-frame.#{$city} .cross:before {
+    background-color: $color;
+  }
+}
+
+// City icon x project icon.
+.cityxproject {
+
+  padding: 50px 70px;
+  position: relative;
+
+  .icon-block {
+
+    display: inline-block;
+
+    .icon {
+      width: 100px;
+    }
+    .label {
+      color: $WXII_GRAY;
+      font-family: 'Futura', Arial;
+      text-align: center;
+    }
+  }
+  .x {
+    font-size: 40px;
+    margin: 0 10px;
+    position: relative;
+    top: -40px;
+  }
+}
+
+@each $city, $color in $CITY_COLORS {
+  .matrix-frame.#{$city} .cityxproject .x {
+    color: $color;
+  }
+}
+
+.arrows {
+  
+  bottom: -35px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+
+  .arrow {
+    display: inline-block;
+    font-size: 35px;
+    margin: 0 10px;
+  }
+  @each $city, $color in $CITY_COLORS {
+    .arrow.#{$city} {
+      color: $color;
+    }
+  }
+}

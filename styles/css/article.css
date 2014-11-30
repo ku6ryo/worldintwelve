@@ -1,4 +1,4 @@
-
+/* line 3, ../sass/article.scss */
 article {
   color: #4E4E4E;
   font-family: YuGothic, Arial;
@@ -8,6 +8,7 @@ article {
   line-height: 2.2;
 }
 
+/* line 12, ../sass/article.scss */
 article .title {
   font-family: Futura, Arial;
   font-size: 28px;
@@ -16,75 +17,88 @@ article .title {
   text-align: center;
 }
 
+/* line 20, ../sass/article.scss */
 article h1 {
   font-size: 25px;
   margin: 15px 0;
 }
 
+/* line 25, ../sass/article.scss */
 article em {
   font-family: inherit;
   font-size: 21px;
   font-style: inherit;
 }
 
+/* line 31, ../sass/article.scss */
 .underline {
   border-bottom: 2px dashed #FC3838;
   padding-bottom: 3px;
 }
 
+/* line 36, ../sass/article.scss */
 .red {
   color: #FC3838;
 }
 
+/* line 40, ../sass/article.scss */
 article ol,
 article ul {
   margin-left: 35px;
 }
 
+/* line 45, ../sass/article.scss */
 article img {
   max-width: 100%;
 }
 
+/* line 49, ../sass/article.scss */
 article .block {
   margin-bottom: 65px;
   position: relative;
 }
 
+/* line 54, ../sass/article.scss */
 article .block:last-child {
   margin-bottom: 0;
 }
 
+/* line 58, ../sass/article.scss */
 article .block.image-left img {
-  /*margin: 20px 30px;*/
   position: absolute;
   width: 220px;
 }
 
+/* line 63, ../sass/article.scss */
 article .block.image-left p {
   padding-left: 230px;
 }
 
+/* line 67, ../sass/article.scss */
 article .block.image-right img {
-  /*margin: 20px 35px;*/
   position: absolute;
   right: 0;
   width: 220px;
 }
 
+/* line 73, ../sass/article.scss */
 article .block.image-right p {
   padding-right: 230px;
 }
 
+/* line 77, ../sass/article.scss */
 article .block.two .inner-block {
   display: inline-block;
   vertical-align: top;
   width: 47%;
 }
 
+/* line 83, ../sass/article.scss */
 article .block.two .inner-block:last-child {
   padding-left: 5%;
 }
 
+/* line 87, ../sass/article.scss */
 article .block.next-link {
   color: red;
   font-size: 20pt;
@@ -92,6 +106,7 @@ article .block.next-link {
   text-decoration: underline;
 }
 
+/* line 94, ../sass/article.scss */
 article .block .info-block {
   font-family: Futura, Arial;
   font-size: 21px;
@@ -102,11 +117,13 @@ article .block .info-block {
   text-align: center;
 }
 
+/* line 104, ../sass/article.scss */
 article .block .info-block img {
   margin-top: 15px;
   width: 150px;
 }
 
+/* line 109, ../sass/article.scss */
 .partition {
   color: #FC3838;
   font-size: 40px;
@@ -116,52 +133,60 @@ article .block .info-block img {
 }
 
 @media screen and (max-width: 1024px) {
-
+  /* line 119, ../sass/article.scss */
   article .title {
     margin: 20px 0 25px;
   }
 
+  /* line 123, ../sass/article.scss */
   article .block {
     margin-bottom: 50px;
     text-align: center;
   }
 
+  /* line 128, ../sass/article.scss */
   article .block p {
     text-align: left;
   }
 
+  /* line 132, ../sass/article.scss */
   article .block.image-left img,
   article .block.image-right img {
     position: initial;
     right: initial;
   }
 
+  /* line 138, ../sass/article.scss */
   article .block.image-left p,
   article .block.image-right p {
     padding-left: 0;
     padding-right: 0;
   }
 
+  /* line 144, ../sass/article.scss */
   article .block img.remove-when-screen-size-small {
     display: none;
   }
 
+  /* line 148, ../sass/article.scss */
   article .block.two .inner-block {
     display: block;
     vertical-align: initial;
     width: 100%;
   }
 
+  /* line 154, ../sass/article.scss */
   article .block.two .inner-block:first-child {
     margin-right: 9%;
   }
 
+  /* line 158, ../sass/article.scss */
   article .block.two .inner-block:last-child {
     padding-left: 0;
   }
 }
-
 @media screen and (max-width: 480px) {
+  /* line 164, ../sass/article.scss */
   article .title {
     margin: 15px 0;
   }

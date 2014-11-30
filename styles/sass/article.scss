@@ -1,0 +1,167 @@
+@import "constants";
+
+article {
+  color: $WXII_GRAY;
+  font-family: YuGothic, Arial;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: .1em;
+  line-height: 2.2;
+}
+
+article .title {
+  font-family: Futura, Arial;
+  font-size: 28px;
+  letter-spacing: .05em;
+  margin: 40px 0 45px;
+  text-align: center;
+}
+
+article h1 {
+  font-size: 25px;
+  margin: 15px 0;
+}
+
+article em {
+  font-family: inherit;
+  font-size: 21px;
+  font-style: inherit;
+}
+
+.underline {
+  border-bottom: 2px dashed #FC3838;
+  padding-bottom: 3px;
+}
+
+.red {
+  color: #FC3838;
+}
+
+article ol,
+article ul {
+  margin-left: 35px;
+}
+
+article img {
+  max-width: 100%;
+}
+
+article .block {
+  margin-bottom: 65px;
+  position: relative;
+}
+
+article .block:last-child {
+  margin-bottom: 0;
+}
+
+article .block.image-left img {
+  position: absolute;
+  width: 220px;
+}
+
+article .block.image-left p {
+  padding-left: 230px;
+}
+
+article .block.image-right img {
+  position: absolute;
+  right: 0;
+  width: 220px;
+}
+
+article .block.image-right p {
+  padding-right: 230px;
+}
+
+article .block.two .inner-block {
+  display: inline-block;
+  vertical-align: top;
+  width: 47%;
+}
+
+article .block.two .inner-block:last-child {
+  padding-left: 5%;
+}
+
+article .block.next-link {
+  color: red;
+  font-size: 20pt;
+  text-align: center;
+  text-decoration: underline;
+}
+
+article .block .info-block {
+  font-family: Futura, Arial;
+  font-size: 21px;
+  font-weight: normal;
+  letter-spacing: .1em;
+  line-height: 1.6;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+article .block .info-block img {
+  margin-top: 15px;
+  width: 150px;
+}
+
+.partition {
+  color: #FC3838;
+  font-size: 40px;
+  font-weight: lighter;
+  margin: -40px 0 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+
+  article .title {
+    margin: 20px 0 25px;
+  }
+
+  article .block {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  article .block p {
+    text-align: left;
+  }
+
+  article .block.image-left img,
+  article .block.image-right img {
+    position: initial;
+    right: initial;
+  }
+
+  article .block.image-left p,
+  article .block.image-right p {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  article .block img.remove-when-screen-size-small {
+    display: none;
+  }
+
+  article .block.two .inner-block {
+    display: block;
+    vertical-align: initial;
+    width: 100%;
+  }
+
+  article .block.two .inner-block:first-child {
+    margin-right: 9%;
+  }
+
+  article .block.two .inner-block:last-child {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  article .title {
+    margin: 15px 0;
+  }
+}
