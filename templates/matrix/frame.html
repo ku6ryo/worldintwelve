@@ -23,7 +23,7 @@
     {% if is_multiple_pages %}
     <div class="page-selector">
       {% for page in pages_meta %}
-      <a href="#{{page.id}}"><span data="{{page.id}}">{{page.label}}</span></a>
+      <a href="#{{page.id}}"><img class="icon" src="/images/matrix/{{c_city_meta.id}}/{{c_project_meta.id}}/{{page.id}}/icon.jpg"></a>
       {% endfor %}
     </div>
     <script>
