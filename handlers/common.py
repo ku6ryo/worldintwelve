@@ -226,6 +226,10 @@ PROJECT_MATRIX_META = {
         'id': 'looprider',
         'label': 'Loop Rider'
       },
+      {
+        'id': 'corkbird',
+        'label': 'Corkbird'
+      },
     ]
   },
   'soundscape': {
