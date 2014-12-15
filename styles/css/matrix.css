@@ -336,21 +336,63 @@
 .matrix-body {
   padding: 100px 50px;
 }
-/* line 151, ../sass/matrix.scss */
+/* line 150, ../sass/matrix.scss */
+.matrix-body .page-selector {
+  padding: 10px;
+}
+/* line 152, ../sass/matrix.scss */
+.matrix-body .page-selector a span {
+  margin-right: 10px;
+}
+/* line 155, ../sass/matrix.scss */
+.matrix-body .page-selector a span:hover {
+  text-decoration: underline;
+}
+/* line 162, ../sass/matrix.scss */
 .matrix-body article img {
   max-width: 100%;
 }
-/* line 154, ../sass/matrix.scss */
-.matrix-body article .cover {
+/* line 165, ../sass/matrix.scss */
+.matrix-body article .banner {
   width: 100%;
 }
-/* line 157, ../sass/matrix.scss */
-.matrix-body article .logo {
-  max-height: 70px;
+/* line 170, ../sass/matrix.scss */
+.matrix-body article.hidden {
+  display: none;
 }
 @media screen and (max-width: 756px) {
-  /* line 163, ../sass/matrix.scss */
+  /* line 175, ../sass/matrix.scss */
   .matrix-body {
     padding: 100px 20px;
   }
+}
+
+/* line 182, ../sass/matrix.scss */
+article.musicians .logo {
+  max-height: 70px;
+}
+/* line 185, ../sass/matrix.scss */
+article.musicians .jacket {
+  width: 300px;
+}
+
+/* line 191, ../sass/matrix.scss */
+article.twelve-questions .name {
+  font-size: 26px;
+  font-style: italic;
+  font-weight: bold;
+}
+/* line 196, ../sass/matrix.scss */
+article.twelve-questions .photo {
+  padding: 20px;
+  text-align: center;
+}
+/* line 199, ../sass/matrix.scss */
+article.twelve-questions .photo img {
+  width: 500px;
+}
+/* line 204, ../sass/matrix.scss */
+article.twelve-questions .number {
+  font-family: Futura, Arial;
+  font-size: 30px;
 }

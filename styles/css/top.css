@@ -341,14 +341,18 @@
   -webkit-transition: .2s;
   width: 220px;
 }
+/* line 247, ../sass/top.scss */
+.vehicle .balloon a {
+  text-decoration: underline;
+}
 
-/* line 248, ../sass/top.scss */
+/* line 252, ../sass/top.scss */
 .vehicle:hover .balloon {
   opacity: 1;
   top: -125px;
 }
 
-/* line 253, ../sass/top.scss */
+/* line 257, ../sass/top.scss */
 #plane {
   left: 47%;
   position: absolute;
@@ -359,7 +363,7 @@
   -webkit-animation: anime_plane 6s ease-in-out 0s infinite normal;
 }
 
-/* line 263, ../sass/top.scss */
+/* line 267, ../sass/top.scss */
 #plane img {
   animation: anime_plane_updown 6s ease-in-out 0s infinite alternate;
   -moz-animation: anime_plane_updown 6s ease-in-out 0s infinite alternate;
@@ -367,12 +371,12 @@
   -webkit-animation: anime_plane_updown 6s ease-in-out 0s infinite alternate;
 }
 
-/* line 270, ../sass/top.scss */
-#plane .balloon #numofpeople {
-  font-size: 40px;
+/* line 274, ../sass/top.scss */
+#plane .balloon #days {
+  font-size: 50px;
 }
 
-/* line 274, ../sass/top.scss */
+/* line 278, ../sass/top.scss */
 #ship {
   animation: anime_ship 30s ease-in-out 0s infinite alternate;
   -moz-animation: anime_ship 30s ease-in-out 0s infinite alternate;
@@ -383,21 +387,16 @@
   top: 25%;
 }
 
-/* line 284, ../sass/top.scss */
+/* line 288, ../sass/top.scss */
 #submarine {
   left: 7%;
   position: absolute;
   top: 65%;
 }
 
-/* line 290, ../sass/top.scss */
+/* line 294, ../sass/top.scss */
 #submarine .balloon {
   padding-top: 20px;
-}
-
-/* line 294, ../sass/top.scss */
-#submarine .balloon #days {
-  font-size: 50px;
 }
 
 /* line 298, ../sass/top.scss */
@@ -450,6 +449,13 @@
 }
 
 /* line 340, ../sass/top.scss */
+#submarine .balloon p {
+  position: relative;
+  top: 20px;
+  font-size: 20px;
+}
+
+/* line 346, ../sass/top.scss */
 #wave {
   animation: anime_wave 7s ease-in-out 0s infinite alternate;
   -moz-animation: anime_wave 7s ease-in-out 0s infinite alternate;
@@ -461,7 +467,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-  /* line 351, ../sass/top.scss */
+  /* line 357, ../sass/top.scss */
   #vehicles {
     position: absolute;
     text-align: center;
@@ -469,7 +475,7 @@
     width: 100%;
   }
 
-  /* line 358, ../sass/top.scss */
+  /* line 364, ../sass/top.scss */
   .vehicle {
     background-color: #FFF;
     border: 2px solid #FC3838;
@@ -477,12 +483,12 @@
     display: inline-block;
   }
 
-  /* line 365, ../sass/top.scss */
+  /* line 371, ../sass/top.scss */
   #ship, #ufo, #plane, #submarine {
     position: initial;
   }
 
-  /* line 369, ../sass/top.scss */
+  /* line 375, ../sass/top.scss */
   #ufo .balloon {
     background-image: url(/images/balloon.png);
     padding-top: 40px;
@@ -490,7 +496,7 @@
     opacity: 1;
   }
 
-  /* line 376, ../sass/top.scss */
+  /* line 382, ../sass/top.scss */
   #ship {
     animation: anime_updown 1s ease-in-out 0s infinite alternate;
     -moz-animation: anime_updown 1s ease-in-out 0s infinite alternate;
@@ -498,7 +504,7 @@
     -webkit-animation: anime_updown 1s ease-in-out 0s infinite alternate;
   }
 
-  /* line 383, ../sass/top.scss */
+  /* line 389, ../sass/top.scss */
   #plane, #submarine {
     animation: anime_downup 1s ease-in-out 0s infinite alternate;
     -moz-animation: anime_downup 1s ease-in-out 0s infinite alternate;
@@ -506,28 +512,28 @@
     -webkit-animation: anime_downup 1s ease-in-out 0s infinite alternate;
   }
 
-  /* line 390, ../sass/top.scss */
+  /* line 396, ../sass/top.scss */
   #wave {
     display: none;
   }
 
-  /* line 394, ../sass/top.scss */
+  /* line 400, ../sass/top.scss */
   .pin-container {
     display: none;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 400, ../sass/top.scss */
+  /* line 406, ../sass/top.scss */
   #map {
     margin-top: 100px;
   }
 
-  /* line 403, ../sass/top.scss */
+  /* line 409, ../sass/top.scss */
   .vehicle {
     margin: 10px;
   }
 
-  /* line 407, ../sass/top.scss */
+  /* line 413, ../sass/top.scss */
   #vehicles {
     position: relative;
   }

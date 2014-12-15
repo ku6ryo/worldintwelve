@@ -243,6 +243,10 @@
   -o-transition: .2s;
   -webkit-transition: .2s;
   width: 220px;
+
+  a {
+    text-decoration: underline;
+  }
 }
 
 .vehicle:hover .balloon {
@@ -267,8 +271,8 @@
   -webkit-animation: anime_plane_updown 6s ease-in-out 0s infinite alternate;
 }
 
-#plane .balloon #numofpeople {
-  font-size: 40px;
+#plane .balloon #days {
+  font-size: 50px;
 }
 
 #ship {
@@ -289,10 +293,6 @@
 
 #submarine .balloon {
   padding-top: 20px;
-}
-
-#submarine .balloon #days {
-  font-size: 50px;
 }
 
 #ufo {
@@ -335,6 +335,12 @@
   -moz-animation: anime_submarine 7s ease-in-out 0s infinite alternate;
   -o-animation: anime_submarine 7s ease-in-out 0s infinite alternate;
   -webkit-animation: anime_submarine 7s ease-in-out 0s infinite alternate;
+}
+
+#submarine .balloon p {
+  position: relative;
+  top: 20px;
+  font-size: 20px;
 }
 
 #wave {

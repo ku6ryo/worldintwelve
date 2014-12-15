@@ -11,9 +11,9 @@ import webapp2
 
 
 JINJA_ENVIRONMENT = jinja2.Environment(
-    loader=jinja2.FileSystemLoader(os.path.dirname(__file__)),
-    extensions=['jinja2.ext.autoescape'],
-    autoescape=True)
+  loader=jinja2.FileSystemLoader(os.path.dirname(__file__).replace('handlers', 'templates')),
+  extensions=['jinja2.ext.autoescape'],
+  autoescape=True)
 
 
 BREADCRUMB_DICT = {
@@ -218,6 +218,52 @@ PROJECTS = [
 ]
 
 
+PROJECT_MATRIX_META = {
+  'musicians': {
+    'is_multiple_pages': True,
+    'tokyo': [
+      {
+        'id': 'looprider',
+        'label': 'Loop Rider'
+      },
+    ]
+  },
+  'soundscape': {
+  },
+  'treasure_box': {
+  },
+  'live': {
+  }, 
+  'dates1': {
+  }, 
+  'dates2': {
+  }, 
+  'grandma_cooking': {
+  }, 
+  'micro_guide': {
+  }, 
+  'misc': {
+  },
+  'twelve_questions': {
+    'is_multiple_pages': True,
+    'tokyo': [
+      {
+        'id': 'nanako',
+        'label': 'Nanako Level'
+      },
+      {
+        'id': 'yamato',
+        'label': 'Yamato Watanabe'
+      }
+    ]
+  }, 
+  'bck': {
+  }, 
+  'marketplace': {
+  }
+}
+
+
 PROJECT_METAS_EN = {
   'musicians': {
     'id': 'musicians',
@@ -386,11 +432,12 @@ PROJECT_METAS_JA = {
 
 
 def GetTemplate(path):
-  return JINJA_ENVIRONMENT.get_template('templates/%s' % path)
+  return JINJA_ENVIRONMENT.get_template(path)
 
 
 def existTemplate(path):
-  return ('templates/%s' % path) in JINJA_ENVIRONMENT.list_templates()
+  print JINJA_ENVIRONMENT.list_templates()
+  return path in JINJA_ENVIRONMENT.list_templates()
 
 
 def WrapWithBaseTemplate(content, lang, dirs):

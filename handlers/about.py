@@ -13,7 +13,8 @@ import webapp2
 
 class Handler(webapp2.RequestHandler):
   def get(self, lang, topic):
-    base_template = common.GetTemplate('base.html')
+    print os.path.abspath(os.path.dirname(__file__))
+    print os.path.dirname(__file__)
     frame_template = common.GetTemplate('about/frame.html')
     blog_template = common.GetTemplate('about/%s/%s.html' % (lang, topic))
     body = blog_template.render()

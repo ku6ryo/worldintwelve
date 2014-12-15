@@ -1,0 +1,93 @@
+<link rel="stylesheet" href="/styles/matrix.css">
+<div class="matrix-frame {{c_city_meta.id}}">
+  <div class="cross left top"></div>
+  <div class="cross right top"></div>
+  <div class="cross left bottom"></div>
+  <div class="cross right bottom"></div>
+  <div class="cityxproject">
+    <a href="/{{lang}}/cities/{{c_city_meta.id}}">
+      <div class="icon-block">
+        <img class="icon" src="/images/cities/{{c_city_meta.id}}.png">
+        <div class="label">{{c_city_meta.label}}</div>
+      </div>
+    </a>
+    <span class="x">&#10005;</span>
+    <a href="/{{lang}}/projects/{{c_project_meta.id}}">
+      <div class="icon-block">
+        <img class="icon" src="/images/projects/{{c_project_meta.id}}.png">
+        <div class="label">{{c_project_meta.label}}</div>
+      </div>
+    </a>
+  </div>
+  <div class="matrix-body">
+    {% if is_multiple_pages %}
+    <div class="page-selector">
+      {% for page in pages_meta %}
+      <a href="#{{page.id}}"><span data="{{page.id}}">{{page.label}}</span></a>
+      {% endfor %}
+    </div>
+    <script>
+      window.onhashchange = function() {
+        var articles = document.getElementsByTagName('article');
+        for (var i = 0; i < articles.length; i++) {
+          articles[i].classList.add('hidden');
+        }
+        var id = location.hash.replace('#', '_');
+        var article = document.getElementById(id);
+        if (article) {
+          article.classList.remove('hidden');
+        }
+      };
+    </script>
+    {% endif %}
+  {% autoescape false %}
+    {{body}}
+  {% endautoescape %}
+    <script>
+      var id = location.hash.replace('#', '_');
+      var article = document.getElementById(id);
+      if (article) {
+        article.classList.remove('hidden');
+      } else {
+        var articles = document.getElementsByTagName('article');
+        if (articles.length > 0) {
+          articles[0].classList.remove('hidden');
+        }
+      }
+    </script>
+  </div>
+  <div class="arrows">
+    {% if p_city_meta %}
+      <a title="{{p_city_meta.label}}"
+         href="/{{lang}}/matrix/{{p_city_meta.id}}_x_{{c_project_meta.id}}">
+        <div class="arrow left {{p_city_meta.id}}">&larr;</div>
+      </a>
+    {% else %}
+      <div class="arrow left">&larr;</div>
+    {% endif %}
+    {% if p_project_meta %}
+      <a title="{{p_project_meta.label}}"
+         href="/{{lang}}/matrix/{{c_city_meta.id}}_x_{{p_project_meta.id}}">
+        <div class="arrow up {{c_city_meta.id}}">&uarr;</div>
+      </a>
+    {% else %}
+      <div class="arrow up">&uarr;</div>
+    {% endif %}
+    {% if n_project_meta %}
+      <a title="{{n_project_meta.label}}"
+         href="/{{lang}}/matrix/{{c_city_meta.id}}_x_{{n_project_meta.id}}">
+        <div class="arrow down {{c_city_meta.id}}">&darr;</div>
+      </a>
+    {% else %}
+      <div class="arrow down">&darr;</div>
+    {% endif %}
+    {% if n_city_meta %}
+      <a title="{{n_city_meta.label}}"
+         href="/{{lang}}/matrix/{{n_city_meta.id}}_x_{{c_project_meta.id}}">
+        <div class="arrow right {{n_city_meta.id}}">&rarr;</div>
+      </a>
+    {% else %}
+      <div class="arrow right">&rarr;</div>
+    {% endif %}
+  </div>
+</div>

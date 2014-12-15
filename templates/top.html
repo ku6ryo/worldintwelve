@@ -34,22 +34,20 @@
     </div>
     <div id="plane" class="vehicle">
       <div class="balloon">
-        <p><span id="numofpeople">20</span></p>
-        {% if lang == 'en' %}
-        <p>awsome people have helped !!</p>
-        {% else %}
-        <p>のイケてる人たちが参加してくれました !!</p>
-        {% endif %}
+        {% if lang == 'ja' %}<p>出発まであと、</p>{% endif %}
+        <p><span id="days"></span>{% if lang == 'en' %}&nbsp;days{% else %}&nbsp;日{% endif %}</p>
+        {% if lang == 'en' %}<p>until departure</p>{% endif %}
         </p>
       </div>
       <img src="/images/vehicles/plane.png">
     </div>
     <div id="submarine" class="vehicle">
       <div class="balloon">
-        {% if lang == 'ja' %}<p>出発まであと、</p>{% endif %}
-        <p><span id="days"></span>{% if lang == 'en' %}&nbsp;days{% else %}&nbsp;日{% endif %}</p>
-        {% if lang == 'en' %}<p>until departure</p>{% endif %}
-        </p>
+        {% if lang == 'en' %}
+        <p>Check out the project results <a href="/en/matrix/tokyo_x_musicians">Here</a>!!</p>
+        {% else %}
+        <p>プロジェクトの成果は<a href="/ja/matrix/tokyo_x_musicians">こちら</a>！</p>
+        {% endif %}
       </div>
       <img src="/images/vehicles/submarine.png">
       <img id="wave" src="/images/vehicles/wave.png">

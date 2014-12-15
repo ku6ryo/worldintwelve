@@ -3,6 +3,10 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+/* line 8, ../sass/base.scss */
+body {
   font-family: YuGothic, Arial;
 }
 
@@ -12,32 +16,32 @@
   font-weight: normal;
   font-style: normal;
 }
-/* line 16, ../sass/base.scss */
+/* line 19, ../sass/base.scss */
 a {
   color: #FC3838;
   text-decoration: none;
 }
 
-/* line 21, ../sass/base.scss */
+/* line 24, ../sass/base.scss */
 a:visited {
   color: #FC3838;
 }
 
-/* line 25, ../sass/base.scss */
+/* line 28, ../sass/base.scss */
 #wrapper {
   margin: 0 auto;
   width: 1015px;
 }
 
 @media screen and (max-width: 1024px) {
-  /* line 31, ../sass/base.scss */
+  /* line 34, ../sass/base.scss */
   #wrapper {
     padding: 0 5%;
     width: initial;
   }
 }
 /* Menu */
-/* line 39, ../sass/base.scss */
+/* line 42, ../sass/base.scss */
 #menu {
   color: #FC3838;
   font-family: Futura, Arial;
@@ -45,17 +49,17 @@ a:visited {
   width: 100%;
 }
 
-/* line 46, ../sass/base.scss */
+/* line 49, ../sass/base.scss */
 #navigation {
   padding: 16px 0 10px;
 }
 
-/* line 50, ../sass/base.scss */
+/* line 53, ../sass/base.scss */
 #navigation ul {
   list-style: none;
 }
 
-/* line 54, ../sass/base.scss */
+/* line 57, ../sass/base.scss */
 #navigation ul li {
   box-sizing: border-box;
   display: inline-block;
@@ -67,12 +71,12 @@ a:visited {
   width: 90px;
 }
 
-/* line 65, ../sass/base.scss */
+/* line 68, ../sass/base.scss */
 #navigation ul li span {
   position: relative;
 }
 
-/* line 69, ../sass/base.scss */
+/* line 72, ../sass/base.scss */
 #navigation ul li span:after {
   background-color: #FC3838;
   bottom: -2px;
@@ -85,12 +89,12 @@ a:visited {
   width: 0;
 }
 
-/* line 81, ../sass/base.scss */
+/* line 84, ../sass/base.scss */
 #navigation ul li.logo span:after {
   opacity: 0;
 }
 
-/* line 85, ../sass/base.scss */
+/* line 88, ../sass/base.scss */
 #navigation ul li.item:hover span:after,
 #navigation ul li.selected span:after,
 #navigation ul li.lang span.selected:after,
@@ -98,7 +102,7 @@ a:visited {
   width: 100%;
 }
 
-/* line 92, ../sass/base.scss */
+/* line 95, ../sass/base.scss */
 #navigation li.logo {
   background: url(http://worldintwelve.com/images/logo.png) left center no-repeat;
   background-size: 105px;
@@ -106,12 +110,12 @@ a:visited {
   width: 135px;
 }
 
-/* line 99, ../sass/base.scss */
+/* line 102, ../sass/base.scss */
 #navigation ul li.logo:hover {
   opacity: .7;
 }
 
-/* line 103, ../sass/base.scss */
+/* line 106, ../sass/base.scss */
 #navigation ul li.test-city {
   background-image: url(http://worldintwelve.com/images/cities/tokyo_mini.png);
   background-size: 37px;
@@ -121,14 +125,14 @@ a:visited {
   width: 200px;
 }
 
-/* line 112, ../sass/base.scss */
+/* line 115, ../sass/base.scss */
 #topbar {
   display: none;
   padding: 20px 0 10px;
   position: relative;
 }
 
-/* line 118, ../sass/base.scss */
+/* line 121, ../sass/base.scss */
 #topbar .logo {
   background-image: url(/images/logo.png);
   background-position: left center;
@@ -139,7 +143,7 @@ a:visited {
   width: 110px;
 }
 
-/* line 129, ../sass/base.scss */
+/* line 132, ../sass/base.scss */
 #toggle {
   background-image: url(http://worldintwelve.com/images/menu.png);
   background-size: 50px;
@@ -152,30 +156,30 @@ a:visited {
   z-index: 99999;
 }
 
-/* line 141, ../sass/base.scss */
+/* line 144, ../sass/base.scss */
 #breadcrumb {
   margin-bottom: 15px;
 }
 
-/* line 145, ../sass/base.scss */
+/* line 148, ../sass/base.scss */
 #breadcrumb span, #breadcrumb a {
   color: #8F8F8F;
   font-size: 11px;
   letter-spacing: .1em;
 }
 
-/* line 151, ../sass/base.scss */
+/* line 154, ../sass/base.scss */
 #breadcrumb a:last-child {
   color: #FC3838;
 }
 
-/* line 155, ../sass/base.scss */
+/* line 158, ../sass/base.scss */
 #breadcrumb .separator {
   margin: 0 10px;
 }
 
 @media screen and (max-width: 1024px) {
-  /* line 160, ../sass/base.scss */
+  /* line 163, ../sass/base.scss */
   #navigation {
     background-color: #FC3838;
     box-sizing: border-box;
@@ -190,7 +194,7 @@ a:visited {
     z-index: 99999;
   }
 
-  /* line 174, ../sass/base.scss */
+  /* line 177, ../sass/base.scss */
   #navigation ul li {
     color: white;
     display: block;
@@ -199,33 +203,33 @@ a:visited {
     width: 100%;
   }
 
-  /* line 182, ../sass/base.scss */
+  /* line 185, ../sass/base.scss */
   #navigation ul li a {
     color: white;
   }
 
-  /* line 186, ../sass/base.scss */
+  /* line 189, ../sass/base.scss */
   #navigation ul li span:after {
     background-color: white;
   }
 
-  /* line 190, ../sass/base.scss */
+  /* line 193, ../sass/base.scss */
   #navigation ul li.logo {
     background: none;
     color: white;
   }
 
-  /* line 195, ../sass/base.scss */
+  /* line 198, ../sass/base.scss */
   #navigation ul li.logo:hover {
     opacity: 1;
   }
 
-  /* line 199, ../sass/base.scss */
+  /* line 202, ../sass/base.scss */
   #navigation ul li.logo span:after {
     opacity: 1;
   }
 
-  /* line 203, ../sass/base.scss */
+  /* line 206, ../sass/base.scss */
   #navigation ul li.test-city {
     background-image: url(http://worldintwelve.com/images/cities/tokyo_mini_white.png);
     background-repeat: no-repeat;
@@ -234,17 +238,17 @@ a:visited {
     width: 100%;
   }
 
-  /* line 211, ../sass/base.scss */
+  /* line 214, ../sass/base.scss */
   #topbar {
     display: block;
   }
 
-  /* line 215, ../sass/base.scss */
+  /* line 218, ../sass/base.scss */
   #menu.expanded #navigation {
     right: 0;
   }
 
-  /* line 219, ../sass/base.scss */
+  /* line 222, ../sass/base.scss */
   #menu.expanded #toggle {
     background-image: url(http://worldintwelve.com/images/close.png);
     position: fixed;
@@ -252,7 +256,7 @@ a:visited {
   }
 }
 /* Footer */
-/* line 227, ../sass/base.scss */
+/* line 230, ../sass/base.scss */
 #footer {
   clear: both;
   color: #fc3838;
@@ -265,46 +269,46 @@ a:visited {
   width: 100%;
 }
 
-/* line 239, ../sass/base.scss */
+/* line 242, ../sass/base.scss */
 .footer-block {
   display: inline-block;
 }
 
-/* line 243, ../sass/base.scss */
+/* line 246, ../sass/base.scss */
 #footer .left {
   float: left;
 }
 
-/* line 247, ../sass/base.scss */
+/* line 250, ../sass/base.scss */
 #footer .right {
   float: right;
 }
 
 @media screen and (max-width: 1024px) {
-  /* line 253, ../sass/base.scss */
+  /* line 256, ../sass/base.scss */
   #footer .left,
   #footer .right {
     float: none;
   }
 
-  /* line 257, ../sass/base.scss */
+  /* line 260, ../sass/base.scss */
   #footer .footer-block {
     margin-top: 5px;
     display: block;
   }
 }
 @media screen and (max-width: 1024px) {
-  /* line 264, ../sass/base.scss */
+  /* line 267, ../sass/base.scss */
   #footer {
     padding: 50px 0 40px;
   }
 }
-/* line 269, ../sass/base.scss */
+/* line 272, ../sass/base.scss */
 #contact img {
   margin-right: 5px;
 }
 
-/* line 273, ../sass/base.scss */
+/* line 276, ../sass/base.scss */
 #social {
   bottom: -3px;
   margin-left: 30px;
@@ -312,7 +316,7 @@ a:visited {
   position: relative;
 }
 
-/* line 280, ../sass/base.scss */
+/* line 283, ../sass/base.scss */
 #social a {
   margin-right: 10px;
 }

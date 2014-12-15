@@ -13,6 +13,7 @@ import webapp2
 import logging
 
 
+
 class Handler(webapp2.RequestHandler):
   def get(self, lang, city, project):
 
@@ -36,14 +37,23 @@ class Handler(webapp2.RequestHandler):
     c_project_meta = common.PROJECT_METAS_EN[c_project_id] if c_project_id else {}
     n_project_meta = common.PROJECT_METAS_EN[n_project_id] if n_project_id else {}
 
-    base_template = common.GetTemplate('base.html')
-    frame_template = common.GetTemplate('project_matrix/frame.html')
-    content_template_path = 'project_matrix/%s_x_%s.html' % (c_city_id, c_project_id)
-    content_template = common.GetTemplate('project_matrix/frame.html')
-    if common.existTemplate(content_template_path):
-      body = common.GetTemplate(content_template_path).render()
+    is_multiple_pages = common.PROJECT_MATRIX_META[c_project_id]
+    project_matrix_meta = common.PROJECT_MATRIX_META[c_project_id]
+
+    pages_meta = []
+    body = ''
+    if is_multiple_pages and c_city_id in project_matrix_meta:
+      pages_meta = project_matrix_meta[c_city_id]
+      for page in pages_meta:
+        content_template_path = 'matrix/%s/%s/%s_%s.html' % (
+            lang, c_city_id, c_project_id, page['id'])
+        if common.existTemplate(content_template_path):
+          body += common.GetTemplate(content_template_path).render()
     else:
       body = ''
+
+    base_template = common.GetTemplate('base.html')
+    frame_template = common.GetTemplate('matrix/frame.html')
 
     frame = frame_template.render({
       'body': body,
@@ -53,13 +63,15 @@ class Handler(webapp2.RequestHandler):
       'n_city_meta': n_city_meta,
       'p_project_meta': p_project_meta,
       'c_project_meta': c_project_meta,
-      'n_project_meta': n_project_meta
+      'n_project_meta': n_project_meta,
+      'is_multiple_pages': is_multiple_pages,
+      'pages_meta': pages_meta
     })
     self.response.write(common.WrapWithBaseTemplate(
         frame, lang, ['project_matrix']))
 
 
 app = webapp2.WSGIApplication([
-    webapp2.Route(r'/<lang:>/project_matrix/<city:>_x_<project:>', handler=Handler),
-    webapp2.Route(r'/<lang:>/project_matrix/.*', handler=not_found.Handler),
+  webapp2.Route(r'/<lang:>/matrix/<city:>_x_<project:>', handler=Handler),
+  webapp2.Route(r'/<lang:>/matrix/.*', handler=not_found.Handler),
 ], debug=True)

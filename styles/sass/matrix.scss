@@ -147,21 +147,62 @@
 
   padding: 100px 50px;
 
+  .page-selector {
+    padding: 10px;
+    a span {
+      margin-right: 10px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
   article {
     img {
       max-width: 100%;
     }
-    .cover {
+    .banner {
       width: 100%;
     }
-    .logo {
-      max-height: 70px;
-    }
+  }
+
+  article.hidden {
+    display: none;
   }
 
   @media screen and (max-width: 756px) {
     & {
       padding: 100px 20px;
     }
+  }
+}
+
+article.musicians {
+  .logo {
+    max-height: 70px;
+  }
+  .jacket {
+    width: 300px;
+  }
+}
+
+article.twelve-questions {
+  .name {
+    font-size: 26px;
+    font-style: italic;
+    font-weight: bold;
+  }
+  .photo {
+    padding: 20px;
+    text-align: center;
+    img {
+      width: 500px;
+    }
+  }
+
+  .number {
+    font-family: Futura, Arial;
+    font-size: 30px;
   }
 }

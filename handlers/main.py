@@ -12,7 +12,7 @@ import webapp2
 
 class TopHandler(webapp2.RequestHandler):
   def get(self, lang):
-    top_template = common.GetTemplate('/top.html')
+    top_template = common.GetTemplate('top.html')
     cities = ['tokyo']
     cities.extend(common.CITIES)
     body = top_template.render({
@@ -24,7 +24,6 @@ class TopHandler(webapp2.RequestHandler):
 
 class PeopleHandler(webapp2.RequestHandler):
   def get(self, lang):
-    base_template = common.GetTemplate('base.html')
     people_template = common.GetTemplate('people_%s.html' % lang)
     people_body = people_template.render()
     self.response.write(common.WrapWithBaseTemplate(people_body, lang, ['people']))

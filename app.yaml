@@ -17,34 +17,34 @@ handlers:
   upload: /images/logo_mini\.png
 
 - url: /((en|ja)/)?
-  script: main.app
+  script: handlers.main.app
 
-- url: /((en|ja)/)?cities(/(|sanfrancisco|newyork|toronto|riodejaneiro|london|stockholm|munich|paris|barcelona|istanbul|melbourne|bangkok|tokyo))?
-  script: citiesprojects.app
+- url: /(en|ja)/cities(/(|sanfrancisco|newyork|toronto|riodejaneiro|london|stockholm|munich|paris|barcelona|istanbul|melbourne|bangkok|tokyo))?
+  script: handlers.citiesprojects.app
 
 - url: /(en|ja)/projects(/(|musicians|soundscape|treasure_box|live|dates1|dates2|grandma_cooking|micro_guide|misc|twelve_questions|bck|marketplace))?
-  script: citiesprojects.app
+  script: handlers.citiesprojects.app
 
-- url: /(en|ja)/project_matrix/.*
-  script: projectmatrix.app
+- url: /(en|ja)/matrix/.*
+  script: handlers.matrix.app
 
 - url: /(en|ja)/about(/(|cities|projects|whatis|faq|rules|team))?
-  script: about.app
+  script: handlers.about.app
 
 - url: /(en|ja)/people
-  script: main.app
+  script: handlers.main.app
 
 - url: /(en|ja)/sponsors
-  script: main.app
+  script: handlers.main.app
 
 - url: /tac
-  script: main.app
+  script: handlers.main.app
 
 - url: /(en|ja)/test_city_tokyo
-  script: main.app
+  script: handlers.main.app
 
 - url: /(en|ja)/coming_soon
-  script: main.app
+  script: handlers.main.app
 
 # Static directories.
 - url: /images
@@ -53,6 +53,6 @@ handlers:
 - url: /styles
   static_dir: styles/css
 
-# This should be always the end of the handler definitions.
+# This should be always at the end of the handler definitions.
 - url: /.*
-  script: not_found.app
+  script: handlers.not_found.app
