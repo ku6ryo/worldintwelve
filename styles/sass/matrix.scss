@@ -173,6 +173,8 @@
   }
 
   article {
+    color: $WXII_GRAY;
+
     img {
       max-width: 100%;
     }
@@ -211,6 +213,7 @@ article.twelve-questions {
     padding: 20px;
     text-align: center;
     img {
+      border: 5px solid $WXII_RED;
       width: 500px;
     }
   }
