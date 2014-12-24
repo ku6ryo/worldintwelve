@@ -19,7 +19,8 @@ JINJA_ENVIRONMENT = jinja2.Environment(
 BREADCRUMB_DICT = {
   'sanfrancisco': 'San Francisco',
   'riodejaneiro': 'Rio de Janeiro',
-  'grandma_cooking': 'Grandmas\' Cooking',
+  'family_recipes': 'Family Recipes',
+  'whats_beauty': 'What is beauty?',
   'test_city_tokyo': 'TEST CITY: Tokyo',
   'whatis': 'What is Wxii?',
   'project_matrix': 'Project Matrix',
@@ -206,10 +207,10 @@ PROJECTS = [
   'musicians',
   'soundscape',
   'treasure_box',
-  'live', 
-  'dates1', 
-  'dates2', 
-  'grandma_cooking', 
+  'twelve_twelve', 
+  'whats_beauty', 
+  'real_dates', 
+  'family_recipes', 
   'micro_guide', 
   'misc', 
   'twelve_questions', 
@@ -236,13 +237,13 @@ PROJECT_MATRIX_META = {
   },
   'treasure_box': {
   },
-  'live': {
+  'twelve_twelve': {
   }, 
-  'dates1': {
+  'whats_beauty': {
   }, 
-  'dates2': {
+  'real_dates': {
   }, 
-  'grandma_cooking': {
+  'family_recipes': {
   }, 
   'micro_guide': {
     'is_multiple_pages': False
@@ -282,26 +283,26 @@ PROJECT_METAS_EN = {
     'metas': ['Base Format: Music', 'Overview Format: Movie', 'Length: --', 'Songs: 1', 'Participants: --'],
     'description': u'Welcome to the world of Blind Cheap Kudos. Don’t be scared, take a look!!'
   },
-  'dates1': {
-      'id': 'dates1',
-      'label': 'Dates Part 1',
+  'whats_beauty': {
+      'id': 'whats_beauty',
+      'label': 'What is beauty?',
       'metas': ['Base Format: Movie', 'Episodes: 12', 'Length: 5 min',
 'Participants: 4 people for each city'],
-    'description': u'Holding her bags, waiting in line, commenting on her new look. Universal, true love.'
+    'description': u'What is beauty? Is it personal? Is it relative? Is there true, universal beauty? These are quesions human kind has held, ever since existence. Let’s see what people have to say.'
   },
-  'dates2': {
-      'id': 'dates2',
-      'label': 'Dates Part 2',
+  'real_dates': {
+      'id': 'real_dates',
+      'label': 'Real Dates',
       'metas': ['Base Format: Movie', 'Episodes: 12',
           'Length: 2 min 24 sec', 'Participants: 12 couples(total: 24 people)'],
       'description': u'We laugh, we fight, we eat, we cry, we sleep, we smile. These are the days we live together.'
   },
-  'grandma_cooking': {
-      'id': 'grandma_cooking',
-      'label': 'Grandma\'s Cooking',
+  'family_recipes': {
+      'id': 'family_recipes',
+      'label': 'Family Recipes',
       'metas': ['Base Format: Movie', 'Overview Format: Photos / Articles',
       'Episodes: 1', 'Participants: --'],
-          'description': u'\"Mine would be home made pecan pie and lemon bars\" (Robin, Tallahassee). Grandmas and Grandpas, here we come!'
+      'description': u'\"Mine would be home made pecan pie and lemon bars\" (Robin, Tallahassee). Let’s see what everyone grew up eating!!'
   },
   'micro_guide': {
       'id': 'micro_guide',
@@ -342,11 +343,11 @@ PROJECT_METAS_EN = {
       'metas': ['Base Format: Photos / Web', 'Participants: 12 groups at least'],
       'description': u'Buy, sell, sell, buy. Yep, the World in Twelve has now officially joined capitalistic society.'
   },
-  'live': {
-      'id': 'live',
-      'label': 'LIVE!!',
+  'twelve_twelve': {
+      'id': 'twelve_twelve',
+      'label': 'Twelve x Twelve',
       'metas': [],
-      'description': u'Live from our studios (I wish) in each city, this is the World in Twelve!!'
+      'description': u'A mini-project truly depicting the essence of the number 12… You have any wacky ideas for combinations? Let your voice be heard!!'
   }
 }
 
@@ -365,25 +366,25 @@ PROJECT_METAS_JA = {
           u'曲数：1', u'参加人数：--'],
       'description': u'和名「盲目な安い賞賛」。本気でふざけよ。ただそれだけ。'
   },
-  'dates1': {
-      'id': 'dates1',
-      'label': u'デート パート １',
+  'whats_beauty': {
+      'id': 'whats_beauty',
+      'label': u'美とは？',
       'metas': [u'基本フォーマット：映像', u'エピソード数：12本', u'尺：５分', u'参加人数：各都市４人'],
-      'description': u'いつでも僕たちは彼女の後を追い、荷物を持たされ、愛について悩むのであった。'
+      'description': u'人類の永遠の質問…美とはなんぞや？普遍的なものなのか、人それぞれなのか。「美」の概念に迫ります！'
   },
-  'dates2': {
-      'id': 'dates2',
-      'label': u'デート パート 2',
+  'real_dates': {
+      'id': 'real_dates',
+      'label': u'リアルデート',
       'metas': [u'基本フォーマット：映像', u'エピソード数：12本',
           u'尺：2分24秒', u'参加人数：カップル12組（計24人）'],
       'description': u'笑いあって、手をつないで、そばにいて、喧嘩したあとは仲直りする。そんな日々がありました。'
   },
-  'grandma_cooking': {
-      'id': 'grandma_cooking',
-      'label': u'おばあちゃんの手料理',
+  'family_recipes': {
+      'id': 'family_recipes',
+      'label': u'家庭の味',
       'metas': [u'基本フォーマット：映像', u'概要フォーマット：写真・文章',
       u'エピソード数：1', u'参加人数：--'],
-      'description': u'「僕は唐揚げ、卵焼き、そしておかかと梅のおにぎり」（S君・25歳）。みんなのおばあちゃん、みてみましょ。'
+      'description': u'「僕は唐揚げ、卵焼き、そしておかかと梅のおにぎり」（S君・25歳）。みんなの家庭の味、見てみましょ。'
   },
   'micro_guide': {
       'id': 'micro_guide',
@@ -427,11 +428,12 @@ PROJECT_METAS_JA = {
           u'参加人数：最低12組'],
       'description': u'買って、売る。売って、買う。資本主義社会の輪廻の一部となりました。'
   },
-  'live': {
-      'id': 'live',
-      'label': u'ライブ！',
+  'twelve_twelve': {
+      'id': 'twelve_twelve',
+      'label': u'Twelve x Twelve',
       'metas': [],
-      'description': u'臨場感．．．があるかは不明ですが、とりあえず今夜も生でお送りします！'
+      'description':
+      u'12という概念をこれでもか！って込めました！（笑）みんなもいい組み合わせがあったら教えてね！'
   }
 }
 

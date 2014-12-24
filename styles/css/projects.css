@@ -59,51 +59,51 @@
 }
 
 /* line 24, ../sass/projects.scss */
-.image-list .item.live {
-  background-image: url(/images/projects/live_gray.png);
+.image-list .item.twelve_twelve {
+  background-image: url(/images/projects/twelve_twelve_gray.png);
 }
 
 /* line 27, ../sass/projects.scss */
-.image-list.top .item.live,
-.image-list.live .item.live,
-.image-list .item.live:hover {
-  background-image: url(/images/projects/live.png);
+.image-list.top .item.twelve_twelve,
+.image-list.twelve_twelve .item.twelve_twelve,
+.image-list .item.twelve_twelve:hover {
+  background-image: url(/images/projects/twelve_twelve.png);
 }
 
 /* line 24, ../sass/projects.scss */
-.image-list .item.dates1 {
-  background-image: url(/images/projects/dates1_gray.png);
+.image-list .item.whats_beauty {
+  background-image: url(/images/projects/whats_beauty_gray.png);
 }
 
 /* line 27, ../sass/projects.scss */
-.image-list.top .item.dates1,
-.image-list.dates1 .item.dates1,
-.image-list .item.dates1:hover {
-  background-image: url(/images/projects/dates1.png);
+.image-list.top .item.whats_beauty,
+.image-list.whats_beauty .item.whats_beauty,
+.image-list .item.whats_beauty:hover {
+  background-image: url(/images/projects/whats_beauty.png);
 }
 
 /* line 24, ../sass/projects.scss */
-.image-list .item.dates2 {
-  background-image: url(/images/projects/dates2_gray.png);
+.image-list .item.real_dates {
+  background-image: url(/images/projects/real_dates_gray.png);
 }
 
 /* line 27, ../sass/projects.scss */
-.image-list.top .item.dates2,
-.image-list.dates2 .item.dates2,
-.image-list .item.dates2:hover {
-  background-image: url(/images/projects/dates2.png);
+.image-list.top .item.real_dates,
+.image-list.real_dates .item.real_dates,
+.image-list .item.real_dates:hover {
+  background-image: url(/images/projects/real_dates.png);
 }
 
 /* line 24, ../sass/projects.scss */
-.image-list .item.grandma_cooking {
-  background-image: url(/images/projects/grandma_cooking_gray.png);
+.image-list .item.family_recipes {
+  background-image: url(/images/projects/family_recipes_gray.png);
 }
 
 /* line 27, ../sass/projects.scss */
-.image-list.top .item.grandma_cooking,
-.image-list.grandma_cooking .item.grandma_cooking,
-.image-list .item.grandma_cooking:hover {
-  background-image: url(/images/projects/grandma_cooking.png);
+.image-list.top .item.family_recipes,
+.image-list.family_recipes .item.family_recipes,
+.image-list .item.family_recipes:hover {
+  background-image: url(/images/projects/family_recipes.png);
 }
 
 /* line 24, ../sass/projects.scss */
@@ -167,7 +167,7 @@
 }
 
 /* line 34, ../sass/projects.scss */
-.image-list .item.live,
+.image-list .item.twelve_twelve,
 .image-list .item.micro_guide,
 .image-list .item.marketplace {
   margin-right: 0;
