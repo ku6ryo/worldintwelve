@@ -31,6 +31,8 @@ class Handler(webapp2.RequestHandler):
       info_body = info_template.render({
         'description': type_template.render(),
         'meta': metas[item],
+        'lang': lang,
+        'type': typ,
         'item_id': item
        })
       body = frame_template.render({

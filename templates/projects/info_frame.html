@@ -5,11 +5,17 @@
         <img src="/images/projects/{{item_id}}.png">
         <div>{{meta.label}}</div>
       </div>
+      {% if type == "projects" %}
+      <div class="info-block">
+        <a href="/{{lang}}/matrix/tokyo_x_{{item_id}}">TEST CITY: Tokyo</a>
+      </div>
+      {% else %}
       <div class="info-block">
         {% for item in meta.metas %}
         <div>{{item}}</div>
         {% endfor %}
       </div>
+      {% endif %}
     </div>
     <div class="inner-block">
       <p>

@@ -245,6 +245,7 @@ PROJECT_MATRIX_META = {
   'grandma_cooking': {
   }, 
   'micro_guide': {
+    'is_multiple_pages': False
   }, 
   'misc': {
   },

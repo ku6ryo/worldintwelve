@@ -364,52 +364,136 @@
 /* line 175, ../sass/matrix.scss */
 .matrix-body article {
   color: #4E4E4E;
+  position: relative;
 }
-/* line 178, ../sass/matrix.scss */
+/* line 179, ../sass/matrix.scss */
 .matrix-body article img {
   max-width: 100%;
 }
-/* line 181, ../sass/matrix.scss */
+/* line 183, ../sass/matrix.scss */
 .matrix-body article .banner {
   width: 100%;
 }
-/* line 186, ../sass/matrix.scss */
+/* line 188, ../sass/matrix.scss */
 .matrix-body article.hidden {
   display: none;
 }
 @media screen and (max-width: 756px) {
-  /* line 191, ../sass/matrix.scss */
+  /* line 193, ../sass/matrix.scss */
   .matrix-body {
     padding: 100px 20px;
   }
 }
 
-/* line 198, ../sass/matrix.scss */
+/* line 200, ../sass/matrix.scss */
 article.musicians .logo {
   max-height: 70px;
 }
-/* line 201, ../sass/matrix.scss */
+/* line 203, ../sass/matrix.scss */
 article.musicians .jacket {
   width: 300px;
 }
 
-/* line 207, ../sass/matrix.scss */
+/* line 211, ../sass/matrix.scss */
+article.micro_guide .section .title {
+  color: #FC3838;
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* line 218, ../sass/matrix.scss */
+article.micro_guide .section img {
+  box-sizing: border-box;
+  border: 5px solid #FC3838;
+  position: absolute;
+  width: 400px;
+}
+/* line 225, ../sass/matrix.scss */
+article.micro_guide .section .content {
+  min-height: 550px;
+  padding: 30px 100px;
+}
+/* line 229, ../sass/matrix.scss */
+article.micro_guide .section .content li {
+  color: #FC3838;
+}
+/* line 232, ../sass/matrix.scss */
+article.micro_guide .section .content li span {
+  color: #4E4E4E;
+}
+/* line 237, ../sass/matrix.scss */
+article.micro_guide .section .content ul ul {
+  list-style-position: inside;
+}
+/* line 243, ../sass/matrix.scss */
+article.micro_guide .section.image-left .content {
+  margin-left: 50%;
+}
+/* line 249, ../sass/matrix.scss */
+article.micro_guide .section.image-right img {
+  right: 0;
+}
+/* line 252, ../sass/matrix.scss */
+article.micro_guide .section.image-right .content {
+  margin-right: 50%;
+}
+@media screen and (max-width: 1024px) {
+  /* line 258, ../sass/matrix.scss */
+  article.micro_guide .section img {
+    width: 300px;
+  }
+  /* line 261, ../sass/matrix.scss */
+  article.micro_guide .section .content {
+    min-height: 400px;
+    padding: 20px 30px;
+  }
+}
+@media screen and (max-width: 756px) {
+  /* line 268, ../sass/matrix.scss */
+  article.micro_guide .section {
+    text-align: center;
+  }
+  /* line 271, ../sass/matrix.scss */
+  article.micro_guide .section img {
+    position: relative;
+    width: 300px;
+  }
+  /* line 275, ../sass/matrix.scss */
+  article.micro_guide .section .content {
+    min-height: 0;
+    padding: 20px 0;
+  }
+  /* line 279, ../sass/matrix.scss */
+  article.micro_guide .section .content ul {
+    list-style-position: inside;
+  }
+  /* line 284, ../sass/matrix.scss */
+  article.micro_guide .section.image-left .content {
+    margin-left: 0;
+  }
+  /* line 289, ../sass/matrix.scss */
+  article.micro_guide .section.image-right .content {
+    margin-right: 0;
+  }
+}
+
+/* line 298, ../sass/matrix.scss */
 article.twelve-questions .name {
   font-size: 26px;
   font-style: italic;
   font-weight: bold;
 }
-/* line 212, ../sass/matrix.scss */
+/* line 303, ../sass/matrix.scss */
 article.twelve-questions .photo {
   padding: 20px;
   text-align: center;
 }
-/* line 215, ../sass/matrix.scss */
+/* line 306, ../sass/matrix.scss */
 article.twelve-questions .photo img {
   border: 5px solid #FC3838;
   width: 500px;
 }
-/* line 221, ../sass/matrix.scss */
+/* line 312, ../sass/matrix.scss */
 article.twelve-questions .number {
   font-family: Futura, Arial;
   font-size: 30px;

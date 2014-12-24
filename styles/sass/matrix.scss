@@ -174,10 +174,12 @@
 
   article {
     color: $WXII_GRAY;
+    position: relative;
 
     img {
       max-width: 100%;
     }
+
     .banner {
       width: 100%;
     }
@@ -200,6 +202,95 @@ article.musicians {
   }
   .jacket {
     width: 300px;
+  }
+}
+
+article.micro_guide {
+  .section {
+
+    .title {
+      color: $WXII_RED;
+      font-size: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    img {
+      box-sizing: border-box;
+      border: 5px solid $WXII_RED;
+      position: absolute;
+      width: 400px;
+    }
+
+    .content {
+      min-height: 550px;
+      padding: 30px 100px;
+
+      li {
+        color: $WXII_RED;
+        
+        span {
+          color: $WXII_GRAY;
+        }
+      }
+
+      ul ul {
+        list-style-position: inside;
+      }
+    }
+    
+    &.image-left {
+      .content {
+        margin-left: 50%;
+      }
+    }
+
+    &.image-right {
+      img {
+        right: 0;
+      }
+      .content {
+        margin-right: 50%;
+      }
+    }
+
+    @media screen and (max-width: 1024px) {
+      img {
+        width: 300px;
+      }
+      .content {
+        min-height: 400px;
+        padding: 20px 30px;
+      }
+    }
+
+    @media screen and (max-width: 756px) {
+      & {
+        text-align: center;
+      }
+      img {
+        position: relative;
+        width: 300px;
+      }
+      .content {
+        min-height: 0;
+        padding: 20px 0;
+
+        ul {
+          list-style-position: inside;
+        }
+      }
+      &.image-left {
+        .content {
+          margin-left: 0;
+        }
+      }
+      &.image-right {
+        .content {
+          margin-right: 0;
+        }
+      }
+    }
   }
 }
 

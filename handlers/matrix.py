@@ -50,7 +50,10 @@ class Handler(webapp2.RequestHandler):
         if common.existTemplate(content_template_path):
           body += common.GetTemplate(content_template_path).render()
     else:
-      body = ''
+      content_template_path = 'matrix/%s/%s/%s.html' % (
+          lang, c_city_id, c_project_id)
+      if common.existTemplate(content_template_path):
+        body += common.GetTemplate(content_template_path).render()
 
     base_template = common.GetTemplate('base.html')
     frame_template = common.GetTemplate('matrix/frame.html')
