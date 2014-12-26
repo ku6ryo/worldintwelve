@@ -55,6 +55,9 @@ class Handler(webapp2.RequestHandler):
       if common.existTemplate(content_template_path):
         body += common.GetTemplate(content_template_path).render()
 
+    if body is '':
+      body = common.GetTemplate('coming_soon.html').render()
+
     base_template = common.GetTemplate('base.html')
     frame_template = common.GetTemplate('matrix/frame.html')
 
