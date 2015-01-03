@@ -260,7 +260,11 @@ PROJECT_MATRIX_META = {
       {
         'id': 'yamato',
         'label': 'Yamato Watanabe'
-      }
+      },
+      {
+        'id': 'onochan',
+        'label': 'Nanako Level'
+      },
     ]
   }, 
   'bck': {
