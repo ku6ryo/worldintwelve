@@ -263,7 +263,7 @@ PROJECT_MATRIX_META = {
       },
       {
         'id': 'onochan',
-        'label': 'Nanako Level'
+        'label': 'Ono Shinya'
       },
     ]
   }, 
