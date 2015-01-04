@@ -246,7 +246,17 @@ PROJECT_MATRIX_META = {
   'family_recipes': {
   }, 
   'micro_guide': {
-    'is_multiple_pages': False
+    'is_multiple_pages': True,
+    'tokyo': [
+      {
+        'id': 'shigusa',
+        'label': 'Shigusa'
+      },
+      {
+        'id': 'meetup',
+        'label': 'Meet Up'
+      },
+    ]
   }, 
   'misc': {
   },
