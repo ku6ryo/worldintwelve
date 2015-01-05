@@ -268,7 +268,7 @@
 
 /* line 126, ../sass/matrix.scss */
 .arrows {
-  bottom: -35px;
+  bottom: -50px;
   position: absolute;
   text-align: center;
   width: 100%;
@@ -411,23 +411,23 @@ article.micro_guide .section img {
 /* line 225, ../sass/matrix.scss */
 article.micro_guide .section .content {
   min-height: 550px;
-  padding: 30px 100px;
 }
-/* line 229, ../sass/matrix.scss */
+/* line 228, ../sass/matrix.scss */
 article.micro_guide .section .content li {
   color: #FC3838;
 }
-/* line 232, ../sass/matrix.scss */
+/* line 231, ../sass/matrix.scss */
 article.micro_guide .section .content li span {
   color: #4E4E4E;
 }
-/* line 237, ../sass/matrix.scss */
+/* line 236, ../sass/matrix.scss */
 article.micro_guide .section .content ul ul {
   list-style-position: inside;
 }
-/* line 243, ../sass/matrix.scss */
+/* line 242, ../sass/matrix.scss */
 article.micro_guide .section.image-left .content {
   margin-left: 50%;
+  padding: 30px 0 0 70px;
 }
 /* line 249, ../sass/matrix.scss */
 article.micro_guide .section.image-right img {
@@ -436,64 +436,69 @@ article.micro_guide .section.image-right img {
 /* line 252, ../sass/matrix.scss */
 article.micro_guide .section.image-right .content {
   margin-right: 50%;
+  padding: 30px 70px 0 0;
 }
 @media screen and (max-width: 1024px) {
-  /* line 258, ../sass/matrix.scss */
+  /* line 259, ../sass/matrix.scss */
   article.micro_guide .section img {
     width: 300px;
   }
-  /* line 261, ../sass/matrix.scss */
+  /* line 262, ../sass/matrix.scss */
   article.micro_guide .section .content {
     min-height: 400px;
     padding: 20px 30px;
   }
 }
 @media screen and (max-width: 756px) {
-  /* line 268, ../sass/matrix.scss */
+  /* line 269, ../sass/matrix.scss */
   article.micro_guide .section {
     text-align: center;
   }
-  /* line 271, ../sass/matrix.scss */
+  /* line 272, ../sass/matrix.scss */
   article.micro_guide .section img {
     position: relative;
     width: 300px;
   }
-  /* line 275, ../sass/matrix.scss */
+  /* line 276, ../sass/matrix.scss */
   article.micro_guide .section .content {
     min-height: 0;
     padding: 20px 0;
   }
-  /* line 279, ../sass/matrix.scss */
+  /* line 280, ../sass/matrix.scss */
   article.micro_guide .section .content ul {
     list-style-position: inside;
   }
-  /* line 284, ../sass/matrix.scss */
+  /* line 285, ../sass/matrix.scss */
   article.micro_guide .section.image-left .content {
     margin-left: 0;
   }
-  /* line 289, ../sass/matrix.scss */
+  /* line 290, ../sass/matrix.scss */
   article.micro_guide .section.image-right .content {
     margin-right: 0;
   }
 }
 
-/* line 298, ../sass/matrix.scss */
+/* line 300, ../sass/matrix.scss */
+article.whats-beauty .name,
 article.twelve-questions .name {
   font-size: 26px;
   font-style: italic;
   font-weight: bold;
 }
-/* line 303, ../sass/matrix.scss */
+/* line 305, ../sass/matrix.scss */
+article.whats-beauty .photo,
 article.twelve-questions .photo {
   padding: 20px;
   text-align: center;
 }
-/* line 306, ../sass/matrix.scss */
+/* line 308, ../sass/matrix.scss */
+article.whats-beauty .photo img,
 article.twelve-questions .photo img {
   border: 5px solid #FC3838;
   width: 500px;
 }
-/* line 312, ../sass/matrix.scss */
+/* line 314, ../sass/matrix.scss */
+article.whats-beauty .number,
 article.twelve-questions .number {
   font-family: Futura, Arial;
   font-size: 30px;

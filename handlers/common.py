@@ -240,6 +240,13 @@ PROJECT_MATRIX_META = {
   'twelve_twelve': {
   }, 
   'whats_beauty': {
+    'is_multiple_pages': True,
+    'tokyo': [
+      {
+        'id': 'yuko',
+        'label': 'Yuko'
+      },
+    ]
   }, 
   'real_dates': {
   }, 
