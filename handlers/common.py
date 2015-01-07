@@ -282,6 +282,10 @@ PROJECT_MATRIX_META = {
         'id': 'onochan',
         'label': 'Ono Shinya'
       },
+       {
+        'id': 'sayaka',
+        'label': 'Sayaka Yamaguchi'
+      },
     ]
   }, 
   'bck': {
