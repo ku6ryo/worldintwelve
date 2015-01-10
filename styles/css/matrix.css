@@ -1,16 +1,209 @@
-/* line 3, ../sass/matrix.scss */
+/* line 3, ../sass/article.scss */
+article {
+  color: #4E4E4E;
+  font-family: YuGothic, Arial;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: .1em;
+  line-height: 2.2;
+}
+
+/* line 12, ../sass/article.scss */
+article .title {
+  font-family: Futura, Arial;
+  font-size: 28px;
+  letter-spacing: .05em;
+  margin: 40px 0 45px;
+  text-align: center;
+}
+
+/* line 20, ../sass/article.scss */
+article h1 {
+  font-size: 25px;
+  margin: 15px 0;
+}
+
+/* line 25, ../sass/article.scss */
+article em {
+  font-family: inherit;
+  font-size: 21px;
+  font-style: inherit;
+}
+
+/* line 31, ../sass/article.scss */
+.underline {
+  border-bottom: 2px dashed #FC3838;
+  padding-bottom: 3px;
+}
+
+/* line 36, ../sass/article.scss */
+.red {
+  color: #FC3838;
+}
+
+/* line 40, ../sass/article.scss */
+article ol,
+article ul {
+  margin-left: 35px;
+}
+
+/* line 45, ../sass/article.scss */
+article img {
+  max-width: 100%;
+}
+
+/* line 49, ../sass/article.scss */
+article .block {
+  margin-bottom: 65px;
+  position: relative;
+}
+
+/* line 54, ../sass/article.scss */
+article .block:last-child {
+  margin-bottom: 0;
+}
+
+/* line 58, ../sass/article.scss */
+article .block.image-left img {
+  position: absolute;
+  width: 220px;
+}
+
+/* line 63, ../sass/article.scss */
+article .block.image-left p {
+  padding-left: 230px;
+}
+
+/* line 67, ../sass/article.scss */
+article .block.image-right img {
+  position: absolute;
+  right: 0;
+  width: 220px;
+}
+
+/* line 73, ../sass/article.scss */
+article .block.image-right p {
+  padding-right: 230px;
+}
+
+/* line 77, ../sass/article.scss */
+article .block.two .inner-block {
+  display: inline-block;
+  vertical-align: top;
+  width: 47%;
+}
+
+/* line 83, ../sass/article.scss */
+article .block.two .inner-block:last-child {
+  padding-left: 5%;
+}
+
+/* line 87, ../sass/article.scss */
+article .block.next-link {
+  color: red;
+  font-size: 20pt;
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* line 94, ../sass/article.scss */
+article .block .info-block {
+  font-family: Futura, Arial;
+  font-size: 21px;
+  font-weight: normal;
+  letter-spacing: .1em;
+  line-height: 1.6;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+/* line 104, ../sass/article.scss */
+article .block .info-block img {
+  margin-top: 15px;
+  width: 150px;
+}
+
+/* line 109, ../sass/article.scss */
+.partition {
+  color: #FC3838;
+  font-size: 40px;
+  font-weight: lighter;
+  margin: -40px 0 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  /* line 119, ../sass/article.scss */
+  article .title {
+    margin: 20px 0 25px;
+  }
+
+  /* line 123, ../sass/article.scss */
+  article .block {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  /* line 128, ../sass/article.scss */
+  article .block p {
+    text-align: left;
+  }
+
+  /* line 132, ../sass/article.scss */
+  article .block.image-left img,
+  article .block.image-right img {
+    position: initial;
+    right: initial;
+  }
+
+  /* line 138, ../sass/article.scss */
+  article .block.image-left p,
+  article .block.image-right p {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* line 144, ../sass/article.scss */
+  article .block img.remove-when-screen-size-small {
+    display: none;
+  }
+
+  /* line 148, ../sass/article.scss */
+  article .block.two .inner-block {
+    display: block;
+    vertical-align: initial;
+    width: 100%;
+  }
+
+  /* line 154, ../sass/article.scss */
+  article .block.two .inner-block:first-child {
+    margin-right: 9%;
+  }
+
+  /* line 158, ../sass/article.scss */
+  article .block.two .inner-block:last-child {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 164, ../sass/article.scss */
+  article .title {
+    margin: 15px 0;
+  }
+}
+/* line 4, ../sass/matrix.scss */
 .matrix-frame {
   min-height: 400px;
   position: relative;
 }
 
-/* line 8, ../sass/matrix.scss */
+/* line 9, ../sass/matrix.scss */
 .cross {
   position: absolute;
   /* :before is for the horizontal bar */
   /* :after is for the verfical bar */
 }
-/* line 11, ../sass/matrix.scss */
+/* line 12, ../sass/matrix.scss */
 .cross:before {
   background-color: #FC3838;
   content: "";
@@ -19,7 +212,7 @@
   top: 17px;
   width: 120px;
 }
-/* line 21, ../sass/matrix.scss */
+/* line 22, ../sass/matrix.scss */
 .cross:after {
   background-color: #FC3838;
   content: "";
@@ -28,158 +221,158 @@
   width: 2px;
 }
 @media screen and (max-width: 756px) {
-  /* line 30, ../sass/matrix.scss */
+  /* line 31, ../sass/matrix.scss */
   .cross:before {
     width: 34px;
   }
-  /* line 34, ../sass/matrix.scss */
+  /* line 35, ../sass/matrix.scss */
   .cross:after {
     height: 34px;
   }
 }
 
-/* line 41, ../sass/matrix.scss */
+/* line 42, ../sass/matrix.scss */
 .cross.left {
   left: 0;
 }
 
-/* line 45, ../sass/matrix.scss */
+/* line 46, ../sass/matrix.scss */
 .cross.left:after {
   left: 17px;
 }
 
-/* line 49, ../sass/matrix.scss */
+/* line 50, ../sass/matrix.scss */
 .cross.right {
   right: 120px;
 }
 @media screen and (max-width: 756px) {
-  /* line 49, ../sass/matrix.scss */
+  /* line 50, ../sass/matrix.scss */
   .cross.right {
     right: 34px;
   }
 }
 
-/* line 56, ../sass/matrix.scss */
+/* line 57, ../sass/matrix.scss */
 .cross.right:after {
   left: 101px;
 }
 @media screen and (max-width: 756px) {
-  /* line 56, ../sass/matrix.scss */
+  /* line 57, ../sass/matrix.scss */
   .cross.right:after {
     left: 15px;
   }
 }
 
-/* line 63, ../sass/matrix.scss */
+/* line 64, ../sass/matrix.scss */
 .cross.top {
   top: 0;
 }
 
-/* line 67, ../sass/matrix.scss */
+/* line 68, ../sass/matrix.scss */
 .cross.bottom {
   bottom: 0;
 }
 
-/* line 73, ../sass/matrix.scss */
+/* line 74, ../sass/matrix.scss */
 .matrix-frame.bangkok .cross:after,
 .matrix-frame.bangkok .cross:before {
   background-color: #FF6D00;
 }
 
-/* line 73, ../sass/matrix.scss */
+/* line 74, ../sass/matrix.scss */
 .matrix-frame.barcelona .cross:after,
 .matrix-frame.barcelona .cross:before {
   background-color: #AC0D19;
 }
 
-/* line 73, ../sass/matrix.scss */
+/* line 74, ../sass/matrix.scss */
 .matrix-frame.istanbul .cross:after,
 .matrix-frame.istanbul .cross:before {
   background-color: #A3860C;
 }
 
-/* line 73, ../sass/matrix.scss */
+/* line 74, ../sass/matrix.scss */
 .matrix-frame.london .cross:after,
 .matrix-frame.london .cross:before {
   background-color: #08B29A;
 }
 
-/* line 73, ../sass/matrix.scss */
+/* line 74, ../sass/matrix.scss */
 .matrix-frame.melbourne .cross:after,
 .matrix-frame.melbourne .cross:before {
   background-color: #22ADF2;
 }
 
-/* line 73, ../sass/matrix.scss */
+/* line 74, ../sass/matrix.scss */
 .matrix-frame.munich .cross:after,
 .matrix-frame.munich .cross:before {
   background-color: #F49F08;
 }
 
-/* line 73, ../sass/matrix.scss */
+/* line 74, ../sass/matrix.scss */
 .matrix-frame.newyork .cross:after,
 .matrix-frame.newyork .cross:before {
   background-color: #82A81A;
 }
 
-/* line 73, ../sass/matrix.scss */
+/* line 74, ../sass/matrix.scss */
 .matrix-frame.paris .cross:after,
 .matrix-frame.paris .cross:before {
   background-color: #F93EA5;
 }
 
-/* line 73, ../sass/matrix.scss */
+/* line 74, ../sass/matrix.scss */
 .matrix-frame.riodejaneiro .cross:after,
 .matrix-frame.riodejaneiro .cross:before {
   background-color: #457012;
 }
 
-/* line 73, ../sass/matrix.scss */
+/* line 74, ../sass/matrix.scss */
 .matrix-frame.sanfrancisco .cross:after,
 .matrix-frame.sanfrancisco .cross:before {
   background-color: #7436C6;
 }
 
-/* line 73, ../sass/matrix.scss */
+/* line 74, ../sass/matrix.scss */
 .matrix-frame.stockholm .cross:after,
 .matrix-frame.stockholm .cross:before {
   background-color: #1D3C7F;
 }
 
-/* line 73, ../sass/matrix.scss */
+/* line 74, ../sass/matrix.scss */
 .matrix-frame.tokyo .cross:after,
 .matrix-frame.tokyo .cross:before {
   background-color: #565656;
 }
 
-/* line 73, ../sass/matrix.scss */
+/* line 74, ../sass/matrix.scss */
 .matrix-frame.toronto .cross:after,
 .matrix-frame.toronto .cross:before {
   background-color: #6B3E0D;
 }
 
-/* line 80, ../sass/matrix.scss */
+/* line 81, ../sass/matrix.scss */
 .cityxproject {
   position: absolute;
   text-align: center;
   top: -43px;
   width: 100%;
 }
-/* line 87, ../sass/matrix.scss */
+/* line 88, ../sass/matrix.scss */
 .cityxproject .icon-block {
   display: inline-block;
 }
-/* line 91, ../sass/matrix.scss */
+/* line 92, ../sass/matrix.scss */
 .cityxproject .icon-block .icon {
   width: 100px;
 }
-/* line 94, ../sass/matrix.scss */
+/* line 95, ../sass/matrix.scss */
 .cityxproject .icon-block .label {
   color: #4E4E4E;
   font-family: 'Futura', Arial;
   text-align: center;
 }
-/* line 100, ../sass/matrix.scss */
+/* line 101, ../sass/matrix.scss */
 .cityxproject .x {
   font-size: 40px;
   margin: 0 10px;
@@ -187,318 +380,402 @@
   top: -40px;
 }
 @media screen and (max-width: 756px) {
-  /* line 108, ../sass/matrix.scss */
+  /* line 109, ../sass/matrix.scss */
   .cityxproject {
     top: -29px;
   }
-  /* line 111, ../sass/matrix.scss */
+  /* line 112, ../sass/matrix.scss */
   .cityxproject .icon-block .icon {
     width: 75px;
   }
-  /* line 114, ../sass/matrix.scss */
+  /* line 115, ../sass/matrix.scss */
   .cityxproject .x {
     font-size: 25px;
   }
 }
+@media screen and (max-width: 756px) {
+  /* line 120, ../sass/matrix.scss */
+  .cityxproject {
+    top: -16px;
+  }
+  /* line 124, ../sass/matrix.scss */
+  .cityxproject .icon-block .icon {
+    width: 45px;
+  }
+  /* line 127, ../sass/matrix.scss */
+  .cityxproject .icon-block .label {
+    font-size: 12px;
+  }
+  /* line 131, ../sass/matrix.scss */
+  .cityxproject .x {
+    top: -13px;
+  }
+}
 
-/* line 121, ../sass/matrix.scss */
+/* line 138, ../sass/matrix.scss */
 .matrix-frame.bangkok .cityxproject .x {
   color: #FF6D00;
 }
 
-/* line 121, ../sass/matrix.scss */
+/* line 138, ../sass/matrix.scss */
 .matrix-frame.barcelona .cityxproject .x {
   color: #AC0D19;
 }
 
-/* line 121, ../sass/matrix.scss */
+/* line 138, ../sass/matrix.scss */
 .matrix-frame.istanbul .cityxproject .x {
   color: #A3860C;
 }
 
-/* line 121, ../sass/matrix.scss */
+/* line 138, ../sass/matrix.scss */
 .matrix-frame.london .cityxproject .x {
   color: #08B29A;
 }
 
-/* line 121, ../sass/matrix.scss */
+/* line 138, ../sass/matrix.scss */
 .matrix-frame.melbourne .cityxproject .x {
   color: #22ADF2;
 }
 
-/* line 121, ../sass/matrix.scss */
+/* line 138, ../sass/matrix.scss */
 .matrix-frame.munich .cityxproject .x {
   color: #F49F08;
 }
 
-/* line 121, ../sass/matrix.scss */
+/* line 138, ../sass/matrix.scss */
 .matrix-frame.newyork .cityxproject .x {
   color: #82A81A;
 }
 
-/* line 121, ../sass/matrix.scss */
+/* line 138, ../sass/matrix.scss */
 .matrix-frame.paris .cityxproject .x {
   color: #F93EA5;
 }
 
-/* line 121, ../sass/matrix.scss */
+/* line 138, ../sass/matrix.scss */
 .matrix-frame.riodejaneiro .cityxproject .x {
   color: #457012;
 }
 
-/* line 121, ../sass/matrix.scss */
+/* line 138, ../sass/matrix.scss */
 .matrix-frame.sanfrancisco .cityxproject .x {
   color: #7436C6;
 }
 
-/* line 121, ../sass/matrix.scss */
+/* line 138, ../sass/matrix.scss */
 .matrix-frame.stockholm .cityxproject .x {
   color: #1D3C7F;
 }
 
-/* line 121, ../sass/matrix.scss */
+/* line 138, ../sass/matrix.scss */
 .matrix-frame.tokyo .cityxproject .x {
   color: #565656;
 }
 
-/* line 121, ../sass/matrix.scss */
+/* line 138, ../sass/matrix.scss */
 .matrix-frame.toronto .cityxproject .x {
   color: #6B3E0D;
 }
 
-/* line 126, ../sass/matrix.scss */
+/* line 143, ../sass/matrix.scss */
 .arrows {
   bottom: -50px;
   position: absolute;
   text-align: center;
   width: 100%;
 }
-/* line 133, ../sass/matrix.scss */
+/* line 150, ../sass/matrix.scss */
 .arrows .arrow {
   display: inline-block;
   font-size: 35px;
   margin: 0 10px;
 }
-/* line 139, ../sass/matrix.scss */
+/* line 156, ../sass/matrix.scss */
 .arrows .arrow.bangkok {
   color: #FF6D00;
 }
-/* line 139, ../sass/matrix.scss */
+/* line 156, ../sass/matrix.scss */
 .arrows .arrow.barcelona {
   color: #AC0D19;
 }
-/* line 139, ../sass/matrix.scss */
+/* line 156, ../sass/matrix.scss */
 .arrows .arrow.istanbul {
   color: #A3860C;
 }
-/* line 139, ../sass/matrix.scss */
+/* line 156, ../sass/matrix.scss */
 .arrows .arrow.london {
   color: #08B29A;
 }
-/* line 139, ../sass/matrix.scss */
+/* line 156, ../sass/matrix.scss */
 .arrows .arrow.melbourne {
   color: #22ADF2;
 }
-/* line 139, ../sass/matrix.scss */
+/* line 156, ../sass/matrix.scss */
 .arrows .arrow.munich {
   color: #F49F08;
 }
-/* line 139, ../sass/matrix.scss */
+/* line 156, ../sass/matrix.scss */
 .arrows .arrow.newyork {
   color: #82A81A;
 }
-/* line 139, ../sass/matrix.scss */
+/* line 156, ../sass/matrix.scss */
 .arrows .arrow.paris {
   color: #F93EA5;
 }
-/* line 139, ../sass/matrix.scss */
+/* line 156, ../sass/matrix.scss */
 .arrows .arrow.riodejaneiro {
   color: #457012;
 }
-/* line 139, ../sass/matrix.scss */
+/* line 156, ../sass/matrix.scss */
 .arrows .arrow.sanfrancisco {
   color: #7436C6;
 }
-/* line 139, ../sass/matrix.scss */
+/* line 156, ../sass/matrix.scss */
 .arrows .arrow.stockholm {
   color: #1D3C7F;
 }
-/* line 139, ../sass/matrix.scss */
+/* line 156, ../sass/matrix.scss */
 .arrows .arrow.tokyo {
   color: #565656;
 }
-/* line 139, ../sass/matrix.scss */
+/* line 156, ../sass/matrix.scss */
 .arrows .arrow.toronto {
   color: #6B3E0D;
 }
 
-/* line 146, ../sass/matrix.scss */
+/* line 163, ../sass/matrix.scss */
 .matrix-body {
-  padding: 100px 50px;
+  padding: 100px 50px 50px;
 }
-/* line 150, ../sass/matrix.scss */
-.matrix-body .page-selector {
-  padding: 10px;
+/* line 167, ../sass/matrix.scss */
+.matrix-body article {
+  color: #4E4E4E;
+  position: relative;
 }
-/* line 152, ../sass/matrix.scss */
-.matrix-body .page-selector a span {
+/* line 171, ../sass/matrix.scss */
+.matrix-body article img {
+  max-width: 100%;
+}
+/* line 175, ../sass/matrix.scss */
+.matrix-body article .banner {
+  width: 100%;
+}
+/* line 180, ../sass/matrix.scss */
+.matrix-body article.hidden {
+  display: none;
+}
+@media screen and (max-width: 756px) {
+  /* line 185, ../sass/matrix.scss */
+  .matrix-body {
+    padding: 100px 20px 40px;
+  }
+}
+@media screen and (max-width: 400px) {
+  /* line 191, ../sass/matrix.scss */
+  .matrix-body {
+    padding: 52px 10px 30px;
+  }
+}
+
+/* line 199, ../sass/matrix.scss */
+.page-selector a span {
   margin-right: 10px;
 }
-/* line 155, ../sass/matrix.scss */
-.matrix-body .page-selector a span:hover {
+/* line 202, ../sass/matrix.scss */
+.page-selector a span:hover {
   text-decoration: underline;
 }
-/* line 160, ../sass/matrix.scss */
-.matrix-body .page-selector a img.icon {
+/* line 207, ../sass/matrix.scss */
+.page-selector img.icon {
   border-radius: 100px;
-  margin: 5px;
+  margin: 0 5px;
   padding: 2px;
   position: relative;
   transition: .1s;
   width: 75px;
 }
-/* line 168, ../sass/matrix.scss */
-.matrix-body .page-selector a img.icon:hover {
+/* line 215, ../sass/matrix.scss */
+.page-selector img.icon:hover {
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.4);
 }
-/* line 175, ../sass/matrix.scss */
-.matrix-body article {
-  color: #4E4E4E;
-  position: relative;
+/* line 219, ../sass/matrix.scss */
+.page-selector img.icon.selected {
+  background-color: #FC3838;
 }
-/* line 179, ../sass/matrix.scss */
-.matrix-body article img {
-  max-width: 100%;
-}
-/* line 183, ../sass/matrix.scss */
-.matrix-body article .banner {
-  width: 100%;
-}
-/* line 188, ../sass/matrix.scss */
-.matrix-body article.hidden {
-  display: none;
-}
-@media screen and (max-width: 756px) {
-  /* line 193, ../sass/matrix.scss */
-  .matrix-body {
-    padding: 100px 20px;
+@media screen and (max-width: 400px) {
+  /* line 225, ../sass/matrix.scss */
+  .page-selector {
+    padding: 0;
+  }
+  /* line 229, ../sass/matrix.scss */
+  .page-selector img.icon {
+    width: 40px;
   }
 }
 
-/* line 200, ../sass/matrix.scss */
+/* line 236, ../sass/matrix.scss */
 article.musicians .logo {
   max-height: 70px;
 }
-/* line 203, ../sass/matrix.scss */
+/* line 239, ../sass/matrix.scss */
 article.musicians .jacket {
   width: 300px;
 }
 
-/* line 211, ../sass/matrix.scss */
-article.micro_guide .section .title {
+/* line 245, ../sass/matrix.scss */
+article.whats-beauty .block {
+  min-height: 300px;
+}
+/* line 248, ../sass/matrix.scss */
+article.whats-beauty .block img {
+  width: 300px;
+}
+/* line 252, ../sass/matrix.scss */
+article.whats-beauty .block.image-left p {
+  padding-left: 400px;
+}
+/* line 257, ../sass/matrix.scss */
+article.whats-beauty .block.image-right p {
+  padding-right: 400px;
+}
+@media screen and (max-width: 1024px) {
+  /* line 264, ../sass/matrix.scss */
+  article.whats-beauty .block.image-left p,
+  article.whats-beauty .block.image-right p {
+    padding: 0;
+  }
+}
+
+/* line 272, ../sass/matrix.scss */
+article.micro_guide .block {
+  min-height: 550px;
+}
+/* line 275, ../sass/matrix.scss */
+article.micro_guide .block .title {
+  margin: 0 0 15px;
+}
+/* line 279, ../sass/matrix.scss */
+article.micro_guide .block img {
+  width: 400px;
+}
+/* line 283, ../sass/matrix.scss */
+article.micro_guide .block.image-left p {
+  padding-left: 450px;
+}
+/* line 288, ../sass/matrix.scss */
+article.micro_guide .block.image-right p {
+  padding-right: 450px;
+}
+@media screen and (max-width: 1024px) {
+  /* line 295, ../sass/matrix.scss */
+  article.micro_guide .block.image-left p,
+  article.micro_guide .block.image-right p {
+    padding: 0;
+  }
+}
+
+/* line 305, ../sass/matrix.scss */
+article.mcro_guide .section .title {
   color: #FC3838;
   font-size: 20px;
   margin-bottom: 20px;
   text-align: center;
 }
-/* line 218, ../sass/matrix.scss */
-article.micro_guide .section img {
+/* line 312, ../sass/matrix.scss */
+article.mcro_guide .section img {
   box-sizing: border-box;
   border: 5px solid #FC3838;
   position: absolute;
   width: 400px;
 }
-/* line 225, ../sass/matrix.scss */
-article.micro_guide .section .content {
+/* line 319, ../sass/matrix.scss */
+article.mcro_guide .section .content {
   min-height: 550px;
 }
-/* line 228, ../sass/matrix.scss */
-article.micro_guide .section .content li {
+/* line 322, ../sass/matrix.scss */
+article.mcro_guide .section .content li {
   color: #FC3838;
 }
-/* line 231, ../sass/matrix.scss */
-article.micro_guide .section .content li span {
+/* line 325, ../sass/matrix.scss */
+article.mcro_guide .section .content li span {
   color: #4E4E4E;
 }
-/* line 236, ../sass/matrix.scss */
-article.micro_guide .section .content ul ul {
+/* line 330, ../sass/matrix.scss */
+article.mcro_guide .section .content ul ul {
   list-style-position: inside;
 }
-/* line 242, ../sass/matrix.scss */
-article.micro_guide .section.image-left .content {
+/* line 336, ../sass/matrix.scss */
+article.mcro_guide .section.image-left .content {
   margin-left: 50%;
   padding: 30px 0 0 70px;
 }
-/* line 249, ../sass/matrix.scss */
-article.micro_guide .section.image-right img {
+/* line 343, ../sass/matrix.scss */
+article.mcro_guide .section.image-right img {
   right: 0;
 }
-/* line 252, ../sass/matrix.scss */
-article.micro_guide .section.image-right .content {
+/* line 346, ../sass/matrix.scss */
+article.mcro_guide .section.image-right .content {
   margin-right: 50%;
   padding: 30px 70px 0 0;
 }
 @media screen and (max-width: 1024px) {
-  /* line 259, ../sass/matrix.scss */
-  article.micro_guide .section img {
+  /* line 353, ../sass/matrix.scss */
+  article.mcro_guide .section img {
     width: 300px;
   }
-  /* line 262, ../sass/matrix.scss */
-  article.micro_guide .section .content {
+  /* line 356, ../sass/matrix.scss */
+  article.mcro_guide .section .content {
     min-height: 400px;
     padding: 20px 30px;
   }
 }
 @media screen and (max-width: 756px) {
-  /* line 269, ../sass/matrix.scss */
-  article.micro_guide .section {
+  /* line 363, ../sass/matrix.scss */
+  article.mcro_guide .section {
     text-align: center;
   }
-  /* line 272, ../sass/matrix.scss */
-  article.micro_guide .section img {
+  /* line 366, ../sass/matrix.scss */
+  article.mcro_guide .section img {
     position: relative;
     width: 300px;
   }
-  /* line 276, ../sass/matrix.scss */
-  article.micro_guide .section .content {
+  /* line 370, ../sass/matrix.scss */
+  article.mcro_guide .section .content {
     min-height: 0;
     padding: 20px 0;
   }
-  /* line 280, ../sass/matrix.scss */
-  article.micro_guide .section .content ul {
+  /* line 374, ../sass/matrix.scss */
+  article.mcro_guide .section .content ul {
     list-style-position: inside;
   }
-  /* line 285, ../sass/matrix.scss */
-  article.micro_guide .section.image-left .content {
+  /* line 379, ../sass/matrix.scss */
+  article.mcro_guide .section.image-left .content {
     margin-left: 0;
   }
-  /* line 290, ../sass/matrix.scss */
-  article.micro_guide .section.image-right .content {
+  /* line 384, ../sass/matrix.scss */
+  article.mcro_guide .section.image-right .content {
     margin-right: 0;
   }
 }
 
-/* line 300, ../sass/matrix.scss */
-article.whats-beauty .name,
+/* line 393, ../sass/matrix.scss */
 article.twelve-questions .name {
   font-size: 26px;
   font-style: italic;
   font-weight: bold;
 }
-/* line 305, ../sass/matrix.scss */
-article.whats-beauty .photo,
+/* line 398, ../sass/matrix.scss */
 article.twelve-questions .photo {
   padding: 20px;
   text-align: center;
 }
-/* line 308, ../sass/matrix.scss */
-article.whats-beauty .photo img,
+/* line 401, ../sass/matrix.scss */
 article.twelve-questions .photo img {
-  border: 5px solid #FC3838;
+  /*border: 5px solid $WXII_RED;*/
+  border-radius: 2px;
   width: 500px;
 }
-/* line 314, ../sass/matrix.scss */
-article.whats-beauty .number,
+/* line 408, ../sass/matrix.scss */
 article.twelve-questions .number {
   font-family: Futura, Arial;
   font-size: 30px;

@@ -9,31 +9,40 @@ body {
   font-family: YuGothic, Arial;
 }
 
+/* Currently this is not used.
+
 @font-face {
   font-family: 'Futura Oblique';
   src: url('http://worldintwelve.com/fonts/futura_oblique.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
+*/
 
 a {
   color: #FC3838;
   text-decoration: none;
-}
 
-a:visited {
-  color: #FC3838;
+  &:visited {
+    color: #FC3838;
+  }
 }
 
 #wrapper {
   margin: 0 auto;
   width: 1015px;
-}
 
-@media screen and (max-width: 1024px) {
-  #wrapper {
-    padding: 0 5%;
-    width: initial;
+  @media screen and (max-width: 1024px) {
+    & {
+      padding: 0 5%;
+      width: initial;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    & {
+      padding: 0 10px;
+    }
   }
 }
 
@@ -112,34 +121,60 @@ a:visited {
   width: 200px;
 }
 
+/* Top bar displayed when the sceen size is small. */
 #topbar {
   display: none;
   padding: 20px 0 10px;
   position: relative;
+
+  .logo {
+    background-image: url(/images/logo.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    height: 84px;
+    width: 110px;
+  }
+
+  #toggle {
+    background-image: url(http://worldintwelve.com/images/menu.png);
+    background-size: 100%;
+    display: inline-block;
+    height: 50px;
+    margin-top: 14px;
+    position: absolute;
+    right: 0;
+    width: 50px;
+    z-index: 99999;
+  }
+
+  @media screen and (max-width: 1024px) {
+    display: block;
+    padding-top: 10px;
+  }
+
+  @media screen and (max-width: 400px) {
+    & {
+      padding-bottom: 5px;
+      padding-top: 5px;
+    }
+
+    .logo {
+      height: 60px;
+      width: 60px;
+    }
+
+    #toggle {
+      height: 40px;
+      margin-top: 8px;
+      width: 40px;
+    }
+  }
 }
 
-#topbar .logo {
-  background-image: url(/images/logo.png);
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-size: 110px;
-  display: inline-block;
-  height: 84px;
-  width: 110px;
-}
 
 
-#toggle {
-  background-image: url(http://worldintwelve.com/images/menu.png);
-  background-size: 50px;
-  display: inline-block;
-  height: 50px;
-  margin-top: 14px;
-  position: absolute;
-  right: 0;
-  width: 50px;
-  z-index: 99999;
-}
 
 #breadcrumb {
   margin-bottom: 15px;
@@ -209,10 +244,6 @@ a:visited {
     padding-left: 52px;
     background-position: 0;
     width: 100%;
-  }
-
-  #topbar {
-    display: block;
   }
 
   #menu.expanded #navigation {
