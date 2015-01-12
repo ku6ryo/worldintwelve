@@ -286,6 +286,10 @@ PROJECT_MATRIX_META = {
         'id': 'sayaka',
         'label': 'Sayaka Yamaguchi'
       },
+      {
+        'id': 'kamiken',
+        'label': 'Kamiyama Kentaro'
+      },
     ],
     'sanfrancisco': [
       {
