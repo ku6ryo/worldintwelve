@@ -246,6 +246,10 @@ PROJECT_MATRIX_META = {
         'id': 'yuko',
         'label': 'Yuko'
       },
+      {
+        'id': 'saori',
+        'label': 'Saori'
+      },
     ]
   }, 
   'real_dates': {
