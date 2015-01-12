@@ -286,6 +286,12 @@ PROJECT_MATRIX_META = {
         'id': 'sayaka',
         'label': 'Sayaka Yamaguchi'
       },
+    ],
+    'sanfrancisco': [
+      {
+        'id': 'kai',
+        'label': 'Kai Hirota'
+      },
     ]
   }, 
   'bck': {
