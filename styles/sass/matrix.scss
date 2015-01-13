@@ -299,95 +299,6 @@ article.micro_guide {
   }
 }
 
-article.mcro_guide {
-  .section {
-
-    .title {
-      color: $WXII_RED;
-      font-size: 20px;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
-    img {
-      box-sizing: border-box;
-      border: 5px solid $WXII_RED;
-      position: absolute;
-      width: 400px;
-    }
-
-    .content {
-      min-height: 550px;
-
-      li {
-        color: $WXII_RED;
-        
-        span {
-          color: $WXII_GRAY;
-        }
-      }
-
-      ul ul {
-        list-style-position: inside;
-      }
-    }
-    
-    &.image-left {
-      .content {
-        margin-left: 50%;
-        padding: 30px 0 0 70px;
-      }
-    }
-
-    &.image-right {
-      img {
-        right: 0;
-      }
-      .content {
-        margin-right: 50%;
-        padding: 30px 70px 0 0;
-      }
-    }
-
-    @media screen and (max-width: 1024px) {
-      img {
-        width: 300px;
-      }
-      .content {
-        min-height: 400px;
-        padding: 20px 30px;
-      }
-    }
-
-    @media screen and (max-width: 756px) {
-      & {
-        text-align: center;
-      }
-      img {
-        position: relative;
-        width: 300px;
-      }
-      .content {
-        min-height: 0;
-        padding: 20px 0;
-
-        ul {
-          list-style-position: inside;
-        }
-      }
-      &.image-left {
-        .content {
-          margin-left: 0;
-        }
-      }
-      &.image-right {
-        .content {
-          margin-right: 0;
-        }
-      }
-    }
-  }
-}
 
 article.twelve-questions {
   .name {
@@ -404,9 +315,26 @@ article.twelve-questions {
       width: 500px;
     }
   }
+}
 
-  .number {
-    font-family: Futura, Arial;
-    font-size: 30px;
+article.real-dates {
+  .block {
+    .youtube {
+      box-sizing: border-box;
+      display: block;
+      height: 360px;
+      margin: 0 auto;
+      max-width: 100%;
+      width: 640px;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    .block {
+      .youtube {
+        height: 180px;
+        width: 320px;
+      }
+    }
   }
 }

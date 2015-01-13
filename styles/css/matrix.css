@@ -674,109 +674,37 @@ article.micro_guide .block.image-right p {
   }
 }
 
-/* line 305, ../sass/matrix.scss */
-article.mcro_guide .section .title {
-  color: #FC3838;
-  font-size: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-/* line 312, ../sass/matrix.scss */
-article.mcro_guide .section img {
-  box-sizing: border-box;
-  border: 5px solid #FC3838;
-  position: absolute;
-  width: 400px;
-}
-/* line 319, ../sass/matrix.scss */
-article.mcro_guide .section .content {
-  min-height: 550px;
-}
-/* line 322, ../sass/matrix.scss */
-article.mcro_guide .section .content li {
-  color: #FC3838;
-}
-/* line 325, ../sass/matrix.scss */
-article.mcro_guide .section .content li span {
-  color: #4E4E4E;
-}
-/* line 330, ../sass/matrix.scss */
-article.mcro_guide .section .content ul ul {
-  list-style-position: inside;
-}
-/* line 336, ../sass/matrix.scss */
-article.mcro_guide .section.image-left .content {
-  margin-left: 50%;
-  padding: 30px 0 0 70px;
-}
-/* line 343, ../sass/matrix.scss */
-article.mcro_guide .section.image-right img {
-  right: 0;
-}
-/* line 346, ../sass/matrix.scss */
-article.mcro_guide .section.image-right .content {
-  margin-right: 50%;
-  padding: 30px 70px 0 0;
-}
-@media screen and (max-width: 1024px) {
-  /* line 353, ../sass/matrix.scss */
-  article.mcro_guide .section img {
-    width: 300px;
-  }
-  /* line 356, ../sass/matrix.scss */
-  article.mcro_guide .section .content {
-    min-height: 400px;
-    padding: 20px 30px;
-  }
-}
-@media screen and (max-width: 756px) {
-  /* line 363, ../sass/matrix.scss */
-  article.mcro_guide .section {
-    text-align: center;
-  }
-  /* line 366, ../sass/matrix.scss */
-  article.mcro_guide .section img {
-    position: relative;
-    width: 300px;
-  }
-  /* line 370, ../sass/matrix.scss */
-  article.mcro_guide .section .content {
-    min-height: 0;
-    padding: 20px 0;
-  }
-  /* line 374, ../sass/matrix.scss */
-  article.mcro_guide .section .content ul {
-    list-style-position: inside;
-  }
-  /* line 379, ../sass/matrix.scss */
-  article.mcro_guide .section.image-left .content {
-    margin-left: 0;
-  }
-  /* line 384, ../sass/matrix.scss */
-  article.mcro_guide .section.image-right .content {
-    margin-right: 0;
-  }
-}
-
-/* line 393, ../sass/matrix.scss */
+/* line 304, ../sass/matrix.scss */
 article.twelve-questions .name {
   font-size: 26px;
   font-style: italic;
   font-weight: bold;
 }
-/* line 398, ../sass/matrix.scss */
+/* line 309, ../sass/matrix.scss */
 article.twelve-questions .photo {
   padding: 20px;
   text-align: center;
 }
-/* line 401, ../sass/matrix.scss */
+/* line 312, ../sass/matrix.scss */
 article.twelve-questions .photo img {
   /*border: 5px solid $WXII_RED;*/
   border-radius: 2px;
   width: 500px;
 }
-/* line 408, ../sass/matrix.scss */
-article.twelve-questions .number {
-  font-family: Futura, Arial;
-  font-size: 30px;
+
+/* line 322, ../sass/matrix.scss */
+article.real-dates .block .youtube {
+  box-sizing: border-box;
+  display: block;
+  height: 360px;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 640px;
+}
+@media screen and (max-width: 640px) {
+  /* line 334, ../sass/matrix.scss */
+  article.real-dates .block .youtube {
+    height: 180px;
+    width: 320px;
+  }
 }

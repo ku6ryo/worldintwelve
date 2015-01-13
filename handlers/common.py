@@ -253,6 +253,12 @@ PROJECT_MATRIX_META = {
     ]
   }, 
   'real_dates': {
+    'tokyo': [
+      {
+        'id': 'madoka_roch',
+        'label': 'Madoka & Roch'
+      },
+    ],
   }, 
   'family_recipes': {
   }, 
