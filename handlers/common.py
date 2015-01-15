@@ -306,6 +306,10 @@ PROJECT_MATRIX_META = {
         'id': 'kai',
         'label': 'Kai Hirota'
       },
+       {
+        'id': 'stong',
+        'label': 'Stephanie Tong'
+      },
     ]
   }, 
   'bck': {
