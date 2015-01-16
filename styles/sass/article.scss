@@ -106,6 +106,15 @@ article .block .info-block img {
   width: 150px;
 }
 
+article .block {
+  &.image-center {
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+
 .partition {
   color: #FC3838;
   font-size: 40px;

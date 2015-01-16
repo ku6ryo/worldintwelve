@@ -123,7 +123,13 @@ article .block .info-block img {
   width: 150px;
 }
 
-/* line 109, ../sass/article.scss */
+/* line 111, ../sass/article.scss */
+article .block.image-center img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 118, ../sass/article.scss */
 .partition {
   color: #FC3838;
   font-size: 40px;
@@ -133,60 +139,60 @@ article .block .info-block img {
 }
 
 @media screen and (max-width: 1024px) {
-  /* line 119, ../sass/article.scss */
+  /* line 128, ../sass/article.scss */
   article .title {
     margin: 20px 0 25px;
   }
 
-  /* line 123, ../sass/article.scss */
+  /* line 132, ../sass/article.scss */
   article .block {
     margin-bottom: 50px;
     text-align: center;
   }
 
-  /* line 128, ../sass/article.scss */
+  /* line 137, ../sass/article.scss */
   article .block p {
     text-align: left;
   }
 
-  /* line 132, ../sass/article.scss */
+  /* line 141, ../sass/article.scss */
   article .block.image-left img,
   article .block.image-right img {
     position: initial;
     right: initial;
   }
 
-  /* line 138, ../sass/article.scss */
+  /* line 147, ../sass/article.scss */
   article .block.image-left p,
   article .block.image-right p {
     padding-left: 0;
     padding-right: 0;
   }
 
-  /* line 144, ../sass/article.scss */
+  /* line 153, ../sass/article.scss */
   article .block img.remove-when-screen-size-small {
     display: none;
   }
 
-  /* line 148, ../sass/article.scss */
+  /* line 157, ../sass/article.scss */
   article .block.two .inner-block {
     display: block;
     vertical-align: initial;
     width: 100%;
   }
 
-  /* line 154, ../sass/article.scss */
+  /* line 163, ../sass/article.scss */
   article .block.two .inner-block:first-child {
     margin-right: 9%;
   }
 
-  /* line 158, ../sass/article.scss */
+  /* line 167, ../sass/article.scss */
   article .block.two .inner-block:last-child {
     padding-left: 0;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 164, ../sass/article.scss */
+  /* line 173, ../sass/article.scss */
   article .title {
     margin: 15px 0;
   }

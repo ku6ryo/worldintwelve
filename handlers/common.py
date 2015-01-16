@@ -492,7 +492,6 @@ def GetTemplate(path):
 
 
 def existTemplate(path):
-  print JINJA_ENVIRONMENT.list_templates()
   return path in JINJA_ENVIRONMENT.list_templates()
 
 
