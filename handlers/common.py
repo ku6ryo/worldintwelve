@@ -300,6 +300,10 @@ PROJECT_MATRIX_META = {
         'id': 'kamiken',
         'label': 'Kamiyama Kentaro'
       },
+      {
+        'id': 'karly',
+        'label': 'Kaori Yagi'
+      },
     ],
     'sanfrancisco': [
       {
