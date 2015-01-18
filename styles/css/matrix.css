@@ -24,81 +24,97 @@ article h1 {
 }
 
 /* line 25, ../sass/article.scss */
+article h2 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+/* line 30, ../sass/article.scss */
 article em {
   font-family: inherit;
   font-size: 21px;
   font-style: inherit;
 }
 
-/* line 31, ../sass/article.scss */
+/* line 36, ../sass/article.scss */
 .underline {
   border-bottom: 2px dashed #FC3838;
   padding-bottom: 3px;
 }
 
-/* line 36, ../sass/article.scss */
+/* line 41, ../sass/article.scss */
 .red {
   color: #FC3838;
 }
 
-/* line 40, ../sass/article.scss */
+/* line 45, ../sass/article.scss */
+.center {
+  text-align: center;
+}
+
+/* line 49, ../sass/article.scss */
 article ol,
 article ul {
   margin-left: 35px;
 }
 
-/* line 45, ../sass/article.scss */
+/* line 54, ../sass/article.scss */
 article img {
   max-width: 100%;
 }
 
-/* line 49, ../sass/article.scss */
+/* line 58, ../sass/article.scss */
 article .block {
   margin-bottom: 65px;
   position: relative;
 }
 
-/* line 54, ../sass/article.scss */
+/* line 63, ../sass/article.scss */
 article .block:last-child {
   margin-bottom: 0;
 }
 
-/* line 58, ../sass/article.scss */
+/* line 68, ../sass/article.scss */
+article .block.image-left {
+  min-height: 220px;
+}
+/* line 71, ../sass/article.scss */
 article .block.image-left img {
   position: absolute;
   width: 220px;
 }
-
-/* line 63, ../sass/article.scss */
+/* line 75, ../sass/article.scss */
 article .block.image-left p {
   padding-left: 230px;
 }
-
-/* line 67, ../sass/article.scss */
+/* line 79, ../sass/article.scss */
+article .block.image-right {
+  min-height: 220px;
+}
+/* line 82, ../sass/article.scss */
 article .block.image-right img {
   position: absolute;
   right: 0;
   width: 220px;
 }
-
-/* line 73, ../sass/article.scss */
+/* line 87, ../sass/article.scss */
 article .block.image-right p {
   padding-right: 230px;
 }
 
-/* line 77, ../sass/article.scss */
+/* line 93, ../sass/article.scss */
 article .block.two .inner-block {
   display: inline-block;
   vertical-align: top;
   width: 47%;
 }
 
-/* line 83, ../sass/article.scss */
+/* line 99, ../sass/article.scss */
 article .block.two .inner-block:last-child {
   padding-left: 5%;
 }
 
-/* line 87, ../sass/article.scss */
+/* line 103, ../sass/article.scss */
 article .block.next-link {
   color: red;
   font-size: 20pt;
@@ -106,7 +122,7 @@ article .block.next-link {
   text-decoration: underline;
 }
 
-/* line 94, ../sass/article.scss */
+/* line 110, ../sass/article.scss */
 article .block .info-block {
   font-family: Futura, Arial;
   font-size: 21px;
@@ -117,19 +133,19 @@ article .block .info-block {
   text-align: center;
 }
 
-/* line 104, ../sass/article.scss */
+/* line 120, ../sass/article.scss */
 article .block .info-block img {
   margin-top: 15px;
   width: 150px;
 }
 
-/* line 111, ../sass/article.scss */
+/* line 127, ../sass/article.scss */
 article .block.image-center img {
   display: block;
   margin: 0 auto;
 }
 
-/* line 118, ../sass/article.scss */
+/* line 134, ../sass/article.scss */
 .partition {
   color: #FC3838;
   font-size: 40px;
@@ -139,60 +155,60 @@ article .block.image-center img {
 }
 
 @media screen and (max-width: 1024px) {
-  /* line 128, ../sass/article.scss */
+  /* line 144, ../sass/article.scss */
   article .title {
     margin: 20px 0 25px;
   }
 
-  /* line 132, ../sass/article.scss */
+  /* line 148, ../sass/article.scss */
   article .block {
     margin-bottom: 50px;
     text-align: center;
   }
 
-  /* line 137, ../sass/article.scss */
+  /* line 153, ../sass/article.scss */
   article .block p {
     text-align: left;
   }
 
-  /* line 141, ../sass/article.scss */
+  /* line 157, ../sass/article.scss */
   article .block.image-left img,
   article .block.image-right img {
     position: initial;
     right: initial;
   }
 
-  /* line 147, ../sass/article.scss */
+  /* line 163, ../sass/article.scss */
   article .block.image-left p,
   article .block.image-right p {
     padding-left: 0;
     padding-right: 0;
   }
 
-  /* line 153, ../sass/article.scss */
+  /* line 169, ../sass/article.scss */
   article .block img.remove-when-screen-size-small {
     display: none;
   }
 
-  /* line 157, ../sass/article.scss */
+  /* line 173, ../sass/article.scss */
   article .block.two .inner-block {
     display: block;
     vertical-align: initial;
     width: 100%;
   }
 
-  /* line 163, ../sass/article.scss */
+  /* line 179, ../sass/article.scss */
   article .block.two .inner-block:first-child {
     margin-right: 9%;
   }
 
-  /* line 167, ../sass/article.scss */
+  /* line 183, ../sass/article.scss */
   article .block.two .inner-block:last-child {
     padding-left: 0;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 173, ../sass/article.scss */
+  /* line 189, ../sass/article.scss */
   article .title {
     margin: 15px 0;
   }
@@ -652,53 +668,89 @@ article.whats-beauty .block.image-right p {
   }
 }
 
-/* line 272, ../sass/matrix.scss */
+/* line 275, ../sass/matrix.scss */
+article.treasure_box .block.image-center img {
+  width: 500px;
+}
+/* line 280, ../sass/matrix.scss */
+article.treasure_box .block.image-left {
+  min-height: 300px;
+}
+/* line 283, ../sass/matrix.scss */
+article.treasure_box .block.image-left img {
+  width: 300px;
+}
+/* line 286, ../sass/matrix.scss */
+article.treasure_box .block.image-left p {
+  padding-left: 400px;
+}
+/* line 290, ../sass/matrix.scss */
+article.treasure_box .block.image-right {
+  min-height: 300px;
+}
+/* line 293, ../sass/matrix.scss */
+article.treasure_box .block.image-right img {
+  width: 300px;
+}
+/* line 296, ../sass/matrix.scss */
+article.treasure_box .block.image-right p {
+  padding-right: 400px;
+}
+@media screen and (max-width: 1024px) {
+  /* line 303, ../sass/matrix.scss */
+  article.treasure_box .block.image-left p,
+  article.treasure_box .block.image-right p {
+    padding: 0;
+  }
+}
+
+/* line 311, ../sass/matrix.scss */
 article.micro_guide .block {
   min-height: 550px;
 }
-/* line 275, ../sass/matrix.scss */
+/* line 314, ../sass/matrix.scss */
 article.micro_guide .block .title {
   margin: 0 0 15px;
 }
-/* line 279, ../sass/matrix.scss */
+/* line 318, ../sass/matrix.scss */
 article.micro_guide .block img {
   width: 400px;
 }
-/* line 283, ../sass/matrix.scss */
+/* line 322, ../sass/matrix.scss */
 article.micro_guide .block.image-left p {
   padding-left: 450px;
 }
-/* line 288, ../sass/matrix.scss */
+/* line 327, ../sass/matrix.scss */
 article.micro_guide .block.image-right p {
   padding-right: 450px;
 }
 @media screen and (max-width: 1024px) {
-  /* line 295, ../sass/matrix.scss */
+  /* line 334, ../sass/matrix.scss */
   article.micro_guide .block.image-left p,
   article.micro_guide .block.image-right p {
     padding: 0;
   }
 }
 
-/* line 304, ../sass/matrix.scss */
+/* line 343, ../sass/matrix.scss */
 article.twelve-questions .name {
   font-size: 26px;
   font-style: italic;
   font-weight: bold;
 }
-/* line 309, ../sass/matrix.scss */
+/* line 348, ../sass/matrix.scss */
 article.twelve-questions .photo {
   padding: 20px;
   text-align: center;
 }
-/* line 312, ../sass/matrix.scss */
+/* line 351, ../sass/matrix.scss */
 article.twelve-questions .photo img {
   /*border: 5px solid $WXII_RED;*/
   border-radius: 2px;
   width: 500px;
 }
 
-/* line 322, ../sass/matrix.scss */
+/* line 361, ../sass/matrix.scss */
 article.real-dates .block .youtube {
   box-sizing: border-box;
   display: block;
@@ -708,7 +760,7 @@ article.real-dates .block .youtube {
   width: 640px;
 }
 @media screen and (max-width: 640px) {
-  /* line 334, ../sass/matrix.scss */
+  /* line 373, ../sass/matrix.scss */
   article.real-dates .block .youtube {
     height: 180px;
     width: 320px;

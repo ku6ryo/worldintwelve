@@ -268,6 +268,45 @@ article.whats-beauty {
   }
 }
 
+article.treasure_box {
+  .block {
+
+    &.image-center {
+      img {
+        width: 500px;
+      }
+    }
+
+    &.image-left {
+      min-height: 300px;
+
+      img {
+        width: 300px;
+      }
+      p {
+        padding-left: 400px;
+      }
+    }
+    &.image-right {
+      min-height: 300px;
+
+      img {
+        width: 300px;
+      }
+      p {
+        padding-right: 400px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .block.image-left p,
+    .block.image-right p {
+      padding: 0;
+    }
+  }
+}
+
 article.micro_guide {
   .block {
     min-height: 550px;

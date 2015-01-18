@@ -236,6 +236,7 @@ PROJECT_MATRIX_META = {
   'soundscape': {
   },
   'treasure_box': {
+    'is_multiple_pages': False
   },
   'twelve_twelve': {
   }, 
