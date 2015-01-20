@@ -251,6 +251,10 @@ PROJECT_MATRIX_META = {
         'id': 'saori',
         'label': 'Saori'
       },
+      {
+        'id': 'nana',
+        'label': 'Nana'
+      },
     ]
   }, 
   'real_dates': {
