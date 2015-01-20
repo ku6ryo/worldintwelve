@@ -274,6 +274,22 @@ PROJECT_MATRIX_META = {
         'id': 'meetup',
         'label': 'Meet Up'
       },
+      {
+        'id': 'slang',
+        'label': 'Slang'
+      },
+      {
+        'id': 'ingredients',
+        'label': 'Ingredients'
+      },
+      {
+        'id': 'proverbs',
+        'label': 'Proverbs'
+      },
+      {
+        'id': 'places',
+        'label': 'Places'
+      },
     ]
   }, 
   'misc': {
