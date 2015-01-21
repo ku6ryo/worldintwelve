@@ -73,6 +73,11 @@ class TacHandler(webapp2.RequestHandler):
     self.response.write(common.WrapWithBaseTemplate(sponsors_body, 'en', ['tac']))
 
 
+class TestPageHandler(webapp2.RequestHandler):
+  def get(self):
+    self.response.write(common.GetTemplate('test/ad.html').render())
+
+
 app = webapp2.WSGIApplication([
     # English is the default.
     webapp2.Route('/', webapp2.RedirectHandler, defaults={
@@ -83,4 +88,5 @@ app = webapp2.WSGIApplication([
     ('/(en|ja)/test_city_tokyo', TestCityHandler),
     ('/tac', TacHandler),
     ('/(en|ja)/coming_soon', ComingSoonHandler),
+    ('/ad', TestPageHandler),
 ], debug=True)

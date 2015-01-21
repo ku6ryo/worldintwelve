@@ -46,6 +46,10 @@ handlers:
 - url: /(en|ja)/coming_soon
   script: handlers.main.app
 
+# For Ad test
+- url: /ad
+  script: handlers.main.app
+
 # Static directories.
 - url: /images
   static_dir: images
