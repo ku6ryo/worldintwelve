@@ -335,6 +335,10 @@ PROJECT_MATRIX_META = {
         'id': 'stong',
         'label': 'Stephanie Tong'
       },
+       {
+        'id': 'geoff',
+        'label': 'Geoff Taylor'
+      },
     ]
   }, 
   'bck': {
