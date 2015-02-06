@@ -4,6 +4,7 @@
 # Copyright 2014 The World in Twelve.
 
 import common
+import datetime
 import jinja2
 import os
 import urllib
@@ -12,12 +13,27 @@ import webapp2
 
 class TopHandler(webapp2.RequestHandler):
   def get(self, lang):
+    now = datetime.datetime.now()
+    date20150101 = datetime.datetime.fromtimestamp(1420090000)
+    diff = (now.year * 12 + now.month) - (date20150101.year * 12 + date20150101.month)
+    print now, date20150101
+    if diff > 11:
+      diff = 11
+
+    if lang == 'en':
+      label_key = 'label'
+    else:
+      label_key = 'label_ja'
+
+    current_city_name = common.CITY_METAS[common.CITIES[diff]][label_key]
+
     top_template = common.GetTemplate('top.html')
     cities = ['tokyo']
     cities.extend(common.CITIES)
     body = top_template.render({
       'cities': [common.CITY_METAS[c] for c in cities],
-      'lang': lang
+      'lang': lang,
+      'current_city_name': current_city_name
     })
     self.response.write(common.WrapWithBaseTemplate(body, lang, []))
 

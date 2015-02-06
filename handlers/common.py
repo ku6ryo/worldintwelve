@@ -47,6 +47,7 @@ CITY_METAS = {
   'tokyo': {
     'id': 'tokyo',
     'label': 'Tokyo',
+    'label_ja': u'東京',
     'population': '9,071,577',
     'area': '622.99',
     'urban_population': '37,239,000',
@@ -59,6 +60,7 @@ CITY_METAS = {
   'bangkok': {
     'id': 'bangkok',
     'label': 'Bangkok',
+    'label_ja': u'バンコク',
     'population': '8,280,925',
     'area': '1,568.737',
     'urban_population': '14,565,547',
@@ -71,6 +73,7 @@ CITY_METAS = {
   'barcelona': {
     'id': 'barcelona',
     'label': 'Barcelona',
+    'label_ja': u'バルセロナ',
     'population': '1,620,943',
     'area': '101.9',
     'urban_population': '5,375,774',
@@ -83,6 +86,7 @@ CITY_METAS = {
   'istanbul': {
     'id': 'istanbul',
     'label': 'Istanbul',
+    'label_ja': u'イスタンブール',
     'population': '14,160,467',
     'area': '5,343',
     'urban_population': '14,160,467',
@@ -95,6 +99,7 @@ CITY_METAS = {
   'london': {
     'id': 'london',
     'label': 'London',
+    'label_ja': u'ロンドン',
     'population': '8,416,535',
     'area': '1,572.15',
     'urban_population': '9,576,000',
@@ -107,6 +112,7 @@ CITY_METAS = {
   'melbourne': {
     'id': 'melbourne',
     'label': 'Melbourne',
+    'label_ja': u'メルボルン',
     'population': '116,431',
     'area': '33.7',
     'urban_population': '4,347,955',
@@ -119,6 +125,7 @@ CITY_METAS = {
   'munich': {
     'id': 'munich',
     'label': 'Munich',
+    'label_ja': u'ミュンヘン',
     'population': '1,388,308',
     'area': '310.43',
     'urban_population': '',
@@ -131,6 +138,7 @@ CITY_METAS = {
   'newyork': {
     'id': 'newyork',
     'label': 'New York',
+    'label_ja': u'ニューヨーク',
     'population': '8,405,837',
     'area': '783.84',
     'urban_population': '20,673,000',
@@ -143,6 +151,7 @@ CITY_METAS = {
   'paris': {
     'id': 'paris',
     'label': 'Paris',
+    'label_ja': u'パリ',
     'population': '2,211,297',
     'area': '105',
     'urban_population': '12,292,895',
@@ -155,6 +164,7 @@ CITY_METAS = {
   'riodejaneiro': {
     'id': 'riodejaneiro',
     'label': 'Rio de Janeiro',
+    'label_ja': u'リオ デ ジャネイロ',
     'population': '6,429,923',
     'area': '1,200.27',
     'urban_population': '11,616,000',
@@ -167,6 +177,7 @@ CITY_METAS = {
   'sanfrancisco': {
     'id': 'sanfrancisco',
     'label': 'San Francisco',
+    'label_ja': u'サンフランシスコ',
     'population': '837,442',
     'area': '600.6',
     'urban_population': '4,516,276',
@@ -179,6 +190,7 @@ CITY_METAS = {
   'stockholm': {
     'id': 'stockholm',
     'label': 'Stockholm',
+    'label_ja': u'ストックホルム',
     'population': '905,184',
     'area': '188',
     'urban_population': '2,171,459',
@@ -191,6 +203,7 @@ CITY_METAS = {
   'toronto': {
     'id': 'toronto',
     'label': 'Toronto',
+    'label_ja': u'トロント',
     'population': '2,615,060',
     'area': '630',
     'urban_population': '5,583,064',
@@ -238,6 +251,7 @@ PROJECT_MATRIX_META = {
     ]
   },
   'soundscape': {
+    'is_multiple_pages': False
   },
   'treasure_box': {
     'is_multiple_pages': False

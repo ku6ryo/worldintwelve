@@ -142,9 +142,9 @@
 
 .arrows {
   
-  bottom: -50px;
   position: absolute;
   text-align: center;
+  top: 75px;
   width: 100%;
 
   .arrow {
@@ -157,12 +157,20 @@
       color: $color;
     }
   }
+
+  @media screen and (max-width: 756px) {
+    top: 40px;
+
+    .arrow {
+      font-size: 30px;
+    }
+  }
 }
 
 
 .matrix-body {
 
-  padding: 100px 50px 50px;
+  padding: 130px 50px 50px;
 
   article {
     color: $WXII_GRAY;
@@ -189,7 +197,7 @@
 
   @media screen and (max-width: 400px) {
     & {
-      padding: 52px 10px 30px;
+      padding: 90px 10px 30px;
     }
   }
 }

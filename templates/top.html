@@ -22,7 +22,8 @@
     <div id="ufo" class="vehicle">
       <div class="balloon">
         <p>{% if lang == 'en' %}Welcome to the World in Twelve!! Leo is now in
-        San Francisco!!{% else %}”World in Twelve”へようこそ！いま現在、サンフランシスコにいるよ！{% endif %}</p>
+        {{current_city_name}}!!{% else %}”World in
+        Twelve”へようこそ！いま現在、{{current_city_name}}にいるよ！{% endif %}</p>
       </div>
       <img src="/images/vehicles/ufo.png">
     </div>
