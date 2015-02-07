@@ -248,6 +248,12 @@ PROJECT_MATRIX_META = {
         'id': 'junkondo',
         'label': 'junkondo'
       },
+    ],
+    'sanfrancisco': [
+      {
+        'id': 'thetropics',
+        'label': 'The Tropics'
+      },
     ]
   },
   'soundscape': {
