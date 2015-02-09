@@ -254,7 +254,7 @@ PROJECT_MATRIX_META = {
         'id': 'thetropics',
         'label': 'The Tropics'
       },
-    ]
+    ],
   },
   'soundscape': {
     'is_multiple_pages': False
@@ -263,6 +263,17 @@ PROJECT_MATRIX_META = {
     'is_multiple_pages': False
   },
   'twelve_twelve': {
+    'is_multiple_pages': True,
+     'sanfrancisco': [
+      {
+        'id': 'animals',
+        'label': 'animals'
+      },
+       {
+        'id': 'books',
+        'label': 'books'
+      },
+    ],
   }, 
   'whats_beauty': {
     'is_multiple_pages': True,
