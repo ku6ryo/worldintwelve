@@ -264,12 +264,12 @@ PROJECT_MATRIX_META = {
   },
   'twelve_twelve': {
     'is_multiple_pages': True,
-     'sanfrancisco': [
+    'sanfrancisco': [
       {
         'id': 'animals',
         'label': 'animals'
       },
-       {
+      {
         'id': 'books',
         'label': 'books'
       },
