@@ -20,7 +20,7 @@
     </a>
   </div>
   <div class="matrix-body">
-    {% if is_multiple_pages %}
+    {% if has_content and is_multiple_pages %}
     <div class="page-selector">
       {% for page in pages_meta %}
       <a href="#{{page.id}}"><img id="icon_{{page.id}}" class="icon" src="/images/matrix/{{c_city_meta.id}}/{{c_project_meta.id}}/{{page.id}}/icon.jpg"></a>
@@ -51,9 +51,10 @@
       };
     </script>
     {% endif %}
-  {% autoescape false %}
-    {{body}}
-  {% endautoescape %}
+    {% autoescape false %}
+      {{body}}
+    {% endautoescape %}
+    {% if has_content %}
     <script>
       var id = location.hash.replace('#', '_');
       var article = document.getElementById(id);
@@ -66,7 +67,24 @@
         }
       }
     </script>
+    {% endif %}
   </div>
+  {% if has_content %}
+  <div class="go-to-top-container">
+    <a id="go-to-top">
+      {% if lang == 'en' %}
+        Back to Top
+      {% else %}
+      　トップへ戻る
+      {% endif %}
+    </a>
+    <script>
+      var goToTop = document.getElementById('go-to-top');
+      goToTop.addEventListener(
+          'click', function() { window.scrollTo(0, 0); }, false);
+    </script>
+  </div>
+  {% endif %}
   <div class="arrows">
     {% if p_city_meta %}
       <a title="{{p_city_meta.label}}"

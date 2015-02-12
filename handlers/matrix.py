@@ -48,15 +48,19 @@ class Handler(webapp2.RequestHandler):
         content_template_path = 'matrix/%s/%s/%s_%s.html' % (
             lang, c_city_id, c_project_id, page['id'])
         if common.existTemplate(content_template_path):
-          body += common.GetTemplate(content_template_path).render()
+          body += common.GetTemplate(content_template_path).render({
+            'id': page['id']
+          })
     else:
       content_template_path = 'matrix/%s/%s/%s.html' % (
           lang, c_city_id, c_project_id)
       if common.existTemplate(content_template_path):
         body += common.GetTemplate(content_template_path).render()
 
+    has_content = True
     if body is '':
       body = common.GetTemplate('coming_soon.html').render()
+      has_content = False
 
     base_template = common.GetTemplate('base.html')
     frame_template = common.GetTemplate('matrix/frame.html')
@@ -71,7 +75,8 @@ class Handler(webapp2.RequestHandler):
       'c_project_meta': c_project_meta,
       'n_project_meta': n_project_meta,
       'is_multiple_pages': is_multiple_pages,
-      'pages_meta': pages_meta
+      'pages_meta': pages_meta,
+      'has_content': has_content,
     })
     self.response.write(common.WrapWithBaseTemplate(
         frame, lang, ['project_matrix']))

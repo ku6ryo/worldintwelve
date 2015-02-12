@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+
 # Copyright 2014 The World in Twelve.
 
 
@@ -302,12 +303,12 @@ PROJECT_MATRIX_META = {
   }, 
   'family_recipes': {
     'is_multiple_pages': True,
-     'sanfrancisco': [
-       {
+    'sanfrancisco': [
+      {
         'id': 'alexandeve',
         'label': 'Alex and Eve'
       },
-       {
+      {
         'id': 'brunch',
         'label': 'Brunch'
       },
