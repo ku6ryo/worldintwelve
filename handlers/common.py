@@ -290,7 +290,7 @@ PROJECT_MATRIX_META = {
         'id': 'nana',
         'label': 'Nana'
       },
-    ]
+    ],
   }, 
   'real_dates': {
     'tokyo': [
@@ -301,6 +301,17 @@ PROJECT_MATRIX_META = {
     ],
   }, 
   'family_recipes': {
+    'is_multiple_pages': True,
+     'sanfrancisco': [
+       {
+        'id': 'alexandeve',
+        'label': 'Alex and Eve'
+      },
+       {
+        'id': 'brunch',
+        'label': 'Brunch'
+      },
+    ],
   }, 
   'micro_guide': {
     'is_multiple_pages': True,
@@ -329,11 +340,12 @@ PROJECT_MATRIX_META = {
         'id': 'places',
         'label': 'Places'
       },
-    ]
+    ],
   }, 
   'misc': {
     'is_multiple_pages': False,
-    
+    'sanfrancisco': [
+    ],
   },
   'twelve_questions': {
     'is_multiple_pages': True,
@@ -376,7 +388,7 @@ PROJECT_MATRIX_META = {
         'id': 'geoff',
         'label': 'Geoff Taylor'
       },
-    ]
+    ],
   }, 
   'bck': {
   }, 
