@@ -538,6 +538,28 @@
     position: relative;
   }
 }
+@media screen and (max-width: 400px) {
+  /* line 420, ../sass/top.scss */
+  #map {
+    margin-top: 10px;
+  }
+
+  /* line 424, ../sass/top.scss */
+  .vehicle {
+    border: none;
+    width: 100%;
+  }
+  /* line 428, ../sass/top.scss */
+  .vehicle img {
+    width: 170px;
+  }
+  /* line 431, ../sass/top.scss */
+  .vehicle .balloon {
+    margin: 0 auto;
+    opacity: 1;
+    position: initial;
+  }
+}
 /* animations */
 @keyframes anime_ship {
   0% {

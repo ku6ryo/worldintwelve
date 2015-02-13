@@ -416,6 +416,27 @@
 }
 
 
+@media screen and (max-width: 400px) {
+  #map {
+    margin-top: 10px;
+  }
+
+  .vehicle {
+    border: none;
+    width: 100%;
+
+    img {
+      width: 170px;
+    }
+    .balloon {
+      margin: 0 auto;
+      opacity: 1;
+      position: initial;
+    }
+  }
+}
+
+
 /* animations */
 @keyframes anime_ship {
   0% {
