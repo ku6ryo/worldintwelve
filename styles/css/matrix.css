@@ -651,126 +651,127 @@ article .block.image-center img {
   }
   /* line 245, ../sass/matrix.scss */
   .page-selector img.icon {
+    height: 40px;
     width: 40px;
   }
 }
 
-/* line 252, ../sass/matrix.scss */
+/* line 253, ../sass/matrix.scss */
 article.musicians .logo {
   max-height: 70px;
 }
-/* line 255, ../sass/matrix.scss */
+/* line 256, ../sass/matrix.scss */
 article.musicians .jacket {
   width: 300px;
 }
 
-/* line 261, ../sass/matrix.scss */
+/* line 262, ../sass/matrix.scss */
 article.whats-beauty .block {
   min-height: 300px;
 }
-/* line 264, ../sass/matrix.scss */
+/* line 265, ../sass/matrix.scss */
 article.whats-beauty .block img {
   width: 300px;
 }
-/* line 268, ../sass/matrix.scss */
+/* line 269, ../sass/matrix.scss */
 article.whats-beauty .block.image-left p {
   padding-left: 400px;
 }
-/* line 273, ../sass/matrix.scss */
+/* line 274, ../sass/matrix.scss */
 article.whats-beauty .block.image-right p {
   padding-right: 400px;
 }
 @media screen and (max-width: 1024px) {
-  /* line 280, ../sass/matrix.scss */
+  /* line 281, ../sass/matrix.scss */
   article.whats-beauty .block.image-left p,
   article.whats-beauty .block.image-right p {
     padding: 0;
   }
 }
 
-/* line 291, ../sass/matrix.scss */
+/* line 292, ../sass/matrix.scss */
 article.treasure_box .block.image-center img {
   width: 500px;
 }
-/* line 296, ../sass/matrix.scss */
+/* line 297, ../sass/matrix.scss */
 article.treasure_box .block.image-left {
   min-height: 300px;
 }
-/* line 299, ../sass/matrix.scss */
+/* line 300, ../sass/matrix.scss */
 article.treasure_box .block.image-left img {
   width: 300px;
 }
-/* line 302, ../sass/matrix.scss */
+/* line 303, ../sass/matrix.scss */
 article.treasure_box .block.image-left p {
   padding-left: 400px;
 }
-/* line 306, ../sass/matrix.scss */
+/* line 307, ../sass/matrix.scss */
 article.treasure_box .block.image-right {
   min-height: 300px;
 }
-/* line 309, ../sass/matrix.scss */
+/* line 310, ../sass/matrix.scss */
 article.treasure_box .block.image-right img {
   width: 300px;
 }
-/* line 312, ../sass/matrix.scss */
+/* line 313, ../sass/matrix.scss */
 article.treasure_box .block.image-right p {
   padding-right: 400px;
 }
 @media screen and (max-width: 1024px) {
-  /* line 319, ../sass/matrix.scss */
+  /* line 320, ../sass/matrix.scss */
   article.treasure_box .block.image-left p,
   article.treasure_box .block.image-right p {
     padding: 0;
   }
 }
 
-/* line 327, ../sass/matrix.scss */
+/* line 328, ../sass/matrix.scss */
 article.micro_guide .block {
   min-height: 550px;
 }
-/* line 330, ../sass/matrix.scss */
+/* line 331, ../sass/matrix.scss */
 article.micro_guide .block .title {
   margin: 0 0 15px;
 }
-/* line 334, ../sass/matrix.scss */
+/* line 335, ../sass/matrix.scss */
 article.micro_guide .block img {
   width: 400px;
 }
-/* line 338, ../sass/matrix.scss */
+/* line 339, ../sass/matrix.scss */
 article.micro_guide .block.image-left p {
   padding-left: 450px;
 }
-/* line 343, ../sass/matrix.scss */
+/* line 344, ../sass/matrix.scss */
 article.micro_guide .block.image-right p {
   padding-right: 450px;
 }
 @media screen and (max-width: 1024px) {
-  /* line 350, ../sass/matrix.scss */
+  /* line 351, ../sass/matrix.scss */
   article.micro_guide .block.image-left p,
   article.micro_guide .block.image-right p {
     padding: 0;
   }
 }
 
-/* line 359, ../sass/matrix.scss */
+/* line 360, ../sass/matrix.scss */
 article.twelve-questions .name {
   font-size: 26px;
   font-style: italic;
   font-weight: bold;
 }
-/* line 364, ../sass/matrix.scss */
+/* line 365, ../sass/matrix.scss */
 article.twelve-questions .photo {
   padding: 20px;
   text-align: center;
 }
-/* line 367, ../sass/matrix.scss */
+/* line 368, ../sass/matrix.scss */
 article.twelve-questions .photo img {
   /*border: 5px solid $WXII_RED;*/
   border-radius: 2px;
   width: 500px;
 }
 
-/* line 377, ../sass/matrix.scss */
+/* line 378, ../sass/matrix.scss */
 article.real-dates .block .youtube {
   box-sizing: border-box;
   display: block;
@@ -780,7 +781,7 @@ article.real-dates .block .youtube {
   width: 640px;
 }
 @media screen and (max-width: 640px) {
-  /* line 389, ../sass/matrix.scss */
+  /* line 390, ../sass/matrix.scss */
   article.real-dates .block .youtube {
     height: 180px;
     width: 320px;
