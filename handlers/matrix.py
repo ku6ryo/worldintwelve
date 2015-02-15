@@ -37,7 +37,8 @@ class Handler(webapp2.RequestHandler):
     c_project_meta = common.PROJECT_METAS_EN[c_project_id] if c_project_id else {}
     n_project_meta = common.PROJECT_METAS_EN[n_project_id] if n_project_id else {}
 
-    is_multiple_pages = common.PROJECT_MATRIX_META[c_project_id]
+    is_multiple_pages = common.PROJECT_MATRIX_META[c_project_id][
+        'is_multiple_pages']
     project_matrix_meta = common.PROJECT_MATRIX_META[c_project_id]
 
     pages_meta = []

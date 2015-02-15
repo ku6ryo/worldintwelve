@@ -345,8 +345,6 @@ PROJECT_MATRIX_META = {
   }, 
   'misc': {
     'is_multiple_pages': False,
-    'sanfrancisco': [
-    ],
   },
   'twelve_questions': {
     'is_multiple_pages': True,
