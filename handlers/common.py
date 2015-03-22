@@ -392,6 +392,10 @@ PROJECT_MATRIX_META = {
         'id': 'aspen',
         'label': 'Aspen Jordan'
       },
+        {
+        'id': 'denisha',
+        'label': 'Denisha Brekke'
+      },
     ],
   }, 
   'bck': {
