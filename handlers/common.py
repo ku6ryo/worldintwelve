@@ -292,6 +292,14 @@ PROJECT_MATRIX_META = {
         'label': 'Nana'
       },
     ],
+    'sanfrancisco': [
+    ],
+    'toronto': [
+      {
+        'id': 'lana',
+        'label': 'Lana'
+      }, 
+    ],
   }, 
   'real_dates': {
   'is_multiple_pages': True,
@@ -395,6 +403,10 @@ PROJECT_MATRIX_META = {
         {
         'id': 'denisha',
         'label': 'Denisha Brekke'
+      },
+       {
+        'id': 'willow',
+        'label': 'Willow Hill'
       },
     ],
   }, 
