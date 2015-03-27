@@ -322,6 +322,16 @@ PROJECT_MATRIX_META = {
         'label': 'Brunch'
       },
     ],
+     'toronto': [
+      {
+        'id': 'tobyandnancy',
+        'label': 'Toby and Nancy'
+      },
+      {
+        'id': 'fusion',
+        'label': 'Fusion'
+      },
+    ],
   }, 
   'micro_guide': {
     'is_multiple_pages': True,
