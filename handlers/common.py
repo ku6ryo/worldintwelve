@@ -418,6 +418,10 @@ PROJECT_MATRIX_META = {
         'id': 'willow',
         'label': 'Willow Hill'
       },
+        {
+        'id': 'lance',
+        'label': 'Lance Skundrich'
+      },
     ],
   }, 
   'bck': {
