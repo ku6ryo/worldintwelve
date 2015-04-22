@@ -275,6 +275,16 @@ PROJECT_MATRIX_META = {
         'label': 'books'
       },
     ],
+    'toronto': [
+      {
+        'id': 'animals',
+        'label': 'animals'
+      },
+      {
+        'id': 'books',
+        'label': 'books'
+      },
+    ],
   }, 
   'whats_beauty': {
     'is_multiple_pages': True,
@@ -421,6 +431,10 @@ PROJECT_MATRIX_META = {
         {
         'id': 'lance',
         'label': 'Lance Skundrich'
+      },
+        {
+        'id': 'claire',
+        'label': 'Claire George'
       },
     ],
   }, 
