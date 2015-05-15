@@ -437,6 +437,12 @@ PROJECT_MATRIX_META = {
         'label': 'Claire George'
       },
     ],
+    'toronto': [
+      {
+        'id': 'steven',
+        'label': 'Steven Tanaka'
+      },
+    ],
   }, 
   'bck': {
   'is_multiple_pages': False,
