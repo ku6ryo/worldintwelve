@@ -436,6 +436,10 @@ PROJECT_MATRIX_META = {
         'id': 'claire',
         'label': 'Claire George'
       },
+          {
+        'id': 'gabriella',
+        'label': 'Gabriella Daher'
+      },
     ],
     'toronto': [
       {
