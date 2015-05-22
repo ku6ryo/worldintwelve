@@ -447,6 +447,12 @@ PROJECT_MATRIX_META = {
         'label': 'Steven Tanaka'
       },
     ],
+    'newyork': [
+      {
+        'id': 'kelly',
+        'label': 'Kelly Teacher'
+      },
+    ],
   }, 
   'bck': {
   'is_multiple_pages': False,
