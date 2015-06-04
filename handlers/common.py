@@ -453,6 +453,12 @@ PROJECT_MATRIX_META = {
         'label': 'Kelly Teacher'
       },
     ],
+    'riodejaneiro': [
+      {
+        'id': 'roberta',
+        'label': 'Roberta Amorim'
+      },
+    ],
   }, 
   'bck': {
   'is_multiple_pages': False,
