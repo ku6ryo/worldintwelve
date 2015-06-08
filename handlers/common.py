@@ -446,6 +446,10 @@ PROJECT_MATRIX_META = {
         'id': 'steven',
         'label': 'Steven Tanaka'
       },
+        {
+        'id': 'myles',
+        'label': 'Myles Drayton'
+      },
     ],
     'newyork': [
       {
