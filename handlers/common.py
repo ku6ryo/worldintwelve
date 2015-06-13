@@ -440,6 +440,10 @@ PROJECT_MATRIX_META = {
         'id': 'gabriella',
         'label': 'Gabriella Daher'
       },
+       {
+        'id': 'catlin',
+        'label': 'Catlin Anne Seavey'
+      },
     ],
     'toronto': [
       {
