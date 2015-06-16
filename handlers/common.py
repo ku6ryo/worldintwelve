@@ -460,6 +460,10 @@ PROJECT_MATRIX_META = {
         'id': 'kelly',
         'label': 'Kelly Teacher'
       },
+       {
+        'id': 'katarina',
+        'label': 'Katarina Pasinsky'
+      },
     ],
     'riodejaneiro': [
       {
