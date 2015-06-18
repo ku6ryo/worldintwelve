@@ -470,6 +470,10 @@ PROJECT_MATRIX_META = {
         'id': 'roberta',
         'label': 'Roberta Amorim'
       },
+       {
+        'id': 'pedro',
+        'label': 'Pedro Concy'
+      },
     ],
   }, 
   'bck': {
