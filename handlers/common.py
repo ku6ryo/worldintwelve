@@ -371,6 +371,24 @@ PROJECT_MATRIX_META = {
         'label': 'Places'
       },
     ],
+      'sanfrancisco': [
+      {
+        'id': 'people',
+        'label': 'People'
+      },
+      {
+        'id': 'things',
+        'label': 'Things'
+      },
+      {
+        'id': 'places',
+        'label': 'Places'
+      },
+      {
+        'id': 'actions',
+        'label': 'Actions'
+      },
+    ],
   }, 
   'misc': {
     'is_multiple_pages': False,
@@ -473,6 +491,12 @@ PROJECT_MATRIX_META = {
        {
         'id': 'pedro',
         'label': 'Pedro Concy'
+      },
+    ],
+     'london': [
+      {
+        'id': 'luis',
+        'label': 'Luis Varets'
       },
     ],
   }, 
