@@ -472,6 +472,10 @@ PROJECT_MATRIX_META = {
         'id': 'myles',
         'label': 'Myles Drayton'
       },
+         {
+        'id': 'desmond',
+        'label': 'Desmond Foo'
+      },
     ],
     'newyork': [
       {
