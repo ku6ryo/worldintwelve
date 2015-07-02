@@ -486,6 +486,10 @@ PROJECT_MATRIX_META = {
         'id': 'katarina',
         'label': 'Katarina Pasinsky'
       },
+         {
+        'id': 'michelle',
+        'label': 'Michelle Weiss'
+      },
     ],
     'riodejaneiro': [
       {
