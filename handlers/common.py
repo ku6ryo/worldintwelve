@@ -476,6 +476,10 @@ PROJECT_MATRIX_META = {
         'id': 'desmond',
         'label': 'Desmond Foo'
       },
+         {
+        'id': 'jessie',
+        'label': 'Jessie Sheng'
+      },
     ],
     'newyork': [
       {
