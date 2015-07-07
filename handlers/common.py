@@ -504,6 +504,10 @@ PROJECT_MATRIX_META = {
         'id': 'pedro',
         'label': 'Pedro Concy'
       },
+        {
+        'id': 'caio',
+        'label': 'Caio Ferreira'
+      },
     ],
      'london': [
       {
