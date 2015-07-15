@@ -371,6 +371,24 @@ PROJECT_MATRIX_META = {
         'label': 'Places'
       },
     ],
+      'sanfrancisco': [
+      {
+        'id': 'people',
+        'label': 'People'
+      },
+      {
+        'id': 'things',
+        'label': 'Things'
+      },
+      {
+        'id': 'places',
+        'label': 'Places'
+      },
+      {
+        'id': 'actions',
+        'label': 'Actions'
+      },
+    ],
   }, 
   'misc': {
     'is_multiple_pages': False,
@@ -454,17 +472,47 @@ PROJECT_MATRIX_META = {
         'id': 'myles',
         'label': 'Myles Drayton'
       },
+         {
+        'id': 'desmond',
+        'label': 'Desmond Foo'
+      },
+         {
+        'id': 'jessie',
+        'label': 'Jessie Sheng'
+      },
     ],
     'newyork': [
       {
         'id': 'kelly',
         'label': 'Kelly Teacher'
       },
+       {
+        'id': 'katarina',
+        'label': 'Katarina Pasinsky'
+      },
+         {
+        'id': 'michelle',
+        'label': 'Michelle Weiss'
+      },
     ],
     'riodejaneiro': [
       {
         'id': 'roberta',
         'label': 'Roberta Amorim'
+      },
+       {
+        'id': 'pedro',
+        'label': 'Pedro Concy'
+      },
+        {
+        'id': 'caio',
+        'label': 'Caio Ferreira'
+      },
+    ],
+     'london': [
+      {
+        'id': 'luis',
+        'label': 'Luis Varets'
       },
     ],
   }, 
