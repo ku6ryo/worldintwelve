@@ -494,6 +494,10 @@ PROJECT_MATRIX_META = {
         'id': 'michelle',
         'label': 'Michelle Weiss'
       },
+       {
+        'id': 'hollyandalex',
+        'label': 'Holly and Alex'
+      },
     ],
     'riodejaneiro': [
       {
