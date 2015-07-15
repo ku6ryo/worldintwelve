@@ -221,12 +221,12 @@
 
   img.icon {
     border-radius: 100px;
-    height: 75px;
+    height: 70px;
     margin: 0 5px;
     padding: 2px;
     position: relative;
     transition: .1s;
-    width: 75px;
+    width: 70px;
 
     &:hover {
       box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.4);
@@ -320,6 +320,80 @@ article.treasure_box {
     .block.image-left p,
     .block.image-right p {
       padding: 0;
+    }
+  }
+}
+
+.grid-selector {
+  background-color: white;
+  bottom: -300px;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, .2);
+  box-sizing: border-box;
+  padding: 10px 5px;
+  position: fixed;
+  right: -282px;
+  transition: .2s;
+  width: 320px;
+  z-index: 999999;
+
+  &.open {
+    bottom: 0;
+    right: 0;
+  }
+}
+
+
+.grid-selector-button {
+  width: 15px;
+  height: 15px;
+  border-width: 2px 0 0 2px;
+  border-color: #FC3838;
+  border-style: solid;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  transition: .2s;
+}
+
+.grid-selector.open .grid-selector-button {
+  transform: rotate(180deg);
+}
+
+.grid-selector-title {
+  text-align: center;
+  font-family: Futura;
+  color: #FC3838;
+  margin: 0 0 10px;
+}
+
+.grid-selector-row {
+  text-align: center;
+
+  a {
+    display: table-cell;
+  }
+}
+
+.grid-selector-cell {
+  margin: 2px;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 20px;
+  border-color: #999;
+  transition: .2s;
+
+  &.current, &:hover {
+    border-radius: 0;
+  }
+
+  // Sets the color of the crosses with the color of each city.
+  @each $city, $color in $CITY_COLORS {
+    &.hascontent.#{$city} {
+      background-color: $color;
+      border-color: $color;
     }
   }
 }

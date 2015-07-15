@@ -58,6 +58,29 @@ class Handler(webapp2.RequestHandler):
       if common.existTemplate(content_template_path):
         body += common.GetTemplate(content_template_path).render()
 
+    # Creates grid data.
+    _cities = [c for c in common.CITIES]
+    _cities.append('tokyo')
+
+    grid_data = {}
+    for project in common.PROJECTS:
+      project_data = {}
+      for city in _cities:
+        project_data[city] = False
+      grid_data[project] = project_data
+
+    for project in common.PROJECT_MATRIX_META:
+
+      project_meta = common.PROJECT_MATRIX_META[project]
+      for city in _cities:
+        content_template_path = 'matrix/%s/%s/%s.html' % (lang, city, project)
+        grid_data[project][city] = common.existTemplate(content_template_path)
+        # Ignores other key like is_multiple_pages.
+        if city in project_meta:
+          grid_data[project][city] = True
+
+
+
     has_content = True
     if body is '':
       body = common.GetTemplate('coming_soon.html').render()
@@ -78,6 +101,9 @@ class Handler(webapp2.RequestHandler):
       'is_multiple_pages': is_multiple_pages,
       'pages_meta': pages_meta,
       'has_content': has_content,
+      'grid_data': grid_data,
+      'cities': _cities,
+      'projects': common.PROJECTS,
     })
     self.response.write(common.WrapWithBaseTemplate(
         frame, lang, ['project_matrix']))

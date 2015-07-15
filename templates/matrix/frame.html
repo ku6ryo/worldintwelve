@@ -120,3 +120,49 @@
     {% endif %}
   </div>
 </div>
+
+<!-- Grid Selector -->
+<div class="grid-selector">
+  <div class="grid-selector-header">
+    <div class="grid-selector-button"></div>
+    <div class="grid-selector-title">Projct Matrix</div>
+  </div>
+  <div class="grid-selector-container">
+    {% for project in projects %}
+      <div class="grid-selector-row">
+      {% for city in cities %}
+        <a href="/{{lang}}/matrix/{{city}}_x_{{project}}">
+          <div class="grid-selector-cell {{city}}
+          {% if c_city_meta.id == city and c_project_meta.id == project %}
+            current
+          {% endif %}
+          {% if grid_data[project][city] %}
+            hascontent
+          {% endif %}
+          "></div>
+        </a>
+      {% endfor %}
+      </div>
+    {% endfor %}
+    </div>
+  </div>
+</div>
+
+<script>
+  (function() {
+    var frame = document.getElementsByClassName('grid-selector')[0];
+    var button = document.getElementsByClassName('grid-selector-button')[0];
+
+    var openStateClass = 'open';
+    button.addEventListener('click', function() {
+      if (frame.classList.contains(openStateClass)) {
+        frame.classList.remove(openStateClass);
+      } else {
+        frame.classList.add(openStateClass);
+      }
+    });
+    if (window.innerWidth >= 1024) frame.classList.add(openStateClass);
+    
+  })();
+</script>
+

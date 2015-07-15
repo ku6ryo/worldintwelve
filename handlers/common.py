@@ -245,7 +245,7 @@ PROJECT_MATRIX_META = {
         'id': 'corkbird',
         'label': 'Corkbird'
       },
-       {
+      {
         'id': 'junkondo',
         'label': 'junkondo'
       },
