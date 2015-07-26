@@ -74,7 +74,6 @@ class Handler(webapp2.RequestHandler):
       project_meta = common.PROJECT_MATRIX_META[project]
       for city in _cities:
         content_template_path = 'matrix/%s/%s/%s.html' % (lang, city, project)
-        grid_data[project][city] = common.existTemplate(content_template_path)
         # Ignores other key like is_multiple_pages.
         if city in project_meta:
           grid_data[project][city] = True

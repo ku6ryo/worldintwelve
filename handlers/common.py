@@ -258,10 +258,13 @@ PROJECT_MATRIX_META = {
     ],
   },
   'soundscape': {
-    'is_multiple_pages': False
+    'is_multiple_pages': False,
+    'sanfrancisco': True,
   },
   'treasure_box': {
-    'is_multiple_pages': False
+    'is_multiple_pages': False,
+    'tokyo': True,
+    'sanfrancisco': True,
   },
   'twelve_twelve': {
     'is_multiple_pages': True,
@@ -392,6 +395,11 @@ PROJECT_MATRIX_META = {
   }, 
   'misc': {
     'is_multiple_pages': False,
+    'sanfrancisco': True,
+    'toronto': True,
+    'newyork': True,
+    'riodejaneiro': True,
+    'london': True,
   },
   'twelve_questions': {
     'is_multiple_pages': True,
@@ -521,10 +529,10 @@ PROJECT_MATRIX_META = {
     ],
   }, 
   'bck': {
-  'is_multiple_pages': False,
+    'is_multiple_pages': False,
   }, 
   'marketplace': {
-  'is_multiple_pages': False,
+    'is_multiple_pages': False,
   }
 }
 

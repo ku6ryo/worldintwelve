@@ -29,8 +29,10 @@
     </div>
     <div id="ship" class="vehicle">
       <div class="balloon">
-        <p><a href="https://www.facebook.com/worldintwelve" target="_blank"><span id="facebooklikes">...</span></a></p>
-        <p>Facebook Likes</p>
+        <p><a href="https://www.facebook.com/worldintwelve"
+        target="_blank"><span id="facebooklikes">Check</span></a></p>
+        <p>Facebook Page</p>
+        
       </div>
       <img src="/images/vehicles/ship.png">
     </div>
@@ -70,8 +72,8 @@
   }, 5000);
 
   var facebookCallback = function(data) {
-    var span = document.getElementById('facebooklikes');
-    span.innerHTML = data.likes;
+    //var span = document.getElementById('facebooklikes');
+    //span.innerHTML = data.likes;
   };
 
   var days = document.getElementById('days');
