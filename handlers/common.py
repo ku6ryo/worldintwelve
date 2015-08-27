@@ -520,6 +520,10 @@ PROJECT_MATRIX_META = {
         'id': 'caio',
         'label': 'Caio Ferreira'
       },
+        {
+        'id': 'thomas',
+        'label': 'Thomas Martin'
+      },
     ],
      'london': [
       {
