@@ -530,6 +530,10 @@ PROJECT_MATRIX_META = {
         'id': 'luis',
         'label': 'Luis Varets'
       },
+      {
+        'id': 'india',
+        'label': 'India Bourne'
+      },
     ],
   }, 
   'bck': {
