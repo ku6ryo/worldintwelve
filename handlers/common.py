@@ -488,6 +488,10 @@ PROJECT_MATRIX_META = {
         'id': 'jessie',
         'label': 'Jessie Sheng'
       },
+         {
+        'id': 'sharon',
+        'label': 'Sharon Lo'
+      },
     ],
     'newyork': [
       {
