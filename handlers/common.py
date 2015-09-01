@@ -539,6 +539,12 @@ PROJECT_MATRIX_META = {
         'label': 'India Bourne'
       },
     ],
+    'stockholm': [
+      {
+        'id': 'yamandu',
+        'label': 'Yamandu Romero Muller'
+      },
+    ],
   }, 
   'bck': {
     'is_multiple_pages': False,
