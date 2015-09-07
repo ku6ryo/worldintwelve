@@ -510,6 +510,10 @@ PROJECT_MATRIX_META = {
         'id': 'hollyandalex',
         'label': 'Holly and Alex'
       },
+         {
+        'id': 'arielle',
+        'label': 'Arielle V'
+      },
     ],
     'riodejaneiro': [
       {
