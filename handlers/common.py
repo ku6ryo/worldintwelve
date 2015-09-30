@@ -552,6 +552,10 @@ PROJECT_MATRIX_META = {
         'id': 'yamandu',
         'label': 'Yamandu Romero Muller'
       },
+       {
+        'id': 'maja',
+        'label': 'Maja Fyfe'
+      },
     ],
   }, 
   'bck': {
