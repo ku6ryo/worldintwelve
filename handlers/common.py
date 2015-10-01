@@ -546,6 +546,10 @@ PROJECT_MATRIX_META = {
         'id': 'christian',
         'label': 'Christian Graham'
       },
+      {
+        'id': 'dan',
+        'label': 'Daniel Alexander Harris'
+      },
     ],
     'stockholm': [
       {
