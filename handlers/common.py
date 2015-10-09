@@ -554,6 +554,10 @@ PROJECT_MATRIX_META = {
         'id': 'dan',
         'label': 'Daniel Alexander Harris'
       },
+       {
+        'id': 'michael',
+        'label': 'Michael Sebastian De Teilman Hald'
+      },
     ],
     'stockholm': [
       {
