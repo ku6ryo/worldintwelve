@@ -514,6 +514,10 @@ PROJECT_MATRIX_META = {
         'id': 'arielle',
         'label': 'Arielle V'
       },
+         {
+        'id': 'avril',
+        'label': 'Avril Koblitz'
+      },
     ],
     'riodejaneiro': [
       {
