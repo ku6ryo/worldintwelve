@@ -496,6 +496,10 @@ PROJECT_MATRIX_META = {
         'id': 'hanandbernard',
         'label': 'Han and Bernard'
       },
+        {
+        'id': 'joshua',
+        'label': 'Joshua Roy'
+      },
       
     ],
     'newyork': [
@@ -576,6 +580,10 @@ PROJECT_MATRIX_META = {
        {
         'id': 'maja',
         'label': 'Maja Fyfe'
+      },
+       {
+        'id': 'lina',
+        'label': 'Lina Karlsson'
       },
     ],
   }, 
