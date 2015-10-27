@@ -527,6 +527,10 @@ PROJECT_MATRIX_META = {
         'id': 'avril',
         'label': 'Avril Koblitz'
       },
+        {
+        'id': 'daniel',
+        'label': 'Daniel Weschler'
+      },
     ],
     'riodejaneiro': [
       {
