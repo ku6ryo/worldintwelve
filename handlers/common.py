@@ -500,6 +500,10 @@ PROJECT_MATRIX_META = {
         'id': 'joshua',
         'label': 'Joshua Roy'
       },
+      {
+        'id': 'tony',
+        'label': 'Tony Deng'
+      },
       
     ],
     'newyork': [
