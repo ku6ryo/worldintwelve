@@ -557,6 +557,10 @@ PROJECT_MATRIX_META = {
         'id': 'carolina',
         'label': 'Carolina Zarur'
       },
+      {
+        'id': 'lucianaandvictor',
+        'label': 'Luciana and Victor'
+      },
     ],
      'london': [
       {
