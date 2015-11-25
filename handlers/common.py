@@ -583,6 +583,10 @@ PROJECT_MATRIX_META = {
         'id': 'michael',
         'label': 'Michael Sebastian De Teilman Hald'
       },
+        {
+        'id': 'james',
+        'label': 'James Rand'
+      },
     ],
     'stockholm': [
       {
@@ -596,6 +600,11 @@ PROJECT_MATRIX_META = {
        {
         'id': 'lina',
         'label': 'Lina Karlsson'
+      },
+    ], 'munich': [
+       {
+        'id': 'olof',
+        'label': 'Olof Ekman'
       },
     ],
   }, 
