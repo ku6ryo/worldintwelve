@@ -587,6 +587,10 @@ PROJECT_MATRIX_META = {
         'id': 'james',
         'label': 'James Rand'
       },
+        {
+        'id': 'roberto',
+        'label': 'Roberto Agosti'
+      },
     ],
     'stockholm': [
       {
