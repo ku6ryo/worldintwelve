@@ -605,7 +605,12 @@ PROJECT_MATRIX_META = {
         'id': 'lina',
         'label': 'Lina Karlsson'
       },
-    ], 'munich': [
+      {
+        'id': 'mathias',
+        'label': 'Mathias Eriksson'
+      },
+    ],
+     'munich': [
        {
         'id': 'olof',
         'label': 'Olof Ekman'
