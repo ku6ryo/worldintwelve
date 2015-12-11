@@ -617,6 +617,10 @@ PROJECT_MATRIX_META = {
         'id': 'mathias',
         'label': 'Mathias Eriksson'
       },
+      {
+        'id': 'nidal',
+        'label': 'Nidalius Kersh'
+      },
     ],
      'munich': [
        {
