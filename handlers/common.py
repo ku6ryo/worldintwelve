@@ -627,6 +627,10 @@ PROJECT_MATRIX_META = {
         'id': 'olof',
         'label': 'Olof Ekman'
       },
+       {
+        'id': 'leen',
+        'label': 'Leen Horsford'
+      },
     ],
   }, 
   'bck': {
