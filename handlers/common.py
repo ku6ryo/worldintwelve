@@ -599,6 +599,10 @@ PROJECT_MATRIX_META = {
         'id': 'roberto',
         'label': 'Roberto Agosti'
       },
+         {
+        'id': 'genevieve',
+        'label': 'Genevieve Edwards'
+      },
     ],
     'stockholm': [
       {
