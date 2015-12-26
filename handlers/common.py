@@ -635,6 +635,10 @@ PROJECT_MATRIX_META = {
         'id': 'leen',
         'label': 'Leen Horsford'
       },
+       {
+        'id': 'jen',
+        'label': 'Jennifer Ohagan'
+      },
     ],
   }, 
   'bck': {
