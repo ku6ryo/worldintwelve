@@ -625,6 +625,10 @@ PROJECT_MATRIX_META = {
         'id': 'nidal',
         'label': 'Nidalius Kersh'
       },
+       {
+        'id': 'jackieandmartin',
+        'label': 'Jackie and Martin'
+      },
     ],
      'munich': [
        {
