@@ -644,6 +644,12 @@ PROJECT_MATRIX_META = {
         'label': 'Jennifer Ohagan'
       },
     ],
+     'paris': [
+       {
+        'id': 'iris',
+        'label': 'Iris Tanaka'
+      },
+    ],
   }, 
   'bck': {
     'is_multiple_pages': False,
