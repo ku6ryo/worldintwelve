@@ -643,6 +643,10 @@ PROJECT_MATRIX_META = {
         'id': 'jen',
         'label': 'Jennifer Ohagan'
       },
+       {
+        'id': 'lenaandhagen',
+        'label': 'Lena and Hagen'
+      },
     ],
      'paris': [
        {
