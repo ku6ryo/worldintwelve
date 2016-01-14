@@ -653,6 +653,10 @@ PROJECT_MATRIX_META = {
         'id': 'iris',
         'label': 'Iris Tanaka'
       },
+        {
+        'id': 'ezgiandbaris',
+        'label': 'Ezgi and Baris'
+      },
     ],
   }, 
   'bck': {
