@@ -629,6 +629,10 @@ PROJECT_MATRIX_META = {
         'id': 'jackieandmartin',
         'label': 'Jackie and Martin'
       },
+       {
+        'id': 'bjorn',
+        'label': 'Bjorn Stampes'
+      },
     ],
      'munich': [
        {
