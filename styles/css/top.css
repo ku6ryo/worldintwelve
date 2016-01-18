@@ -456,6 +456,18 @@
 }
 
 /* line 346, ../sass/top.scss */
+#ufo .balloon p {
+  font-size: 20px;
+}
+
+/* line 350, ../sass/top.scss */
+#plane .balloon p {
+  position: relative;
+  top: 25px;
+  font-size: 20px;
+}
+
+/* line 356, ../sass/top.scss */
 #wave {
   animation: anime_wave 7s ease-in-out 0s infinite alternate;
   -moz-animation: anime_wave 7s ease-in-out 0s infinite alternate;
@@ -467,7 +479,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-  /* line 357, ../sass/top.scss */
+  /* line 367, ../sass/top.scss */
   #vehicles {
     position: absolute;
     text-align: center;
@@ -475,7 +487,7 @@
     width: 100%;
   }
 
-  /* line 364, ../sass/top.scss */
+  /* line 374, ../sass/top.scss */
   .vehicle {
     background-color: #FFF;
     border: 2px solid #FC3838;
@@ -483,12 +495,12 @@
     display: inline-block;
   }
 
-  /* line 371, ../sass/top.scss */
+  /* line 381, ../sass/top.scss */
   #ship, #ufo, #plane, #submarine {
     position: initial;
   }
 
-  /* line 375, ../sass/top.scss */
+  /* line 385, ../sass/top.scss */
   #ufo .balloon {
     background-image: url(/images/balloon.png);
     padding-top: 40px;
@@ -496,7 +508,7 @@
     opacity: 1;
   }
 
-  /* line 382, ../sass/top.scss */
+  /* line 392, ../sass/top.scss */
   #ship {
     animation: anime_updown 1s ease-in-out 0s infinite alternate;
     -moz-animation: anime_updown 1s ease-in-out 0s infinite alternate;
@@ -504,7 +516,7 @@
     -webkit-animation: anime_updown 1s ease-in-out 0s infinite alternate;
   }
 
-  /* line 389, ../sass/top.scss */
+  /* line 399, ../sass/top.scss */
   #plane, #submarine {
     animation: anime_downup 1s ease-in-out 0s infinite alternate;
     -moz-animation: anime_downup 1s ease-in-out 0s infinite alternate;
@@ -512,48 +524,48 @@
     -webkit-animation: anime_downup 1s ease-in-out 0s infinite alternate;
   }
 
-  /* line 396, ../sass/top.scss */
+  /* line 406, ../sass/top.scss */
   #wave {
     display: none;
   }
 
-  /* line 400, ../sass/top.scss */
+  /* line 410, ../sass/top.scss */
   .pin-container {
     display: none;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 406, ../sass/top.scss */
+  /* line 416, ../sass/top.scss */
   #map {
     margin-top: 100px;
   }
 
-  /* line 409, ../sass/top.scss */
+  /* line 419, ../sass/top.scss */
   .vehicle {
     margin: 10px;
   }
 
-  /* line 413, ../sass/top.scss */
+  /* line 423, ../sass/top.scss */
   #vehicles {
     position: relative;
   }
 }
 @media screen and (max-width: 400px) {
-  /* line 420, ../sass/top.scss */
+  /* line 430, ../sass/top.scss */
   #map {
     margin-top: 10px;
   }
 
-  /* line 424, ../sass/top.scss */
+  /* line 434, ../sass/top.scss */
   .vehicle {
     border: none;
     width: 100%;
   }
-  /* line 428, ../sass/top.scss */
+  /* line 438, ../sass/top.scss */
   .vehicle img {
     width: 170px;
   }
-  /* line 431, ../sass/top.scss */
+  /* line 441, ../sass/top.scss */
   .vehicle .balloon {
     margin: 0 auto;
     opacity: 1;
