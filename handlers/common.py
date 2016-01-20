@@ -661,6 +661,10 @@ PROJECT_MATRIX_META = {
         'id': 'ezgiandbaris',
         'label': 'Ezgi and Baris'
       },
+        {
+        'id': 'pierre',
+        'label': 'Pierre Cutellic'
+      },
     ],
   }, 
   'bck': {
