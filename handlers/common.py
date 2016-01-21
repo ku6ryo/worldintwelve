@@ -633,6 +633,10 @@ PROJECT_MATRIX_META = {
         'id': 'bjorn',
         'label': 'Bjorn Stampes'
       },
+        {
+        'id': 'sauman',
+        'label': 'Sauman Ng Agerberg'
+      },
     ],
      'munich': [
        {
