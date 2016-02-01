@@ -677,6 +677,10 @@ PROJECT_MATRIX_META = {
         'id': 'dora',
         'label': 'Dora Bami'
       },
+        {
+        'id': 'gautier',
+        'label': 'Gautier Jacquemain'
+      },
     ],
   }, 
   'bck': {
