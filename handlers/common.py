@@ -603,6 +603,10 @@ PROJECT_MATRIX_META = {
         'id': 'genevieve',
         'label': 'Genevieve Edwards'
       },
+       {
+        'id': 'karina',
+        'label': 'Karina Eibatova'
+      },
     ],
     'stockholm': [
       {
@@ -659,6 +663,10 @@ PROJECT_MATRIX_META = {
         'id': 'wolfgang',
         'label': 'Wolfgang Gollwitzer'
       },
+       {
+        'id': 'katharina',
+        'label': 'Katharina Gruszczynski'
+      },
     ],
      'paris': [
        {
@@ -680,6 +688,20 @@ PROJECT_MATRIX_META = {
         {
         'id': 'gautier',
         'label': 'Gautier Jacquemain'
+      }, 
+    ],
+    'barcelona': [
+       {
+        'id': 'sally',
+        'label': 'Sally Gascoigne'
+      },
+       {
+        'id': 'shoko',
+        'label': 'Shoko Tsuji'
+      },
+       {
+        'id': 'maria',
+        'label': 'Maria Ilka Azêdo'
       },
     ],
   }, 
