@@ -1,0 +1,91 @@
+<link type="text/css" rel="stylesheet" href="/styles/article.css">
+<link type="text/css" rel="stylesheet" href="/styles/list.css">
+<link type="text/css" rel="stylesheet" href="/styles/cities.css">
+<link rel="stylesheet" href="/styles/matrix.css">
+<style>
+  {% for city in items %}
+  .image-list .item.{{city.id}} {
+    background-image: url(/images/cities/{{city.id}}_gray.png);
+  }
+  .image-list.top .item.{{city.id}},
+  .image-list.{{city.id}} .item.{{city.id}},
+  .image-list .item.{{city.id}}:hover {
+    background-image: url(/images/cities/{{city.id}}.png);
+  }
+  .image-list .item.{{city.id}} .meta:before,
+  .image-list .item.{{city.id}} .label {
+    color: {{city.color}};
+  }
+  {% endfor %}
+  .image-list .item.riodejaneiro,
+  .image-list .item.paris,
+  .image-list .item.bangkok {
+    margin-right: 0;
+  }
+</style>
+{% for city in items %}
+<img class="pre-load" src="/images/cities/{{city.id}}.png">
+{% endfor %}
+<div id="city-list" class="image-list {{item_id}} {% if is_top %}top{% else %}deep{% endif %}">
+  {% for city in items %}
+  <a anchor="{{city.label}}" title="{{city.label}}" href="/{{lang}}/{{project_id}}/{{city.id}}">
+    <div class="item {{city.id}}">
+      <div class="meta">
+        <div class="label">{{city.label}}</div>
+        <div class="month">{{city.month}}</div>
+      </div>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+<div class="matrix-body single-project">
+  {% if has_content and is_multiple_pages %}
+  <div class="page-selector">
+    {% for page in pages_meta %}
+    <a href="#{{page.id}}"><img id="icon_{{page.id}}" class="icon"
+    src="/images/matrix/{{city_id}}/{{project_id}}/{{page.id}}/icon.jpg"></a>
+    {% endfor %}
+  </div>
+  <script>
+    window.onhashchange = function() {
+      var articles = document.getElementsByTagName('article');
+      for (var i = 0; i < articles.length; i++) {
+        articles[i].classList.add('hidden');
+      }
+      var id = location.hash.replace('#', '_');
+      var article = document.getElementById(id);
+      if (article) {
+        article.classList.remove('hidden');
+      }
+
+      var SELECTED_CLASS_NAME = 'selected';
+      var icons = document.querySelectorAll('.page-selector .icon');
+      for (var i = 0; i < icons.length; i++) {
+        var icon = icons[i];
+        if (icon.id == 'icon' + id) {
+          icon.classList.add(SELECTED_CLASS_NAME);
+        } else {
+          icon.classList.remove(SELECTED_CLASS_NAME);
+        }
+      }
+    };
+  </script>
+  {% endif %}
+  {% autoescape false %}
+    {{body}}
+  {% endautoescape %}
+  {% if has_content %}
+  <script>
+    var id = location.hash.replace('#', '_');
+    var article = document.getElementById(id);
+    if (article) {
+      article.classList.remove('hidden');
+    } else {
+      var articles = document.getElementsByTagName('article');
+      if (articles.length > 0) {
+        articles[0].classList.remove('hidden');
+      }
+    }
+  </script>
+  {% endif %}
+</div>
