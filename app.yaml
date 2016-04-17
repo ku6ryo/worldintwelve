@@ -28,6 +28,12 @@ handlers:
 - url: /(en|ja)/matrix/.*
   script: handlers.matrix.app
 
+- url: /(en|ja)/twelve_questions/.*
+  script: handlers.single_project.app
+
+- url: /(en|ja)/twelve_twelve/.*
+  script: handlers.single_project.app
+
 - url: /(en|ja)/about(/(|cities|projects|whatis|faq|rules|team))?
   script: handlers.about.app
 

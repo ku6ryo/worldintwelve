@@ -172,6 +172,10 @@
 
   padding: 130px 50px 50px;
 
+  &.single-project {
+    padding-top: 0;
+  }
+
   article {
     color: $WXII_GRAY;
     position: relative;

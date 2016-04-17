@@ -580,53 +580,57 @@ article .block.image-center img {
   padding: 130px 50px 50px;
 }
 /* line 175, ../sass/matrix.scss */
+.matrix-body.single-project {
+  padding-top: 0;
+}
+/* line 179, ../sass/matrix.scss */
 .matrix-body article {
   color: #4E4E4E;
   position: relative;
 }
-/* line 179, ../sass/matrix.scss */
+/* line 183, ../sass/matrix.scss */
 .matrix-body article img {
   max-width: 100%;
 }
-/* line 183, ../sass/matrix.scss */
+/* line 187, ../sass/matrix.scss */
 .matrix-body article .banner {
   width: 100%;
 }
-/* line 188, ../sass/matrix.scss */
+/* line 192, ../sass/matrix.scss */
 .matrix-body article.hidden {
   display: none;
 }
 @media screen and (max-width: 756px) {
-  /* line 193, ../sass/matrix.scss */
+  /* line 197, ../sass/matrix.scss */
   .matrix-body {
     padding: 100px 20px 40px;
   }
 }
 @media screen and (max-width: 400px) {
-  /* line 199, ../sass/matrix.scss */
+  /* line 203, ../sass/matrix.scss */
   .matrix-body {
     padding: 90px 10px 30px;
   }
 }
 
-/* line 205, ../sass/matrix.scss */
+/* line 209, ../sass/matrix.scss */
 .go-to-top-container {
   text-align: center;
 }
-/* line 207, ../sass/matrix.scss */
+/* line 211, ../sass/matrix.scss */
 .go-to-top-container a {
   cursor: default;
 }
 
-/* line 214, ../sass/matrix.scss */
+/* line 218, ../sass/matrix.scss */
 .page-selector a span {
   margin-right: 10px;
 }
-/* line 217, ../sass/matrix.scss */
+/* line 221, ../sass/matrix.scss */
 .page-selector a span:hover {
   text-decoration: underline;
 }
-/* line 222, ../sass/matrix.scss */
+/* line 226, ../sass/matrix.scss */
 .page-selector img.icon {
   border-radius: 100px;
   height: 70px;
@@ -636,96 +640,96 @@ article .block.image-center img {
   transition: .1s;
   width: 70px;
 }
-/* line 231, ../sass/matrix.scss */
+/* line 235, ../sass/matrix.scss */
 .page-selector img.icon:hover {
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.4);
 }
-/* line 235, ../sass/matrix.scss */
+/* line 239, ../sass/matrix.scss */
 .page-selector img.icon.selected {
   background-color: #FC3838;
 }
 @media screen and (max-width: 400px) {
-  /* line 241, ../sass/matrix.scss */
+  /* line 245, ../sass/matrix.scss */
   .page-selector {
     padding: 0;
   }
-  /* line 245, ../sass/matrix.scss */
+  /* line 249, ../sass/matrix.scss */
   .page-selector img.icon {
     height: 40px;
     width: 40px;
   }
 }
 
-/* line 253, ../sass/matrix.scss */
+/* line 257, ../sass/matrix.scss */
 article.musicians .logo {
   max-height: 70px;
 }
-/* line 256, ../sass/matrix.scss */
+/* line 260, ../sass/matrix.scss */
 article.musicians .jacket {
   width: 300px;
 }
 
-/* line 262, ../sass/matrix.scss */
+/* line 266, ../sass/matrix.scss */
 article.whats-beauty .block {
   min-height: 300px;
 }
-/* line 265, ../sass/matrix.scss */
+/* line 269, ../sass/matrix.scss */
 article.whats-beauty .block img {
   width: 300px;
 }
-/* line 269, ../sass/matrix.scss */
+/* line 273, ../sass/matrix.scss */
 article.whats-beauty .block.image-left p {
   padding-left: 400px;
 }
-/* line 274, ../sass/matrix.scss */
+/* line 278, ../sass/matrix.scss */
 article.whats-beauty .block.image-right p {
   padding-right: 400px;
 }
 @media screen and (max-width: 1024px) {
-  /* line 281, ../sass/matrix.scss */
+  /* line 285, ../sass/matrix.scss */
   article.whats-beauty .block.image-left p,
   article.whats-beauty .block.image-right p {
     padding: 0;
   }
 }
 
-/* line 292, ../sass/matrix.scss */
+/* line 296, ../sass/matrix.scss */
 article.treasure_box .block.image-center img {
   width: 500px;
 }
-/* line 297, ../sass/matrix.scss */
+/* line 301, ../sass/matrix.scss */
 article.treasure_box .block.image-left {
   min-height: 300px;
 }
-/* line 300, ../sass/matrix.scss */
+/* line 304, ../sass/matrix.scss */
 article.treasure_box .block.image-left img {
   width: 300px;
 }
-/* line 303, ../sass/matrix.scss */
+/* line 307, ../sass/matrix.scss */
 article.treasure_box .block.image-left p {
   padding-left: 400px;
 }
-/* line 307, ../sass/matrix.scss */
+/* line 311, ../sass/matrix.scss */
 article.treasure_box .block.image-right {
   min-height: 300px;
 }
-/* line 310, ../sass/matrix.scss */
+/* line 314, ../sass/matrix.scss */
 article.treasure_box .block.image-right img {
   width: 300px;
 }
-/* line 313, ../sass/matrix.scss */
+/* line 317, ../sass/matrix.scss */
 article.treasure_box .block.image-right p {
   padding-right: 400px;
 }
 @media screen and (max-width: 1024px) {
-  /* line 320, ../sass/matrix.scss */
+  /* line 324, ../sass/matrix.scss */
   article.treasure_box .block.image-left p,
   article.treasure_box .block.image-right p {
     padding: 0;
   }
 }
 
-/* line 327, ../sass/matrix.scss */
+/* line 331, ../sass/matrix.scss */
 .grid-selector {
   background-color: white;
   bottom: -300px;
@@ -738,13 +742,13 @@ article.treasure_box .block.image-right p {
   width: 320px;
   z-index: 999999;
 }
-/* line 339, ../sass/matrix.scss */
+/* line 343, ../sass/matrix.scss */
 .grid-selector.open {
   bottom: 0;
   right: 0;
 }
 
-/* line 346, ../sass/matrix.scss */
+/* line 350, ../sass/matrix.scss */
 .grid-selector-button {
   width: 15px;
   height: 15px;
@@ -757,12 +761,12 @@ article.treasure_box .block.image-right p {
   transition: .2s;
 }
 
-/* line 358, ../sass/matrix.scss */
+/* line 362, ../sass/matrix.scss */
 .grid-selector.open .grid-selector-button {
   transform: rotate(180deg);
 }
 
-/* line 362, ../sass/matrix.scss */
+/* line 366, ../sass/matrix.scss */
 .grid-selector-title {
   text-align: center;
   font-family: Futura;
@@ -770,16 +774,16 @@ article.treasure_box .block.image-right p {
   margin: 0 0 10px;
 }
 
-/* line 369, ../sass/matrix.scss */
+/* line 373, ../sass/matrix.scss */
 .grid-selector-row {
   text-align: center;
 }
-/* line 372, ../sass/matrix.scss */
+/* line 376, ../sass/matrix.scss */
 .grid-selector-row a {
   display: table-cell;
 }
 
-/* line 377, ../sass/matrix.scss */
+/* line 381, ../sass/matrix.scss */
 .grid-selector-cell {
   margin: 2px;
   width: 18px;
@@ -791,123 +795,123 @@ article.treasure_box .block.image-right p {
   border-color: #999;
   transition: .2s;
 }
-/* line 388, ../sass/matrix.scss */
+/* line 392, ../sass/matrix.scss */
 .grid-selector-cell.current, .grid-selector-cell:hover {
   border-radius: 0;
 }
-/* line 394, ../sass/matrix.scss */
+/* line 398, ../sass/matrix.scss */
 .grid-selector-cell.hascontent.bangkok {
   background-color: #FF6D00;
   border-color: #FF6D00;
 }
-/* line 394, ../sass/matrix.scss */
+/* line 398, ../sass/matrix.scss */
 .grid-selector-cell.hascontent.barcelona {
   background-color: #AC0D19;
   border-color: #AC0D19;
 }
-/* line 394, ../sass/matrix.scss */
+/* line 398, ../sass/matrix.scss */
 .grid-selector-cell.hascontent.istanbul {
   background-color: #A3860C;
   border-color: #A3860C;
 }
-/* line 394, ../sass/matrix.scss */
+/* line 398, ../sass/matrix.scss */
 .grid-selector-cell.hascontent.london {
   background-color: #08B29A;
   border-color: #08B29A;
 }
-/* line 394, ../sass/matrix.scss */
+/* line 398, ../sass/matrix.scss */
 .grid-selector-cell.hascontent.melbourne {
   background-color: #22ADF2;
   border-color: #22ADF2;
 }
-/* line 394, ../sass/matrix.scss */
+/* line 398, ../sass/matrix.scss */
 .grid-selector-cell.hascontent.munich {
   background-color: #F49F08;
   border-color: #F49F08;
 }
-/* line 394, ../sass/matrix.scss */
+/* line 398, ../sass/matrix.scss */
 .grid-selector-cell.hascontent.newyork {
   background-color: #82A81A;
   border-color: #82A81A;
 }
-/* line 394, ../sass/matrix.scss */
+/* line 398, ../sass/matrix.scss */
 .grid-selector-cell.hascontent.paris {
   background-color: #F93EA5;
   border-color: #F93EA5;
 }
-/* line 394, ../sass/matrix.scss */
+/* line 398, ../sass/matrix.scss */
 .grid-selector-cell.hascontent.riodejaneiro {
   background-color: #457012;
   border-color: #457012;
 }
-/* line 394, ../sass/matrix.scss */
+/* line 398, ../sass/matrix.scss */
 .grid-selector-cell.hascontent.sanfrancisco {
   background-color: #7436C6;
   border-color: #7436C6;
 }
-/* line 394, ../sass/matrix.scss */
+/* line 398, ../sass/matrix.scss */
 .grid-selector-cell.hascontent.stockholm {
   background-color: #1D3C7F;
   border-color: #1D3C7F;
 }
-/* line 394, ../sass/matrix.scss */
+/* line 398, ../sass/matrix.scss */
 .grid-selector-cell.hascontent.tokyo {
   background-color: #565656;
   border-color: #565656;
 }
-/* line 394, ../sass/matrix.scss */
+/* line 398, ../sass/matrix.scss */
 .grid-selector-cell.hascontent.toronto {
   background-color: #6B3E0D;
   border-color: #6B3E0D;
 }
 
-/* line 402, ../sass/matrix.scss */
+/* line 406, ../sass/matrix.scss */
 article.micro_guide .block {
   min-height: 550px;
 }
-/* line 405, ../sass/matrix.scss */
+/* line 409, ../sass/matrix.scss */
 article.micro_guide .block .title {
   margin: 0 0 15px;
 }
-/* line 409, ../sass/matrix.scss */
+/* line 413, ../sass/matrix.scss */
 article.micro_guide .block img {
   width: 400px;
 }
-/* line 413, ../sass/matrix.scss */
+/* line 417, ../sass/matrix.scss */
 article.micro_guide .block.image-left p {
   padding-left: 450px;
 }
-/* line 418, ../sass/matrix.scss */
+/* line 422, ../sass/matrix.scss */
 article.micro_guide .block.image-right p {
   padding-right: 450px;
 }
 @media screen and (max-width: 1024px) {
-  /* line 425, ../sass/matrix.scss */
+  /* line 429, ../sass/matrix.scss */
   article.micro_guide .block.image-left p,
   article.micro_guide .block.image-right p {
     padding: 0;
   }
 }
 
-/* line 434, ../sass/matrix.scss */
+/* line 438, ../sass/matrix.scss */
 article.twelve-questions .name {
   font-size: 26px;
   font-style: italic;
   font-weight: bold;
 }
-/* line 439, ../sass/matrix.scss */
+/* line 443, ../sass/matrix.scss */
 article.twelve-questions .photo {
   padding: 20px;
   text-align: center;
 }
-/* line 442, ../sass/matrix.scss */
+/* line 446, ../sass/matrix.scss */
 article.twelve-questions .photo img {
   /*border: 5px solid $WXII_RED;*/
   border-radius: 2px;
   width: 500px;
 }
 
-/* line 452, ../sass/matrix.scss */
+/* line 456, ../sass/matrix.scss */
 article.real-dates .block .youtube {
   box-sizing: border-box;
   display: block;
@@ -917,7 +921,7 @@ article.real-dates .block .youtube {
   width: 640px;
 }
 @media screen and (max-width: 640px) {
-  /* line 464, ../sass/matrix.scss */
+  /* line 468, ../sass/matrix.scss */
   article.real-dates .block .youtube {
     height: 180px;
     width: 320px;
